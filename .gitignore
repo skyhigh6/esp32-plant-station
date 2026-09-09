@@ -1,0 +1,16 @@
+.tools/
+firmware/build/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+evidence/
+mechanical/archive_rejected_p1/
+mechanical/clean_rev2/
+mechanical/concept_rev3/
+mechanical/concept_rev4/
+output/pdf/qa/
+ESP32_Plant_P0_Review.zip

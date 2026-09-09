@@ -1,0 +1,51 @@
+{
+  "battery_tray.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 11609.547371997382,
+    "hash_matches": true
+  },
+  "fascia_charcoal.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 34076.4979236672,
+    "hash_matches": true
+  },
+  "hose_clip.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 619.2180595519021,
+    "hash_matches": true
+  },
+  "planter_sage.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 170317.9246806807,
+    "hash_matches": true
+  },
+  "sump_charcoal.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 128391.17999580705,
+    "hash_matches": true
+  },
+  "top_cover_sage.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 28564.723389492836,
+    "hash_matches": true
+  },
+  "tower_sage.stl": {
+    "watertight": true,
+    "single_component": true,
+    "winding": true,
+    "volume_mm3": 314951.5982211864,
+    "hash_matches": true
+  }
+}
