@@ -4,10 +4,15 @@ A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure
 
 **Current mechanical revision: R6, 11 September 2026. Deeper sump for the shortlisted pump, checked 12 mm button insert spaces and enlarged hose clip. Prototype only: actual hardware fit and the SunFounder carrier pinout remain unverified.**
 
-![R6 CAD assembly](mechanical/concept_rev6/assembly.png)
+![R6 concept appearance - component fit unverified](mechanical/concept_rev6/concept_art.png)
+
+Concept appearance only: LCD text, illumination and tube routing are illustrative. Use the [R6 CAD assembly view](mechanical/concept_rev6/assembly.png) and dimensioned notes for geometry.
 
 ## Downloads
 
+- [R6 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R6_Illustrated_Assembly_Guide.pdf): updated concept art, exploded/section CAD views, 15 assembly steps and acceptance worksheet.
+- [Read the R6 assembly guide online](docs/ASSEMBLY_GUIDE_R6.md).
+- [Complete R6 illustrated review pack (ZIP)](ESP32_Plant_R6_Illustrated_Review.zip): CAD/STL files, concept art, guide and source documentation.
 - [R6 STL/STEP review package (ZIP)](ESP32_Plant_R6_Mechanical_Review.zip).
 - [R6 seven assembly STLs plus fit coupon](mechanical/concept_rev6/stl/), [STEP solids](mechanical/concept_rev6/step/) and [R6 dimensions, assumptions and print guidance](mechanical/concept_rev6/README.md).
 - [R6 assembly STEP](mechanical/concept_rev6/assembly.step) and [editable CAD source](mechanical/concept_rev6/build.py).

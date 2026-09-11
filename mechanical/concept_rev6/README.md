@@ -54,3 +54,7 @@ Not performed: slicing, physical fit, full self-intersection analysis, leak/stre
 3. Test the enlarged hose clip on the actual tube. Avoid crushing the bore; verify retention.
 4. Print and fit the sump/planter pair. Use appropriate removable inlet/drain screens and prove water containment before installing electronics. Leave headspace for drain-back; the geometric cavity is not a recommended fill volume.
 5. Fit the buttons from the outside, tighten nuts inside with the fascia removed, route wiring, then install the fascia. Confirm wiring clears the PCB and LCD envelopes.
+
+## Illustrated assembly documentation
+
+The [R6-A1 illustrated guide](../../output/pdf/Plant_Station_R6_Illustrated_Assembly_Guide.pdf) and [online assembly instructions](../../docs/ASSEMBLY_GUIDE_R6.md) add the concept art, assembly sequence and acceptance worksheet. [Art prompt and review notes](CONCEPT_ART.md) record the image-generation basis and limitations. The guide does not change the R6 geometry or release any hardware-fit gates.

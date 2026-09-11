@@ -1,0 +1,13 @@
+# R6 concept art provenance
+
+11 September 2026. Created with the built-in image-generation tool, using `assembly.png` as the geometry/style reference. Project asset: `concept_art.png`. No CAD geometry was changed to match the generated image.
+
+## Final prompt
+
+Create one refined photorealistic product concept illustration based closely on the supplied R6 CAD assembly. Preserve its exact overall silhouette and relative proportions: tall sage green electronics tower on LEFT, charcoal inset front fascia and sage lid, shorter rectangular sage planting compartment on RIGHT sitting on a deep charcoal sump base (base approx 60mm of 114mm overall planter height; tower 161mm). Rounded corners, understated realistic 3D-printed texture, neutral off-white studio background, three-quarter front view matching reference. Populate existing fascia openings only: wide 16x2 character LCD in upper aperture showing simply 'PLANT STATION' and 'MANUAL DOSE' as illustrative mock display; three tiny separate indicator LEDs in the existing row below LCD; exactly THREE circular metal panel buttons in existing large row with subtle green, yellow and red illuminated rings from left to right; a small black rotary dose knob in lower left existing opening; retain nine sounder grille holes bottom right and all fastener locations. Fit a small healthy green leafy plant in right planting compartment with visible soil. A discreet translucent silicone tube comes up behind planter from sump, through the existing upper right external clip on tower, and ends over soil. Do not invent extra buttons, ports, pump outside sump, new geometry, logos, dimensions or exploded features. Mechanical geometry authoritative in reference; plant, display and installed parts are illustrative. Place a small neat caption at bottom 'R6 CONCEPT - COMPONENT FIT UNVERIFIED'. High quality engineering product visual, not advertising, landscape composition, no hands or props.
+
+## Visual review and limits
+
+The image retains the left tower/right planter arrangement, three ring-button positions, separate LED row, rotary control and sounder grille. It is accepted as appearance art, not a dimensional rendering. Generated surface proportions, tube path and installed component shapes are approximate: use the exported CAD for measurement and assembly.
+
+The green/yellow/red indicator colours are illustrative and do not supersede the existing firmware's provisional LED mapping. Ring illumination has no validated wiring scheme. LCD text is a mock display; text output remains unimplemented. Plant species/size, soil loading and tube bend are not horticultural or hardware-fit approvals.
