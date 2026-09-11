@@ -2,13 +2,16 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R5, 9 September 2026. Prototype only: actual hardware fit and the SunFounder carrier pinout remain unverified.**
+**Current mechanical revision: R6, 11 September 2026. Deeper sump for the shortlisted pump, checked 12 mm button insert spaces and enlarged hose clip. Prototype only: actual hardware fit and the SunFounder carrier pinout remain unverified.**
 
-![R5 CAD assembly](mechanical/concept_rev5/assembly.png)
+![R6 CAD assembly](mechanical/concept_rev6/assembly.png)
 
 ## Downloads
 
-- [Illustrated build guide (PDF)](output/pdf/Plant_Station_R5_Illustrated_Build_Guide.pdf): assembly views, clearance tables, block diagrams, logical pinout, conditional upload procedure and acceptance worksheet.
+- [R6 STL/STEP review package (ZIP)](ESP32_Plant_R6_Mechanical_Review.zip).
+- [R6 seven assembly STLs plus fit coupon](mechanical/concept_rev6/stl/), [STEP solids](mechanical/concept_rev6/step/) and [R6 dimensions, assumptions and print guidance](mechanical/concept_rev6/README.md).
+- [R6 assembly STEP](mechanical/concept_rev6/assembly.step) and [editable CAD source](mechanical/concept_rev6/build.py).
+- [Earlier R5 illustrated build guide (PDF)](output/pdf/Plant_Station_R5_Illustrated_Build_Guide.pdf): R6 mechanical notes supersede its sump, planter and hose-clip dimensions; electrical information remains provisional.
 - [Complete R5 review package (ZIP)](ESP32_Plant_R5_Review.zip).
 - [Seven STL parts](mechanical/concept_rev5/stl/) and [individual STEP solids](mechanical/concept_rev5/step/).
 - [Assembly STEP](mechanical/concept_rev5/assembly.step), [CAD source](mechanical/concept_rev5/build.py) and [mechanical notes](mechanical/concept_rev5/README.md).
@@ -26,7 +29,7 @@ STLs use millimetres and retain common assembly coordinates. Load them together 
 
 ## Verification
 
-Seven closed, consistently wound, positive-volume single-component meshes were checked. All 21 assembled CAD part-pair intersections were zero within the stated threshold. Mount, aperture, drain and tool-access checks are recorded in [verification.json](mechanical/concept_rev5/verification.json), with [independent exported-mesh checks](mechanical/concept_rev5/independent_mesh_check.json).
+Eight closed, consistently wound, positive-volume single-component meshes were checked: seven assembly parts and a button-fit coupon. All 21 assembled CAD part-pair intersections were zero within the stated threshold. Pump, button, mount, aperture, drain and tool-access checks are recorded in [R6 verification.json](mechanical/concept_rev6/verification.json), with [independent exported-mesh checks](mechanical/concept_rev6/independent_mesh_check.json).
 
 Actual component envelopes, fasteners, printer tolerances, structural strength and watertightness are not validated. The mechanical notes record the local CAD runtime shutdown anomaly separately from completed geometry assertions and export checks. The supplied carrier's physical header pinout remains unknown; the illustrated pinout is a logical compile-review map only.
 

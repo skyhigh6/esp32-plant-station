@@ -1,0 +1,239 @@
+{
+  "units": "mm",
+  "revision": "R6",
+  "files": {
+    "battery_tray.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 11609.547371997382,
+      "bounds_mm": [
+        [
+          12.0,
+          30.0,
+          9.0
+        ],
+        [
+          84.0,
+          60.0,
+          21.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "f8704453ffb0bebe480c07a83fe8de7d71d97000dd446686cac5b10bb97790ba"
+    },
+    "button_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 5305.159590013484,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          76.0,
+          28.0,
+          3.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "62d68ce1502278c08820394fdacd870ea3d41c1cdab7b53c7cf1152b7f55b432"
+    },
+    "fascia_charcoal.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 34076.4979236672,
+      "bounds_mm": [
+        [
+          3.4000000953674316,
+          1.0,
+          3.4000000953674316
+        ],
+        [
+          92.5999984741211,
+          12.0,
+          154.60000610351562
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "6ac203c7c28dee9b839062f0e9c616b6953b8d58f67c32e8a24b99831308775e"
+    },
+    "hose_clip.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 563.1961776039097,
+      "bounds_mm": [
+        [
+          96.0,
+          84.0,
+          136.0
+        ],
+        [
+          113.65685272216797,
+          98.0,
+          140.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "0603a87548af40b39f9251549fb9b1e11a806b99e71591563b396f73f337a77c"
+    },
+    "planter_sage.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 165883.44856262548,
+      "bounds_mm": [
+        [
+          102.0,
+          1.0,
+          57.0
+        ],
+        [
+          206.0,
+          99.0,
+          114.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "e3771dd69a867607cb66a01994db97ce926e6ccabf3fa6633ec693113ed4d1e8"
+    },
+    "sump_charcoal.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 174263.44467557812,
+      "bounds_mm": [
+        [
+          96.0,
+          -8.881784197001252e-16,
+          0.0
+        ],
+        [
+          207.0,
+          100.0,
+          60.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "fd7cd3204247a2b4b993b2c11a46f8e3168e2bf31c41e2478ae11d39b94bd3b8"
+    },
+    "top_cover_sage.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 28564.723389492836,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          96.0,
+          100.0,
+          161.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "e4e6fe1c1625200d27f1b484e635bfcfad9b438487672f9cd433e7acf86dbef0"
+    },
+    "tower_sage.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 314951.5982211864,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          0.0
+        ],
+        [
+          104.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "a41a80613217335f8f3bfc5294bb59785ddd4c4942e79cee0452cce105a4a6fc"
+    }
+  },
+  "sections": {
+    "button_bores": [
+      {
+        "centre_mm": [
+          24,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339536201261,
+        "radial_max_mm": 6.000003088270017
+      },
+      {
+        "centre_mm": [
+          48,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339536201262,
+        "radial_max_mm": 6.000002791570859
+      },
+      {
+        "centre_mm": [
+          72,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339986035293,
+        "radial_max_mm": 6.000004389345942
+      }
+    ],
+    "coupon_bores": [
+      {
+        "centre_mm": [
+          14,
+          14
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998134467090745,
+        "radial_max_mm": 6.000000882290438
+      },
+      {
+        "centre_mm": [
+          38,
+          14
+        ],
+        "nominal_diameter_mm": 12.2,
+        "radial_min_mm": 6.098102547528335,
+        "radial_max_mm": 6.1000017109885345
+      },
+      {
+        "centre_mm": [
+          62,
+          14
+        ],
+        "nominal_diameter_mm": 12.4,
+        "radial_min_mm": 6.1980705816849575,
+        "radial_max_mm": 6.200002683712588
+      }
+    ]
+  },
+  "result": "PASS",
+  "limits": [
+    "No slicing, material validation or physical fit/leak test",
+    "No full mesh self-intersection check"
+  ]
+}
