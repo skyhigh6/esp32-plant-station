@@ -1,5 +1,7 @@
 # Provisional bill of materials
 
+**Superseded for the current build by [R8 BOM and fastener schedule](BOM_R8.md), 12 September 2026.** The following P0/R7 inventory is historical; use R8 for USB orientation, piezo mounting, knob options and fasteners.
+
 P0 review only. Quantities describe the concept, not a purchase list. Existing kit contents are not inventoried beyond the user statements and historical photographs.
 
 | Qty | Item | Selection / unresolved evidence |

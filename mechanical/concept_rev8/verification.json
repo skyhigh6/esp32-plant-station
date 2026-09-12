@@ -1,0 +1,480 @@
+{
+  "revision": "R8",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "parts": {
+    "tower_sage": {
+      "bounds_mm": [
+        104.0,
+        100.0,
+        158.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 314065.00994743203,
+      "sha256": "323e7988ad2e9743a6adf5da040bd87583cc48aff37e05939c603c81e6e1cee3"
+    },
+    "fascia_charcoal": {
+      "bounds_mm": [
+        89.19999837875366,
+        11.0,
+        151.2000060081482
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 34703.762694381134,
+      "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb"
+    },
+    "top_cover_sage": {
+      "bounds_mm": [
+        96.0,
+        100.0,
+        3.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 28564.723389492836,
+      "sha256": "e4e6fe1c1625200d27f1b484e635bfcfad9b438487672f9cd433e7acf86dbef0"
+    },
+    "sump_charcoal": {
+      "bounds_mm": [
+        111.0,
+        100.0,
+        60.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 174263.44467557812,
+      "sha256": "fd7cd3204247a2b4b993b2c11a46f8e3168e2bf31c41e2478ae11d39b94bd3b8"
+    },
+    "planter_sage": {
+      "bounds_mm": [
+        104.0,
+        98.0,
+        57.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 165883.44856262548,
+      "sha256": "e3771dd69a867607cb66a01994db97ce926e6ccabf3fa6633ec693113ed4d1e8"
+    },
+    "battery_tray": {
+      "bounds_mm": [
+        72.0,
+        30.0,
+        12.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 11609.547371997382,
+      "sha256": "f8704453ffb0bebe480c07a83fe8de7d71d97000dd446686cac5b10bb97790ba"
+    },
+    "hose_clip": {
+      "bounds_mm": [
+        17.65685272216797,
+        14.0,
+        4.0
+      ],
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 563.1961776039097,
+      "sha256": "0603a87548af40b39f9251549fb9b1e11a806b99e71591563b396f73f337a77c"
+    }
+  },
+  "pairwise": [
+    {
+      "a": "tower_sage",
+      "b": "fascia_charcoal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "tower_sage",
+      "b": "top_cover_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "tower_sage",
+      "b": "sump_charcoal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "tower_sage",
+      "b": "planter_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "tower_sage",
+      "b": "battery_tray",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "tower_sage",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "fascia_charcoal",
+      "b": "top_cover_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "fascia_charcoal",
+      "b": "sump_charcoal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "fascia_charcoal",
+      "b": "planter_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "fascia_charcoal",
+      "b": "battery_tray",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "fascia_charcoal",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "top_cover_sage",
+      "b": "sump_charcoal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "top_cover_sage",
+      "b": "planter_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "top_cover_sage",
+      "b": "battery_tray",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "top_cover_sage",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "sump_charcoal",
+      "b": "planter_sage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "sump_charcoal",
+      "b": "battery_tray",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "sump_charcoal",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "planter_sage",
+      "b": "battery_tray",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "planter_sage",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "battery_tray",
+      "b": "hose_clip",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "critical": {
+    "LCD_aperture_mm": [
+      71.4,
+      24.599999999999998
+    ],
+    "LCD_centres_mm": [
+      75.0,
+      31.0
+    ],
+    "PCB_reference_centres_mm": [
+      60.0,
+      57.0
+    ],
+    "PCB_installed_centres_xz_mm": [
+      57,
+      60
+    ],
+    "plant_cavity_mm": [
+      90,
+      60,
+      50
+    ],
+    "drains": 2,
+    "drain_diameter_mm": 6,
+    "floor_mm": 4,
+    "dovetail_clearance_mm": 0.4,
+    "through_probes": "PASS",
+    "floor_probe": "PASS",
+    "overlap_control_mm3": 500,
+    "button_holes_mm": [
+      12,
+      12,
+      12
+    ],
+    "button_centres_x_mm": [
+      24,
+      48,
+      72
+    ],
+    "button_centre_z_mm": 72,
+    "button_panel_thickness_mm": 3,
+    "sump_external_height_mm": 60.0,
+    "sump_internal_depth_mm": 56.0,
+    "pump_LWH_mm": [
+      38.5,
+      25.5,
+      43.0
+    ],
+    "pump_allowance_mm": 3.0,
+    "pump_body_to_planter_underside_mm": 13,
+    "pump_body_to_lip_bottom_mm": 10,
+    "hose_clip_bore_mm": 8.4,
+    "button_nut_envelope_OD_mm": 20.0,
+    "button_rear_envelope_depth_mm": 35.0,
+    "new_envelope_checks": "PASS",
+    "PCB_outline_reference_mm": [
+      67.0,
+      64.0
+    ],
+    "PCB_installed_outline_xz_mm": [
+      64,
+      67
+    ],
+    "LCD_outline_mm": [
+      80.0,
+      36.0
+    ],
+    "PCB_mount_coordinates_xz_mm": [
+      [
+        19.5,
+        78.5
+      ],
+      [
+        76.5,
+        78.5
+      ],
+      [
+        19.5,
+        138.5
+      ],
+      [
+        76.5,
+        138.5
+      ]
+    ],
+    "LCD_mount_coordinates_xz_mm": [
+      [
+        10.5,
+        97
+      ],
+      [
+        85.5,
+        97
+      ],
+      [
+        10.5,
+        128
+      ],
+      [
+        85.5,
+        128
+      ]
+    ],
+    "USB_orientation": "90 degrees anticlockwise from R7 viewed from fascia; both ports face left",
+    "USB_left_opening_yz_mm": [
+      49.0,
+      98.5
+    ],
+    "USB_left_opening_wh_mm": [
+      28.0,
+      20.0
+    ],
+    "USB_fit_status": "PROVISIONAL: connector offsets and plugs not measured",
+    "top_cover": "solid 3 mm roof except four fixing holes",
+    "upper_boss_webs": "9 mm deep, 10 mm wide, 45 degree lower edge; positive volume probes passed",
+    "piezo_seat_ID_depth_mm": [
+      10.4,
+      3
+    ],
+    "piezo_body_OD_user_mm": 10,
+    "piezo_sound_hole_mm": 4,
+    "LED_bores_mm": 5,
+    "LED_glue_collar_ID_mm": 5.4
+  },
+  "standoffs": [
+    {
+      "group": "PCB",
+      "x_mm": 19.5,
+      "z_mm": 78.5,
+      "driver_diameter_mm": 7,
+      "blind_pilot_depth_mm": 11
+    },
+    {
+      "group": "PCB",
+      "x_mm": 76.5,
+      "z_mm": 78.5,
+      "driver_diameter_mm": 7,
+      "blind_pilot_depth_mm": 11
+    },
+    {
+      "group": "PCB",
+      "x_mm": 19.5,
+      "z_mm": 138.5,
+      "driver_diameter_mm": 7,
+      "blind_pilot_depth_mm": 11
+    },
+    {
+      "group": "PCB",
+      "x_mm": 76.5,
+      "z_mm": 138.5,
+      "driver_diameter_mm": 7,
+      "blind_pilot_depth_mm": 11
+    },
+    {
+      "group": "LCD",
+      "x_mm": 10.5,
+      "z_mm": 97,
+      "stand_off_mm": 8,
+      "OD_mm": 6,
+      "through_hole_mm": 3,
+      "max_head_diameter_mm": 5.5
+    },
+    {
+      "group": "LCD",
+      "x_mm": 85.5,
+      "z_mm": 97,
+      "stand_off_mm": 8,
+      "OD_mm": 6,
+      "through_hole_mm": 3,
+      "max_head_diameter_mm": 5.5
+    },
+    {
+      "group": "LCD",
+      "x_mm": 10.5,
+      "z_mm": 128,
+      "stand_off_mm": 8,
+      "OD_mm": 6,
+      "through_hole_mm": 3,
+      "max_head_diameter_mm": 5.5
+    },
+    {
+      "group": "LCD",
+      "x_mm": 85.5,
+      "z_mm": 128,
+      "stand_off_mm": 8,
+      "OD_mm": 6,
+      "through_hole_mm": 3,
+      "max_head_diameter_mm": 5.5
+    },
+    {
+      "group": "fascia",
+      "x_mm": 9,
+      "z_mm": 10,
+      "front_driver_diameter_mm": 6
+    },
+    {
+      "group": "fascia",
+      "x_mm": 87,
+      "z_mm": 10,
+      "front_driver_diameter_mm": 6
+    },
+    {
+      "group": "fascia",
+      "x_mm": 9,
+      "z_mm": 148,
+      "front_driver_diameter_mm": 6
+    },
+    {
+      "group": "fascia",
+      "x_mm": 87,
+      "z_mm": 148,
+      "front_driver_diameter_mm": 6
+    },
+    {
+      "group": "battery",
+      "x_mm": 18,
+      "y_mm": 45,
+      "driver_diameter_mm": 7
+    },
+    {
+      "group": "battery",
+      "x_mm": 78,
+      "y_mm": 45,
+      "driver_diameter_mm": 7
+    },
+    {
+      "group": "top_cover",
+      "x_mm": 3.5,
+      "y_mm": 15,
+      "driver_diameter_mm": 6,
+      "min_pilot_wall_mm": 1.1
+    },
+    {
+      "group": "top_cover",
+      "x_mm": 3.5,
+      "y_mm": 85,
+      "driver_diameter_mm": 6,
+      "min_pilot_wall_mm": 1.1
+    },
+    {
+      "group": "top_cover",
+      "x_mm": 92.5,
+      "y_mm": 15,
+      "driver_diameter_mm": 6,
+      "min_pilot_wall_mm": 1.1
+    },
+    {
+      "group": "top_cover",
+      "x_mm": 92.5,
+      "y_mm": 85,
+      "driver_diameter_mm": 6,
+      "min_pilot_wall_mm": 1.1
+    },
+    {
+      "group": "hose_clip",
+      "driver_diameter_mm": 6,
+      "blind_pilot_depth_mm": 3
+    }
+  ],
+  "clearances_mm": {
+    "PCB_edge_to_sidewall": 10,
+    "PCB_standoff_to_sidewall": 9.5,
+    "PCB_seating_face_to_rear_wall": 18,
+    "LCD_edge_to_sidewall": 2,
+    "LCD_to_PCB_assumed_component_envelopes": 10.8,
+    "LCD_boss_to_aperture_min": 0.6715119501371642,
+    "LCD_5p5mm_screw_head_to_aperture_min": 0.9215119501371642,
+    "LCD_boss_radial_wall": 1.5,
+    "fascia_edge_gap": 0.4,
+    "sump_lip_side_gap": 0.4
+  },
+  "assumed_envelopes": {
+    "PCB": "Source 67 x 64 rotated to 64 x 67 installed; assumed 31.6 stack towards fascia",
+    "LCD": "Image 80 x 36 PCB; assumed 1.6 thickness and 20 rear projection; assumed 8 mm spacing behind fascia"
+  },
+  "not_verified": [
+    "Actual component fit and undersides",
+    "Fastener selection and print tolerances",
+    "Slicing and load strength",
+    "Leak test",
+    "Full mesh self-intersection test"
+  ]
+}

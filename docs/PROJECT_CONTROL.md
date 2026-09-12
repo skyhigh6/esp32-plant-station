@@ -1,5 +1,11 @@
 # Requirements and configuration control
 
+## Current mechanical change - R8, 12 September 2026
+
+R8 supersedes the older dimensions below for manufacture preparation. Carrier reference pattern is 60 x 57 mm, rotated 90 degrees anticlockwise from R7 as viewed from the fascia to 57 horizontal x 60 vertical, with USB ports facing left. LCD pattern remains R7 75 x 31 mm. Roof access hole closed; provisional left window 28 x 20 mm requires actual cable measurements. Upper fascia bosses have continuous side-wall webs. User specifies a 10 mm round piezo, glued in, and glued LEDs. Eight knob bore options are supplied because shaft size is unknown. Current R03/R06 three-button requirement is retained; no firmware change.
+
+See [R8 dimensional contract](../mechanical/concept_rev8/README.md), [assembly route and first article record](ASSEMBLY_GUIDE_R8.md), and [current BOM](BOM_R8.md). Historical R08/R09 and U01/U02 dimensions below are superseded by R7 references and the R8 installed orientation. USB position, shaft fit, piezo height, actual fastener retention, slicing and physical acceptance remain OPEN.
+
 P0 · 2026-09-08 · Accountable integrator: Demerzel workflow
 
 ## Scope and traceability
