@@ -2,41 +2,35 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R6, 11 September 2026. Deeper sump for the shortlisted pump, checked 12 mm button insert spaces and enlarged hose clip. Prototype only: actual hardware fit and the SunFounder carrier pinout remain unverified.**
+**Current mechanical revision: R7, 12 September 2026. Corrected carrier and LCD mounts, LCD aperture and top USB access. Prototype: actual hardware fit remains unverified.**
 
-![R6 concept appearance - component fit unverified](mechanical/concept_rev6/concept_art.png)
-
-Concept appearance only: LCD text, illumination and tube routing are illustrative. Use the [R6 CAD assembly view](mechanical/concept_rev6/assembly.png) and dimensioned notes for geometry.
+![R7 CAD assembly](mechanical/concept_rev7/assembly.png)
 
 ## Downloads
 
-- [R6 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R6_Illustrated_Assembly_Guide.pdf): updated concept art, exploded/section CAD views, 15 assembly steps and acceptance worksheet.
-- [Read the R6 assembly guide online](docs/ASSEMBLY_GUIDE_R6.md).
-- [Complete R6 illustrated review pack (ZIP)](ESP32_Plant_R6_Illustrated_Review.zip): CAD/STL files, concept art, guide and source documentation.
-- [R6 STL/STEP review package (ZIP)](ESP32_Plant_R6_Mechanical_Review.zip).
-- [R6 seven assembly STLs plus fit coupon](mechanical/concept_rev6/stl/), [STEP solids](mechanical/concept_rev6/step/) and [R6 dimensions, assumptions and print guidance](mechanical/concept_rev6/README.md).
-- [R6 assembly STEP](mechanical/concept_rev6/assembly.step) and [editable CAD source](mechanical/concept_rev6/build.py).
-- [Earlier R5 illustrated build guide (PDF)](output/pdf/Plant_Station_R5_Illustrated_Build_Guide.pdf): R6 mechanical notes supersede its sump, planter and hose-clip dimensions; electrical information remains provisional.
-- [Complete R5 review package (ZIP)](ESP32_Plant_R5_Review.zip).
-- [Seven STL parts](mechanical/concept_rev5/stl/) and [individual STEP solids](mechanical/concept_rev5/step/).
-- [Assembly STEP](mechanical/concept_rev5/assembly.step), [CAD source](mechanical/concept_rev5/build.py) and [mechanical notes](mechanical/concept_rev5/README.md).
+- [R7 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R7_Illustrated_Assembly_Guide.pdf) and [online guide](docs/ASSEMBLY_GUIDE_R7.md).
+- [Complete R7 illustrated review pack (ZIP)](ESP32_Plant_R7_Illustrated_Review.zip).
+- [Seven assembly STLs and three fit coupons](mechanical/concept_rev7/stl/), [STEP solids](mechanical/concept_rev7/step/), [assembly STEP](mechanical/concept_rev7/assembly.step) and [editable CAD source](mechanical/concept_rev7/build.py).
+- [Dimensions, assumptions and print guidance](mechanical/concept_rev7/README.md), [dimensional sources](mechanical/concept_rev7/references/SOURCES.md).
+- Historical packages: [R6](ESP32_Plant_R6_Illustrated_Review.zip), [R5](ESP32_Plant_R5_Review.zip). Their mounting and USB geometry is superseded by R7.
 
 ## Design
 
-- Left-hand dry electronics tower, viewed from the LCD/control face.
-- Sage/charcoal design based on the [concept art](mechanical/concept_rev5/concept_reference.png).
-- Approximate planting cavity: 90 x 60 x 50 mm, with two 6 mm floor drains into the sump.
-- User-measured PCB mounting centres: 60 x 55 mm.
-- User-measured LCD mounting centres: 73 x 30 mm; aperture: 70 x 25 mm.
-- Three buttons, three LEDs, dose potentiometer, battery-holder tray and external hose clip.
+- Left-hand dry electronics tower; overall assembly 207 × 100 × 161 mm.
+- SunFounder reference board 67 × 64 mm; mounting centres **60 × 57 mm**. Both USB ports face upwards into a shared **72 × 46 mm** opening.
+- Supplied LCD reference: PCB 80 × 36 mm, mounting centres **75 × 31 mm**, 3 mm holes. Fascia aperture **71.4 × 24.6 mm** clears the 71 × 24.2 mm bezel with a nominal 0.2 mm per side.
+- Three nominal **12 mm** button holes. Separate carrier, LCD and button fit coupons are supplied.
+- R6 sump retained: 60 mm external height / 56 mm internal depth; provisional pump envelope 38.5 × 25.5 × 43 mm. Planting cavity 90 × 60 × 50 mm with two 6 mm drains.
 
-STLs use millimetres and retain common assembly coordinates. Load them together without auto-arranging to inspect assembly; orient and place each individual part on the bed before slicing.
+Print the fit coupons first. Port offsets, plug dimensions, carrier stack and LCD depth remain assumptions requiring measurement. The broad USB service opening is unsealed and requires cable strain relief.
+
+STLs use millimetres and common assembly coordinates. Load together without auto-arranging to inspect the assembly; orient and place each part on the bed before slicing. R7 replaces the tower, fascia and top cover; the sump, planter, battery tray and hose clip retain R6 geometry.
 
 ## Verification
 
-Eight closed, consistently wound, positive-volume single-component meshes were checked: seven assembly parts and a button-fit coupon. All 21 assembled CAD part-pair intersections were zero within the stated threshold. Pump, button, mount, aperture, drain and tool-access checks are recorded in [R6 verification.json](mechanical/concept_rev6/verification.json), with [independent exported-mesh checks](mechanical/concept_rev6/independent_mesh_check.json).
+Ten exported meshes are closed, consistently wound, positive-volume single components. All 21 assembled CAD part-pair intersections are zero within the recorded threshold. Independent exported sections check carrier/LCD centres, holes, LCD aperture and USB opening. See [CAD verification](mechanical/concept_rev7/verification.json), [independent mesh checks](mechanical/concept_rev7/independent_mesh_check.json) and [documentation QA](docs/R7_DOCUMENTATION_QA.md).
 
-Actual component envelopes, fasteners, printer tolerances, structural strength and watertightness are not validated. The mechanical notes record the local CAD runtime shutdown anomaly separately from completed geometry assertions and export checks. The supplied carrier's physical header pinout remains unknown; the illustrated pinout is a logical compile-review map only.
+The CAD runtime printed PASS then exited with code 1 during shutdown; independent export checking exited successfully with code 0. Actual component fit, strength, watertightness and electrical operation are not established by these checks. The supplied carrier pinout remains unverified.
 
 ## Firmware
 
@@ -51,14 +45,16 @@ Review compilation against ESP32 Arduino core 2.0.17 used 272,957 bytes flash an
 The CAD source uses Python, CadQuery 2.8, trimesh, NumPy and VTK. The PDF source uses ReportLab. Install dependencies in an isolated environment; local bundled runtimes are not included in this repository.
 
 ```powershell
-python mechanical/concept_rev5/build.py
-python scripts/build_guide_r5.py
+python mechanical/concept_rev7/build.py
+python mechanical/concept_rev7/check_exports.py
+python scripts/build_guide_r7.py
+python scripts/package_r7_illustrated.py
 ```
 
 Read the firmware README and PDF before compiling or attempting an upload. Confirm the exact board revision and GPIO reservations first; even a pump-disabled build configures other pins as outputs.
 
 ## Project records
 
-[Requirements and unknowns](docs/PROJECT_CONTROL.md), [electronics notes](docs/ELECTRONICS.md), and [provisional BOM](docs/BOM.md) retain the original engineering context. R5 mechanical notes and the PDF supersede older mechanical dimensions and fitting placeholders in those records. Personal reference photos, superseded CAD revisions and local build tools are not included.
+[Requirements and unknowns](docs/PROJECT_CONTROL.md), [electronics notes](docs/ELECTRONICS.md), and [provisional BOM](docs/BOM.md) retain the original engineering context. R7 mechanical notes and guide supersede older mechanical dimensions and fitting placeholders in those records. Dimensional reference images are included with attribution; local build tools are excluded.
 
 Next steps: measure the actual components, validate the carrier-specific pin map, print fit trials, review slicing, and complete dry electrical and controlled leak/flow tests.

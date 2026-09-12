@@ -1,5 +1,7 @@
 # ESP32 Plant Station Electronics - Initial Engineering Package
 
+> R7 mechanical correction (12 September 2026): use [R7 notes](../mechanical/concept_rev7/README.md) for 60 × 57 mm carrier centres, 75 × 31 mm LCD centres, 71.4 × 24.6 mm aperture and upward USB access. Older mechanical values below are historical. Electrical pin mapping and firmware functionality are unchanged and remain provisional.
+
 ## Scope
 
 This is a bounded provisional electronics package for an ESP32 plant station with:
