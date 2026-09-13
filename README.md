@@ -6,6 +6,10 @@ A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure
 
 ![R8 CAD assembly](mechanical/concept_rev8/assembly.png)
 
+## Interactive STL explorer
+
+[Launch instructions and controls](mechanical/concept_rev8/viewer/README.md) for the R8 rotatable, zoomable exploded viewer, with part isolation and visibility controls. Uses the original seven enclosure STLs.
+
 ## Downloads
 
 - [R8 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) and [online guide](docs/ASSEMBLY_GUIDE_R8.md).
