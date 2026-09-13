@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R9 · Exploded STL explorer</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef0ec;color:#202c29;font:14px system-ui}main{display:grid;grid-template-columns:260px 1fr;height:100vh}aside{padding:22px;background:#fff;overflow:auto}h1{font-size:20px;margin:0 0 8px}p{line-height:1.5;color:#51625c}label{display:block;margin:15px 0}input[type=range],select{width:100%}button,select{padding:9px;border:1px solid #aab8b0;border-radius:5px;background:white;color:inherit;cursor:pointer}button:hover{background:#e4eee7}.buttons{display:flex;gap:6px;flex-wrap:wrap}#view{min-width:0;position:relative}canvas{display:block;width:100%;height:100%;touch-action:none}#status{position:absolute;bottom:12px;left:15px;right:15px;background:#ffffffdd;padding:10px;pointer-events:none}#parts label{margin:9px 0}small{display:block;line-height:1.5;margin-top:15px;color:#52645d}@media(max-width:650px){main{grid-template-columns:190px 1fr}aside{padding:12px}}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script></head>
+<body><main><aside><h1>R9 part explorer</h1><p>Drag to rotate · scroll to zoom · right-drag to pan.</p>
+<label>Explosion <output id="amount">65%</output><input id="explode" type="range" min="0" max="150" value="65"></label>
+<div class="buttons"><button id="assemble">Assemble</button><button id="reset">Reset view</button></div>
+<label>Inspect part<select id="select"><option value="">Whole assembly</option></select></label>
+<div class="buttons"><button id="isolate">Isolate selected</button><button id="show">Show all</button></div>
+<h2 style="font-size:15px;margin-top:24px">Visible parts</h2><div id="parts"></div>
+<label><input type="checkbox" id="wire"> Wireframe</label>
+<small>Seven actual R9 enclosure STLs, in millimetres. Explosion is for inspection, not a removal sequence. Knob alternatives and fit coupons are separate files.</small>
+</aside><section id="view" aria-label="Interactive 3D STL assembly"><div id="status" role="status">Loading 3D viewer… Internet access is required for the rendering library.</div></section></main>
+<script type="module">
+const status=document.getElementById('status');
+try {
+const THREE=await import('three');
+const {OrbitControls}=await import('three/addons/controls/OrbitControls.js');
+const {STLLoader}=await import('three/addons/loaders/STLLoader.js');
+const config=[['tower_sage','Tower',[0,0,0]],['fascia_charcoal','Fascia',[0,-65,0]],['top_cover_sage','Roof',[0,0,65]],['sump_charcoal','Sump',[55,0,-15]],['planter_sage','Planter',[55,0,65]],['battery_tray','Battery tray',[0,-55,25]],['hose_clip','Hose clip',[35,0,35]]];
+const view=document.getElementById('view'), scene=new THREE.Scene();scene.background=new THREE.Color('#eef0ec');
+const camera=new THREE.PerspectiveCamera(40,1,.1,5000);camera.up.set(0,0,1);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));view.prepend(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;
+scene.add(new THREE.HemisphereLight(0xffffff,0x68776a,2.5));
+for(const pos of [[-200,-350,450],[300,200,200]]){const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(...pos);scene.add(light);}
+const loader=new STLLoader(),meshes=[],checks=[];
+for(const [file,label,delta] of config){
+ const geometry=await loader.loadAsync('../stl/'+file+'.stl');geometry.computeBoundingBox();
+ const material=new THREE.MeshStandardMaterial({color:file.includes('sage')?0x96aa90:0x465451,roughness:.72,metalness:.05});
+ const mesh=new THREE.Mesh(geometry,material);mesh.name=label;mesh.userData={delta:new THREE.Vector3(...delta),file};scene.add(mesh);meshes.push(mesh);
+ const option=document.createElement('option');option.value=file;option.textContent=label;document.getElementById('select').append(option);
+ const row=document.createElement('label'),check=document.createElement('input');check.type='checkbox';check.checked=true;check.setAttribute('aria-label',label);check.onchange=()=>{mesh.visible=check.checked;};row.append(check,document.createTextNode(' '+label));document.getElementById('parts').append(row);checks.push(check);
+}
+const slider=document.getElementById('explode');
+function explode(){for(const mesh of meshes)mesh.position.copy(mesh.userData.delta).multiplyScalar(Number(slider.value)/100);document.getElementById('amount').value=slider.value+'%';}
+function fit(){const box=new THREE.Box3();for(const mesh of meshes)if(mesh.visible)box.expandByObject(mesh);if(box.isEmpty())return;const centre=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3()).length();controls.target.copy(centre);camera.position.copy(centre).add(new THREE.Vector3(-.65,-1,.65).normalize().multiplyScalar(size*1.65));controls.update();}
+function select(){const file=document.getElementById('select').value;for(const mesh of meshes)mesh.material.emissive.setHex(mesh.userData.file===file?0x26441d:0);const mesh=meshes.find(m=>m.userData.file===file);if(mesh){const size=mesh.geometry.boundingBox.getSize(new THREE.Vector3());status.textContent=mesh.name+' · '+size.toArray().map(x=>x.toFixed(1)).join(' × ')+' mm (original STL bounds)';}else status.textContent='Seven R9 STL parts loaded · drag to rotate';}
+slider.oninput=explode;document.getElementById('assemble').onclick=()=>{slider.value=0;explode();fit();};document.getElementById('reset').onclick=fit;
+document.getElementById('select').onchange=select;
+document.getElementById('isolate').onclick=()=>{const file=document.getElementById('select').value;if(!file){status.textContent='Choose a part to isolate.';return;}meshes.forEach((mesh,i)=>{mesh.visible=mesh.userData.file===file;checks[i].checked=mesh.visible;});fit();};
+document.getElementById('show').onclick=()=>{meshes.forEach((mesh,i)=>{mesh.visible=true;checks[i].checked=true;});fit();};
+document.getElementById('wire').onchange=e=>meshes.forEach(m=>{m.material.wireframe=e.target.checked;});
+new ResizeObserver(()=>{const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}).observe(view);
+explode();fit();select();renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});
+window.explorer={meshes,camera,controls};
+}catch(error){status.textContent='Unable to load viewer: '+error.message+'. Serve this folder over localhost and check internet/WebGL access.';console.error(error);}
+</script></body></html>

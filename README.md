@@ -2,15 +2,17 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R8, 12 September 2026. Left-side USB access, closed roof, reinforced fascia bosses, glued piezo/LED mounts and eight knob options. Manufacturing preparation: actual hardware fit remains unverified.**
+**Current mechanical revision: R9, 13 September 2026. Tower upper support gaps closed; cavity, rim, support and standoff edges softened. Left-side USB access, closed roof, reinforced fascia bosses, glued piezo/LED mounts and eight knob options. Manufacturing preparation: actual hardware fit remains unverified.**
 
-![R8 CAD assembly](mechanical/concept_rev8/assembly.png)
+![R9 CAD assembly](mechanical/concept_rev9/assembly.png)
 
 ## Interactive STL explorer
 
-[Launch instructions and controls](mechanical/concept_rev8/viewer/README.md) for the R8 rotatable, zoomable exploded viewer, with part isolation and visibility controls. Uses the original seven enclosure STLs.
+[Launch instructions and controls](mechanical/concept_rev9/viewer/README.md) for the R9 rotatable, zoomable exploded viewer, with part isolation and visibility controls. Uses the original seven enclosure STLs.
 
 ## Downloads
+
+- [R9 corrected STL/STEP package](ESP32_Plant_R9_Mechanical_Review.zip), [R9 changes and dimensions](mechanical/concept_rev9/README.md), [R9 STLs](mechanical/concept_rev9/stl/). R8 instructions below remain applicable with the R9 tower correction.
 
 - [R8 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) and [online guide](docs/ASSEMBLY_GUIDE_R8.md).
 - [Complete R8 illustrated review pack (ZIP)](ESP32_Plant_R8_Illustrated_Review.zip), including [BOM and fastener schedule](docs/BOM_R8.md).
