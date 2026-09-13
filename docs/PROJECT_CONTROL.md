@@ -94,3 +94,8 @@ Tower, fascia and top cover replaced; R6 sump, planter, battery tray and hose cl
 ## 2026-09-13 - R9 annotated tower correction
 
 Browser annotations requested closure above the upper fascia support and softened sharp/internal corners. R9 extends both webs to the 158 mm rim, adds cavity/support/root fillets and rim/front/USB/shelf edge treatment. Functional interfaces retained; scope is the annotated tower. Tower and upper-boss coupon changed, other 20 STL files match R8. Independent mesh/dimensional checks pass (exit 0); all 21 solid pairs clear; reopened STEP assertions pass with known runtime shutdown exit 1. See mechanical/concept_rev9/REVISION_CHECKS.md. Updated interactive viewer and mechanical review archive. No firmware or physical test changes.
+
+
+## 2026-09-13 - R10 integrated tower/sump and internal cable route
+
+User requested one printable body and internal cable routing rising above water-containing walls before entering electronics. Baseline R9 retained. Fused tower/sump with continuous web; elevated open cable trough floor z77 above sump rim z60. 8 mm entry/crossover bores, provisional 4 mm cable. No below-rim opening through the wet/dry wall. Revised planter service slot, upper retaining ribs and shelf clearance allow removal; 61 lift positions clear. Six main parts/21 exports. Mesh checks, 15 CAD pair checks, wall/continuity/route probes and STEP solid checks pass with documented CadQuery shutdown anomaly. Added actual-STL cable section and revised assembly guidance. Cable dimensions, bend radius, connector, strain relief and maximum water level remain unverified. No physical printing or electrical changes.

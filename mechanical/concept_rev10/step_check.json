@@ -1,0 +1,218 @@
+{
+  "revision": "R10",
+  "units": "mm",
+  "files": {
+    "battery_tray.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        72.0,
+        30.0,
+        12.0
+      ],
+      "volume_mm3": 11609.524783386749
+    },
+    "button_fit_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        76.0,
+        28.0,
+        3.0
+      ],
+      "volume_mm3": 5304.723540680007
+    },
+    "carrier_fit_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        73.0,
+        70.0,
+        2.0
+      ],
+      "volume_mm3": 5274.739827191712
+    },
+    "fascia_charcoal.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        89.19999999999999,
+        11.0,
+        151.2
+      ],
+      "volume_mm3": 34703.60445706231
+    },
+    "hose_clip.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        17.656854249492113,
+        14.0,
+        4.0
+      ],
+      "volume_mm3": 563.2167407367057
+    },
+    "knob_D_6p0.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3925.022220841647
+    },
+    "knob_D_6p2.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3905.126274477488
+    },
+    "knob_fit_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        100.0,
+        32.0,
+        3.0
+      ],
+      "volume_mm3": 8915.988045812639
+    },
+    "knob_round_5p0.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3959.251098531626
+    },
+    "knob_round_5p2.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3941.626763744988
+    },
+    "knob_round_6p0.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3864.21792076053
+    },
+    "knob_round_6p2.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3843.1378340549422
+    },
+    "knob_round_6p35.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3826.8742015863886
+    },
+    "knob_round_6p55.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        19.95775000000005,
+        19.95775000000005,
+        14.0
+      ],
+      "volume_mm3": 3804.5846017091667
+    },
+    "lcd_fit_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        84.0,
+        40.0,
+        3.0
+      ],
+      "volume_mm3": 4725.856998353074
+    },
+    "piezo_led_fit_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        40.0,
+        22.0,
+        3.0
+      ],
+      "volume_mm3": 2326.2491416859893
+    },
+    "planter_sage.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        104.0,
+        98.0,
+        57.0
+      ],
+      "volume_mm3": 158764.37424240893
+    },
+    "top_cover_sage.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        96.0,
+        100.0,
+        3.0
+      ],
+      "volume_mm3": 28564.86368685135
+    },
+    "tower_sump_body.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        207.0000001,
+        100.00000019999999,
+        158.0000001
+      ],
+      "volume_mm3": 512413.3149196398
+    },
+    "upper_boss_print_coupon.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        17.000000200000002,
+        18.0000001,
+        26.000000200000002
+      ],
+      "volume_mm3": 3746.367826313989
+    },
+    "usb_marking_blank.step": {
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        34.0,
+        26.0,
+        1.2
+      ],
+      "volume_mm3": 1060.7999999999997
+    }
+  },
+  "assembly_solids": 6,
+  "result": "PASS"
+}

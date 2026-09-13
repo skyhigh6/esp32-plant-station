@@ -2,43 +2,28 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R9, 13 September 2026. Tower upper support gaps closed; cavity, rim, support and standoff edges softened. Left-side USB access, closed roof, reinforced fascia bosses, glued piezo/LED mounts and eight knob options. Manufacturing preparation: actual hardware fit remains unverified.**
+**Current mechanical revision: R10, 13 September 2026. One continuous tower-and-sump body with internal cable routing above the sump rim. Physical fit, cable bending and water level remain unverified.**
 
-![R9 CAD assembly](mechanical/concept_rev9/assembly.png)
+![R10 integrated body assembly](mechanical/concept_rev10/assembly.png)
 
-## Interactive STL explorer
+## Downloads and interactive explorer
 
-[Launch instructions and controls](mechanical/concept_rev9/viewer/README.md) for the R9 rotatable, zoomable exploded viewer, with part isolation and visibility controls. Uses the original seven enclosure STLs.
+- [R10 STL/STEP mechanical package](ESP32_Plant_R10_Mechanical_Review.zip).
+- [R10 geometry and revised assembly guidance](mechanical/concept_rev10/README.md).
+- [R10 STL files](mechanical/concept_rev10/stl/), [STEP solids](mechanical/concept_rev10/step/) and [assembly STEP](mechanical/concept_rev10/assembly.step).
+- [Interactive exploded explorer instructions](mechanical/concept_rev10/viewer/README.md).
+- [Cable route section](mechanical/concept_rev10/cable_section.png).
+- [R8 illustrated guide](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) remains applicable to controls and electronics; R10 guidance supersedes its separate tower/sump assembly and cable route.
 
-## Downloads
+## R10 design and verification
 
-- [R9 corrected STL/STEP package](ESP32_Plant_R9_Mechanical_Review.zip), [R9 changes and dimensions](mechanical/concept_rev9/README.md), [R9 STLs](mechanical/concept_rev9/stl/). R8 instructions below remain applicable with the R9 tower correction.
+The combined body is 207 � 100 � 158 mm; assembled height with roof remains 161 mm. Six main printable parts replace seven. The planter has clearance for the fixed internal trough and remains removable. Other R9 controls, mounting patterns, roof, battery tray, hose clip and knob alternatives are retained.
 
-- [R8 illustrated assembly guide (PDF)](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) and [online guide](docs/ASSEMBLY_GUIDE_R8.md).
-- [Complete R8 illustrated review pack (ZIP)](ESP32_Plant_R8_Illustrated_Review.zip), including [BOM and fastener schedule](docs/BOM_R8.md).
-- [22 STLs: seven enclosure parts, eight knob alternatives, six coupons and a marking blank](mechanical/concept_rev8/stl/), [STEP solids](mechanical/concept_rev8/step/), [assembly STEP](mechanical/concept_rev8/assembly.step) and [editable CAD source](mechanical/concept_rev8/build.py).
-- [Dimensions, assumptions and print guidance](mechanical/concept_rev8/README.md), [dimensional sources](mechanical/concept_rev8/references/SOURCES.md).
-- Historical packages: [R7](ESP32_Plant_R7_Illustrated_Review.zip), [R6](ESP32_Plant_R6_Illustrated_Review.zip), [R5](ESP32_Plant_R5_Review.zip). Use the R8 tower, fascia and roof together.
+The provisional 4 mm cable rises on the sump side and crosses through an elevated trough whose floor is at z77 mm, 17 mm above the z60 mm sump rim. There is no below-rim opening in the wet/dry wall. Maximum fill level, actual cable diameter, connector and bend radius remain unknown; the route is not a waterproof gland.
 
-## Design
+21 exported meshes pass independent checks. Reopened STEP parts are valid single solids; the assembly contains six solids. All 15 main-part intersections are zero within the recorded tolerance. Material probes confirm continuity and the retained sump wall; route probes are clear. Planter lift checks at 2 mm increments through 120 mm are clear. See [verification records](mechanical/concept_rev10/REVISION_CHECKS.md). The known CadQuery shutdown exit 1 is separate from passing assertions; the independent mesh checker exits 0.
 
-- Left-hand dry electronics tower; overall assembly 207 × 100 × 161 mm.
-- SunFounder reference board 67 × 64 mm, rotated 90 degrees anticlockwise from R7 viewed from the fascia: installed 64 × 67 mm with **57 horizontal × 60 vertical** mounting centres. Both USB ports face left towards a provisional **28 × 20 mm** window. The roof is closed.
-- Supplied LCD reference: PCB 80 × 36 mm, mounting centres **75 × 31 mm**, 3 mm holes. Fascia aperture **71.4 × 24.6 mm** clears the 71 × 24.2 mm bezel with a nominal 0.2 mm per side.
-- Three nominal **12 mm** button holes retained under the current project control update. Piezo glue seat **10.4 mm ID** for the user-specified **10 mm** buzzer; three LED glue collars behind nominal 5 mm holes.
-- Eight **20 mm OD × 14 mm** knob options: round 5.0/5.2/6.0/6.2/6.35/6.55 mm and D 6.0/6.2 mm. Fit coupon supplied; actual shaft dimensions unknown.
-- Upper fascia screw bosses now have solid side-wall webs and sloped undersides; a real-geometry boss coupon is included.
-- R6 sump retained: 60 mm external height / 56 mm internal depth; provisional pump envelope 38.5 × 25.5 × 43 mm. Planting cavity 90 × 60 × 50 mm with two 6 mm drains.
-
-Print the fit coupons first. Port offsets, plug dimensions, shaft/bushing geometry, buzzer height, carrier stack and LCD depth need measurement. The small USB window is provisional, unsealed and may require relocation or enlargement. The included marking blank permits a measured trim aperture; it is not a snap-fit seal.
-
-Enclosure STLs use millimetres and common assembly coordinates; accessory knobs/coupons use local coordinates. Orient and place each part on the bed before slicing. R8 replaces the tower, fascia and top cover; the sump, planter, battery tray and hose clip retain R7 geometry.
-
-## Verification
-
-All 22 exported meshes are closed, consistently wound, positive-volume single components, with two faces per edge and no degenerate faces. All 21 assembled enclosure part-pair intersections are zero within the recorded threshold. Reopened STEP files contain 22 valid single solids and a seven-solid assembly, with STL dimensions/volumes cross-checked. See [CAD verification](mechanical/concept_rev8/verification.json), [independent mesh checks](mechanical/concept_rev8/independent_mesh_check.json), [STEP checks](mechanical/concept_rev8/step_check.json) and [documentation QA](docs/R8_DOCUMENTATION_QA.md).
-
-The local CadQuery runtime prints PASS then exits 1 during shutdown; a bare CadQuery import reproduces this, while VTK import and independent mesh checking exit 0. The STEP checker also reports successful assertions before the same CadQuery shutdown issue. Actual component fit, slicing, strength, watertightness and electrical operation remain unverified.
+Print preparation, support removal, actual cable fit, strength and controlled leak/flow tests remain outstanding. Historical packages: [R9](ESP32_Plant_R9_Mechanical_Review.zip), [R8](ESP32_Plant_R8_Illustrated_Review.zip).
 
 ## Firmware
 
