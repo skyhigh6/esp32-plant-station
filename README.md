@@ -2,26 +2,26 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R11, 13 September 2026. One continuous tower/sump/battery-saddle body, wall-supported cable riser and a transverse battery tie slot. Physical fit, cable bending and water level remain unverified.**
+**Current mechanical revision: R12, 14 September 2026. One continuous tower/sump/battery-saddle body, enlarged tube/pump-wire service area, above-planter sensor entry and a transverse battery tie slot. Physical fit, cable bending and water level remain unverified.**
 
-![R11 integrated body assembly](mechanical/concept_rev11/assembly.png)
+![R12 integrated body assembly](mechanical/concept_rev12/assembly.png)
 
 ## Downloads and interactive explorer
 
-- [R11 STL/STEP mechanical package](ESP32_Plant_R11_Mechanical_Review.zip).
-- [R11 geometry and revised assembly guidance](mechanical/concept_rev11/README.md).
-- [R11 STL files](mechanical/concept_rev11/stl/), [STEP solids](mechanical/concept_rev11/step/) and [assembly STEP](mechanical/concept_rev11/assembly.step).
-- [Interactive exploded explorer instructions](mechanical/concept_rev11/viewer/README.md).
-- [Cable route section](mechanical/concept_rev11/cable_section.png).
-- [R8 illustrated guide](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) remains applicable to controls and electronics; R11 guidance supersedes its separate tower/sump assembly and cable route.
+- [R12 STL/STEP mechanical package](ESP32_Plant_R12_Mechanical_Review.zip).
+- [R12 geometry and revised assembly guidance](mechanical/concept_rev12/README.md).
+- [R12 STL files](mechanical/concept_rev12/stl/), [STEP solids](mechanical/concept_rev12/step/) and [assembly STEP](mechanical/concept_rev12/assembly.step).
+- [Interactive exploded explorer instructions](mechanical/concept_rev12/viewer/README.md).
+- [Tube/pump-wire section](mechanical/concept_rev12/cable_section.png) and [sensor-entry section](mechanical/concept_rev12/sensor_entry_section.png).
+- [R8 illustrated guide](output/pdf/Plant_Station_R8_Illustrated_Assembly_Guide.pdf) remains applicable to controls and electronics; R12 guidance supersedes its separate tower/sump assembly and cable route.
 
-## R11 design and verification
+## R12 design and verification
 
-The combined body is 207 × 100 × 158 mm; assembled height with roof remains 161 mm. Five main printable parts; the separate battery tray is integrated. The planter has local clearance for the supported riser and remains removable. The rejected long trough has been removed. Other R9 controls, mounting patterns, roof, hose clip and knob alternatives are retained.
+The combined body is 207 x 100 x 158 mm; assembled height with roof remains 161 mm. Five main printable parts; the separate battery tray is integrated. The planter has local clearance for the supported riser and remains removable. The rejected long trough has been removed. Other R9 controls, mounting patterns, roof, hose clip and knob alternatives are retained.
 
-The provisional 4 mm cable rises on the sump side and crosses through the supported riser at a minimum opening height of z77 mm, 17 mm above the z60 mm sump rim. There is no below-rim opening in the wet/dry wall. Maximum fill level, actual cable diameter, connector and bend radius remain unknown; the route is not a waterproof gland.
+A 23.5 x 34 mm common sump-side intake feeds separate 10 mm tube and 8 mm pump-wire passages in the supported riser. The tube exits at z128, above the z116 planter; it remains outside the electronics cavity. The pump-wire crossover starts at z77, 17 mm above the sump rim. An independent 8 mm sensor entry at y65/z128 has its lowest edge 8 mm above the planter. Tube OD 8 mm, two 2.5 mm OD wires and a 4 mm sensor lead are provisional assumptions. Actual connector fit, bend radius and maximum fill level remain unknown.
 
-20 exported meshes pass independent checks. Reopened STEP parts are valid single solids; the assembly contains five solids. All 10 main-part intersections are zero within the recorded tolerance. Material probes confirm continuity and the retained sump wall; route probes are clear. The integrated holder saddle has a 6 x 2.5 mm tie slot for a provisional 4.8 x 1.5 mm tie. Planter lift checks at 2 mm increments through 120 mm are clear. See [verification records](mechanical/concept_rev11/REVISION_CHECKS.md). The known CadQuery shutdown exit 1 is separate from passing assertions; the independent mesh checker exits 0.
+20 exported meshes pass independent checks. Reopened STEP parts are valid single solids; the assembly contains five solids. All 10 main-part intersections are zero within the recorded tolerance. Material probes confirm continuity and the retained sump wall; route probes are clear. The integrated holder saddle has a 6 x 2.5 mm tie slot for a provisional 4.8 x 1.5 mm tie. Planter lift checks at 2 mm increments through 120 mm are clear. See [verification records](mechanical/concept_rev12/REVISION_CHECKS.md). The known CadQuery shutdown exit 1 is separate from passing assertions; the independent mesh checker exits 0.
 
 Print preparation, support removal, actual cable fit, strength and controlled leak/flow tests remain outstanding. Historical packages: [R9](ESP32_Plant_R9_Mechanical_Review.zip), [R8](ESP32_Plant_R8_Illustrated_Review.zip).
 
