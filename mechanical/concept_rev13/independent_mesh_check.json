@@ -1,0 +1,799 @@
+{
+  "units": "mm",
+  "revision": "R13",
+  "files": {
+    "button_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 5305.159590013484,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          76.0,
+          28.0,
+          3.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "62d68ce1502278c08820394fdacd870ea3d41c1cdab7b53c7cf1152b7f55b432"
+    },
+    "carrier_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 5274.760251928169,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          73.0,
+          70.0,
+          2.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "cbd6a513961c321a034fc53acf705926847934d0282435b4bf3a7d05fdfffc5e"
+    },
+    "fascia_charcoal.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 34703.762694381134,
+      "bounds_mm": [
+        [
+          3.4000000953674316,
+          1.0,
+          3.4000000953674316
+        ],
+        [
+          92.5999984741211,
+          12.0,
+          154.60000610351562
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb"
+    },
+    "knob_D_6p0.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3924.4859064046086,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "eaad1c643037e9878c3e935f849b1a88eb6fa1e0bc7aaf21af5da395c07db210"
+    },
+    "knob_D_6p2.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3904.596060300129,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "712d9eb5b1c1440d97b5a1088b936ec1c00e34c9e228628d22177d6cb6542771"
+    },
+    "knob_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 8916.241324583198,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          32.0,
+          3.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "403e990f987118951629cb32e3347e41e3bca56bbef9b68da4ec4e4dd19d474f"
+    },
+    "knob_round_5p0.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3958.7183643257163,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "b57b4a531acf56985602736350d501a2a27f4b71e1f3da5467cfca375aca4528"
+    },
+    "knob_round_5p2.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3941.1013326195266,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "f140ae2e4cf4c7b5cf6c33417f9f728514ed1861ee4bd99d450f85e816da5442"
+    },
+    "knob_round_6p0.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3863.7245673537905,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "7a461f2f6b89d3bf4f131798cb05594d4973b6e78624daeb407f309dcdf44537"
+    },
+    "knob_round_6p2.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3842.6532156198155,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "4ee6e46a8ef69574496550be589000a3b4830482a4436b6607387f848b86c630"
+    },
+    "knob_round_6p35.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3826.3963267995277,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "304f22a0f298888f187a6a620927f2c27dd02cff2400604183b56e3882453167"
+    },
+    "knob_round_6p55.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3804.1159578895144,
+      "bounds_mm": [
+        [
+          -9.978875160217285,
+          -9.978875160217285,
+          0.0
+        ],
+        [
+          9.978875160217285,
+          9.978875160217285,
+          14.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "46464d1058e5336e238088849ec54b1b40bbe664dd47f96352a464f5cbe5e95a"
+    },
+    "lcd_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 4725.892509676981,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          84.0,
+          40.0,
+          3.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "e29243501c86a47c00c6f4aebafadef26ac6fccb61291d400f665fab9391a0e6"
+    },
+    "piezo_led_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 2326.3791540029083,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          40.0,
+          22.0,
+          3.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "d7481b99dd755709d404160e07d7f467409dcc11388c9ba87985376477281f50"
+    },
+    "planter_sage.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 154458.35273238062,
+      "bounds_mm": [
+        [
+          102.0,
+          1.0,
+          57.0
+        ],
+        [
+          206.0,
+          99.0,
+          114.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "27c7700a2273c40ddf47e691e22efac1e67a9443e92908890fbadb31194b2f21"
+    },
+    "top_cover_sage.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 28564.723389492836,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          96.0,
+          100.0,
+          161.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "e4e6fe1c1625200d27f1b484e635bfcfad9b438487672f9cd433e7acf86dbef0"
+    },
+    "tower_sump_body.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 559243.7850155145,
+      "bounds_mm": [
+        [
+          -1.1102230246251565e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "d7cc587e6a5f74563503f47e5323834e255d91909dbebaa3115af6d2a96c4b1c"
+    },
+    "upper_boss_print_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 3746.190024282521,
+      "bounds_mm": [
+        [
+          -4.440892098500626e-16,
+          -1.1102230246251565e-16,
+          0.0
+        ],
+        [
+          17.0,
+          18.0,
+          26.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "c00bb7223c71baf5d07cc7621597da28dbffc0d6e98b6db6ef17959c06cb57bc"
+    },
+    "usb_marking_blank.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 1060.8000421524048,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.0,
+          26.0,
+          1.2000000476837158
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "a1f9fed93132ede54cb987a7dc271972e4195fd0500d9f08ca38d427b1150694"
+    }
+  },
+  "sections": {
+    "button_bores": [
+      {
+        "centre_mm": [
+          24,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339536201261,
+        "radial_max_mm": 6.000003088270017
+      },
+      {
+        "centre_mm": [
+          48,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339536201262,
+        "radial_max_mm": 6.000002791570859
+      },
+      {
+        "centre_mm": [
+          72,
+          72
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998339986035293,
+        "radial_max_mm": 6.000004389345942
+      }
+    ],
+    "coupon_bores": [
+      {
+        "centre_mm": [
+          14,
+          14
+        ],
+        "nominal_diameter_mm": 12,
+        "radial_min_mm": 5.998134467090745,
+        "radial_max_mm": 6.000000882290438
+      },
+      {
+        "centre_mm": [
+          38,
+          14
+        ],
+        "nominal_diameter_mm": 12.2,
+        "radial_min_mm": 6.098102547528335,
+        "radial_max_mm": 6.1000017109885345
+      },
+      {
+        "centre_mm": [
+          62,
+          14
+        ],
+        "nominal_diameter_mm": 12.4,
+        "radial_min_mm": 6.1980705816849575,
+        "radial_max_mm": 6.200002683712588
+      }
+    ],
+    "LCD_bores": [
+      {
+        "centre_mm": [
+          10.5,
+          97
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.4998432114288252,
+        "radial_max_mm": 1.50000305166964
+      },
+      {
+        "centre_mm": [
+          85.5,
+          97
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.4998424830563537,
+        "radial_max_mm": 1.500004494653024
+      },
+      {
+        "centre_mm": [
+          10.5,
+          128
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.499840874419208,
+        "radial_max_mm": 1.5000075406286004
+      },
+      {
+        "centre_mm": [
+          85.5,
+          128
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.4998402510404498,
+        "radial_max_mm": 1.5000076355839143
+      }
+    ],
+    "PCB_pilots": [
+      {
+        "centre_mm": [
+          19.5,
+          78.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995939814534424,
+        "radial_max_mm": 1.400003337880243
+      },
+      {
+        "centre_mm": [
+          76.5,
+          78.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995937033224077,
+        "radial_max_mm": 1.4000037555399403
+      },
+      {
+        "centre_mm": [
+          19.5,
+          138.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995907280376187,
+        "radial_max_mm": 1.4000058521116263
+      },
+      {
+        "centre_mm": [
+          76.5,
+          138.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995908835084994,
+        "radial_max_mm": 1.4000052491645043
+      }
+    ],
+    "LCD_aperture": [
+      [
+        12.300000190734863,
+        100.19999694824219
+      ],
+      [
+        83.69999694824219,
+        124.80000305175781
+      ]
+    ],
+    "USB_access": [
+      [
+        49.0,
+        98.5
+      ],
+      [
+        77.0,
+        118.5
+      ]
+    ],
+    "piezo_seat": [
+      {
+        "centre_mm": [
+          67,
+          45
+        ],
+        "nominal_diameter_mm": 10.4,
+        "radial_min_mm": 5.198560771003847,
+        "radial_max_mm": 5.200003481566325
+      }
+    ],
+    "LED_glue_collars": [
+      {
+        "centre_mm": [
+          24,
+          88
+        ],
+        "nominal_diameter_mm": 5.4,
+        "radial_min_mm": 2.6991574369234157,
+        "radial_max_mm": 2.700003240226696
+      },
+      {
+        "centre_mm": [
+          48,
+          88
+        ],
+        "nominal_diameter_mm": 5.4,
+        "radial_min_mm": 2.6991574131476996,
+        "radial_max_mm": 2.700003618160339
+      },
+      {
+        "centre_mm": [
+          72,
+          88
+        ],
+        "nominal_diameter_mm": 5.4,
+        "radial_min_mm": 2.6991574131476996,
+        "radial_max_mm": 2.700003655585659
+      }
+    ],
+    "closed_roof": {
+      "analytic_volume_mm3": 28564.863686851204,
+      "mesh_volume_mm3": 28564.723389492836
+    },
+    "knob_5p0": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 5,
+        "radial_min_mm": 2.4992292992968324,
+        "radial_max_mm": 2.500000099903307
+      }
+    ],
+    "knob_5p2": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 5.2,
+        "radial_min_mm": 2.5991984587947274,
+        "radial_max_mm": 2.6000001193753133
+      }
+    ],
+    "knob_6p0": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 6,
+        "radial_min_mm": 2.9990751604466452,
+        "radial_max_mm": 3.000000113803736
+      }
+    ],
+    "knob_6p2": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 6.2,
+        "radial_min_mm": 3.099044324796455,
+        "radial_max_mm": 3.100000102758843
+      }
+    ],
+    "knob_6p35": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 6.35,
+        "radial_min_mm": 3.1740212172202797,
+        "radial_max_mm": 3.1750001208743317
+      }
+    ],
+    "knob_6p55": [
+      {
+        "centre_mm": [
+          0,
+          0
+        ],
+        "nominal_diameter_mm": 6.55,
+        "radial_min_mm": 3.273990392512553,
+        "radial_max_mm": 3.2750001178867105
+      }
+    ],
+    "knob_D_6p0": {
+      "diameter_mm": 6,
+      "flat_offset_mm": 1.5,
+      "result": "PASS"
+    },
+    "knob_D_6p2": {
+      "diameter_mm": 6.2,
+      "flat_offset_mm": 1.6,
+      "result": "PASS"
+    },
+    "LCD_coupon_bores": [
+      {
+        "centre_mm": [
+          4.5,
+          4.5
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.4995336167726863,
+        "radial_max_mm": 1.5000002469244564
+      },
+      {
+        "centre_mm": [
+          79.5,
+          4.5
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.499531598058254,
+        "radial_max_mm": 1.50000305166964
+      },
+      {
+        "centre_mm": [
+          4.5,
+          35.5
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.499532215912865,
+        "radial_max_mm": 1.5000011816030003
+      },
+      {
+        "centre_mm": [
+          79.5,
+          35.5
+        ],
+        "nominal_diameter_mm": 3,
+        "radial_min_mm": 1.4995313397644499,
+        "radial_max_mm": 1.5000032874486706
+      }
+    ],
+    "carrier_coupon_bores": [
+      {
+        "centre_mm": [
+          6.5,
+          6.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995647250580658,
+        "radial_max_mm": 1.4000002744491074
+      },
+      {
+        "centre_mm": [
+          66.5,
+          6.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995615609109218,
+        "radial_max_mm": 1.400003337880243
+      },
+      {
+        "centre_mm": [
+          6.5,
+          63.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995621388754154,
+        "radial_max_mm": 1.4000023776514205
+      },
+      {
+        "centre_mm": [
+          66.5,
+          63.5
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995613684845385,
+        "radial_max_mm": 1.4000037555399403
+      }
+    ],
+    "supported_riser_bore": [
+      {
+        "centre_mm": [
+          110,
+          92
+        ],
+        "nominal_diameter_mm": 8,
+        "radial_min_mm": 3.997203568978646,
+        "radial_max_mm": 4.000002084252076
+      },
+      {
+        "centre_mm": [
+          123,
+          92
+        ],
+        "nominal_diameter_mm": 10,
+        "radial_min_mm": 4.998248464180222,
+        "radial_max_mm": 5.000001590711854
+      }
+    ],
+    "battery_tie_slot": {
+      "width_mm": 6,
+      "height_mm": 2.5,
+      "plane_y_mm": 45,
+      "result": "PASS"
+    },
+    "sensor_entry": [
+      {
+        "centre_mm": [
+          65,
+          64
+        ],
+        "nominal_diameter_mm": 8,
+        "radial_min_mm": 3.9987532656361813,
+        "radial_max_mm": 4.000003255327596
+      }
+    ]
+  },
+  "result": "PASS",
+  "limits": [
+    "No slicing, material validation or physical fit/leak test",
+    "No full mesh self-intersection check"
+  ]
+}

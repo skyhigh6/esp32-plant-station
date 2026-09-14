@@ -1,0 +1,29 @@
+{
+  "baseline": "R12",
+  "revision": "R13",
+  "byte_identical_stl": {
+    "button_fit_coupon.stl": true,
+    "carrier_fit_coupon.stl": true,
+    "fascia_charcoal.stl": true,
+    "knob_D_6p0.stl": true,
+    "knob_D_6p2.stl": true,
+    "knob_fit_coupon.stl": true,
+    "knob_round_5p0.stl": true,
+    "knob_round_5p2.stl": true,
+    "knob_round_6p0.stl": true,
+    "knob_round_6p2.stl": true,
+    "knob_round_6p35.stl": true,
+    "knob_round_6p55.stl": true,
+    "lcd_fit_coupon.stl": true,
+    "piezo_led_fit_coupon.stl": true,
+    "planter_sage.stl": false,
+    "top_cover_sage.stl": true,
+    "tower_sump_body.stl": false,
+    "upper_boss_print_coupon.stl": false,
+    "usb_marking_blank.stl": true
+  },
+  "removed": [
+    "hose_clip.stl",
+    "hose_clip.step"
+  ]
+}

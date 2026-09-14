@@ -1,0 +1,49 @@
+{
+  "units": "mm",
+  "outside_diameter": 20,
+  "height": 14,
+  "blind_bore_depth": 11,
+  "print": "closed top at z=0 on bed, bore upwards",
+  "options": [
+    {
+      "file": "knob_round_5p0.stl",
+      "diameter": 5.0,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_round_5p2.stl",
+      "diameter": 5.2,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_round_6p0.stl",
+      "diameter": 6.0,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_round_6p2.stl",
+      "diameter": 6.2,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_round_6p35.stl",
+      "diameter": 6.35,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_round_6p55.stl",
+      "diameter": 6.55,
+      "flat_offset_from_axis": null
+    },
+    {
+      "file": "knob_D_6p0.stl",
+      "diameter": 6.0,
+      "flat_offset_from_axis": 1.5
+    },
+    {
+      "file": "knob_D_6p2.stl",
+      "diameter": 6.2,
+      "flat_offset_from_axis": 1.6
+    }
+  ]
+}
