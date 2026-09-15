@@ -1,0 +1,4 @@
+# Preserve bytes used by the release manifest.
+* -text
+references/* -whitespace
+step/* -whitespace

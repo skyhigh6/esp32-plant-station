@@ -1,0 +1,77 @@
+{
+  "revision": "R14 Uno",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "hole_centres_xz_mm": [
+    [
+      79.75,
+      107.56
+    ],
+    [
+      79.75,
+      79.62
+    ],
+    [
+      28.950000000000003,
+      122.8
+    ],
+    [
+      27.68,
+      74.54
+    ]
+  ],
+  "standoff_OD_mm": 6,
+  "pilot_diameter_mm": 2.8,
+  "pilot_depth_from_seat_mm": 11,
+  "rear_clearance_mm": 18,
+  "checks": {
+    "tower_sump_body_uno": {
+      "valid_single_solid": true,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "STEP_reimport": "PASS"
+    },
+    "uno_mount_fit_coupon": {
+      "valid_single_solid": true,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          68.58000183105469,
+          53.34000015258789,
+          10.0
+        ]
+      ],
+      "STEP_reimport": "PASS"
+    }
+  },
+  "outside_mount_change_mm3": {
+    "added": 0.0,
+    "removed": 0.0
+  },
+  "board_envelope_interference_mm3": 0.0,
+  "limitations": [
+    "Actual Uno variant and screw fit unmeasured; print coupon first",
+    "Existing USB aperture retained; plug access and component/header clearances require physical trial",
+    "Not sliced, printed or physically fit-tested; full mesh self-intersection not checked"
+  ]
+}

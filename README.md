@@ -2,21 +2,19 @@
 
 A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
 
-**Current mechanical revision: R13, 14 September 2026.** Four main enclosure parts. Removed clip/shelf and old battery bores; rounded hose riser; corrected lower support roots; sensor lead entry lowered to the sump rim with local planter clearance.
+**Current mechanical revision: R14 Uno mounts, 15 September 2026.** R13 integrated tower/sump revised with four asymmetric Uno R3 standoffs. The remaining enclosure parts are R13. Physical board, fastener and USB cable fit remain open.
 
-![R13 assembly](mechanical/concept_rev13/assembly.png)
+![R14 tower](mechanical/concept_rev14_uno/preview.png)
 
-## Downloads and interactive explorer
+## Downloads and revision records
 
-- [Complete R13 review package](ESP32_Plant_R13_Illustrated_Review.zip).
-- [Kit assembly instructions - customer-format prototype edition](output/pdf/Plant_Station_R13_Kit_Assembly_Instructions.pdf).
-- [Design review and annotation disposition](output/pdf/Plant_Station_R13_Design_Review.pdf).
-- [R13 geometry, assembly and verification](mechanical/concept_rev13/README.md).
-- [STLs](mechanical/concept_rev13/stl/), [STEPs](mechanical/concept_rev13/step/), [assembly STEP](mechanical/concept_rev13/assembly.step).
-- [Interactive explorer instructions](mechanical/concept_rev13/viewer/README.md).
-- [AI product illustration and provenance](mechanical/concept_rev13/AI_IMAGE_PROVENANCE.md).
+- [Complete R14 mechanical review package](Plant_Station_R14_Uno_Review.zip).
+- [R14 configuration and source](mechanical/concept_rev14_uno/README.md).
+- [Replacement tower STL](mechanical/concept_rev14_uno/stl/tower_sump_body_uno.stl), [STEP](mechanical/concept_rev14_uno/step/tower_sump_body_uno.step), [fit coupon](mechanical/concept_rev14_uno/stl/uno_mount_fit_coupon.stl).
+- [Assembly supplement](mechanical/concept_rev14_uno/ASSEMBLY.md), [change and verification record](mechanical/concept_rev14_uno/REVISION_CHECKS.md), [acceptance actions](mechanical/concept_rev14_uno/ACCEPTANCE.md).
+- [Retained R13 parts and assembly guidance](mechanical/concept_rev13/README.md). Its carrier mounting instructions are superseded by R14; its electronics guidance is historical for the Uno configuration.
 
-19 meshes and STEP parts checked; four-solid assembly, six zero-overlap pairs, 61 sampled planter lift positions clear. CAD/STEP assertions passed with the existing runtime shutdown exit 1; independent mesh and section tools exited 0. Physical fit, slicing, strength, leaks and electrical commissioning remain open. The low cable entry is not a sealed gland or an approved fill level. See the revision records for limits.
+Two new meshes and STEP exports checked. No changed volume outside the mount regions; nominal board envelope clear. Independent mesh checks exit 0. CAD build reports PASS then exits 1 during shutdown; cause unresolved. Print the coupon before the tower. Slicing, physical fit, USB access, strength, leaks and commissioning remain open.
 
 ## Firmware
 
@@ -31,11 +29,9 @@ Review compilation against ESP32 Arduino core 2.0.17 used 272,957 bytes flash an
 The CAD source uses Python, CadQuery 2.8, trimesh, NumPy and VTK. The PDF source uses ReportLab. Install dependencies in an isolated environment; local bundled runtimes are not included in this repository.
 
 ```powershell
-python mechanical/concept_rev13/build.py
-python mechanical/concept_rev13/check_exports.py
-python mechanical/concept_rev13/check_step.py
-python scripts/build_guide_r13.py
-python scripts/package_r13_illustrated.py
+python mechanical/concept_rev14_uno/build.py
+python mechanical/concept_rev14_uno/check_exports.py
+python scripts/package_r14_uno.py
 ```
 
 Read the firmware README and PDF before compiling or attempting an upload. Confirm the exact board revision and GPIO reservations first; even a pump-disabled build configures other pins as outputs.

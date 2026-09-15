@@ -1,0 +1,164 @@
+{
+  "units": "mm",
+  "revision": "R14 Uno",
+  "files": {
+    "tower_sump_body_uno.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 557660.2752649357,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "c400b6ca775cdc79c107d0617feb018be2a049320aa610a0bc6652c759b33d93"
+    },
+    "uno_mount_fit_coupon.stl": {
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "volume_mm3": 7422.50766036721,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          68.58000183105469,
+          53.34000015258789,
+          10.0
+        ]
+      ],
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "sha256": "fd6dd45cba14821521309048cc42931c6d4126a69813f65ff0a1c11419e4a8a6"
+    }
+  },
+  "sections": {
+    "mount_pilots": [
+      {
+        "centre_mm": [
+          79.75,
+          107.56
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995935988693615,
+        "radial_max_mm": 1.4000038797951309
+      },
+      {
+        "centre_mm": [
+          79.75,
+          79.62
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995937597661585,
+        "radial_max_mm": 1.400004070069343
+      },
+      {
+        "centre_mm": [
+          28.95,
+          122.8
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.399594299456851,
+        "radial_max_mm": 1.400003558531848
+      },
+      {
+        "centre_mm": [
+          27.68,
+          74.54
+        ],
+        "nominal_diameter_mm": 2.8,
+        "radial_min_mm": 1.3995935522694891,
+        "radial_max_mm": 1.4000038389200726
+      }
+    ],
+    "mount_outsides": [
+      {
+        "centre_mm": [
+          79.75,
+          107.56
+        ],
+        "nominal_diameter_mm": 6,
+        "radial_min_mm": 2.9993639286552254,
+        "radial_max_mm": 3.000004628773062
+      },
+      {
+        "centre_mm": [
+          79.75,
+          79.62
+        ],
+        "nominal_diameter_mm": 6,
+        "radial_min_mm": 2.9993643721413936,
+        "radial_max_mm": 3.0000043855075837
+      },
+      {
+        "centre_mm": [
+          28.95,
+          122.8
+        ],
+        "nominal_diameter_mm": 6,
+        "radial_min_mm": 2.999365236710372,
+        "radial_max_mm": 3.0000038652187313
+      },
+      {
+        "centre_mm": [
+          27.68,
+          74.54
+        ],
+        "nominal_diameter_mm": 6,
+        "radial_min_mm": 2.9993645161547087,
+        "radial_max_mm": 3.000003386736701
+      }
+    ],
+    "coupon_holes": [
+      {
+        "centre_mm": [
+          66.04,
+          35.56
+        ],
+        "nominal_diameter_mm": 3.2,
+        "radial_min_mm": 1.599500218569775,
+        "radial_max_mm": 1.6000038274161033
+      },
+      {
+        "centre_mm": [
+          66.04,
+          7.62
+        ],
+        "nominal_diameter_mm": 3.2,
+        "radial_min_mm": 1.59950034348228,
+        "radial_max_mm": 1.6000031706349838
+      },
+      {
+        "centre_mm": [
+          15.24,
+          50.8
+        ],
+        "nominal_diameter_mm": 3.2,
+        "radial_min_mm": 1.5995010017121731,
+        "radial_max_mm": 1.6000019181027771
+      },
+      {
+        "centre_mm": [
+          13.97,
+          2.54
+        ],
+        "nominal_diameter_mm": 3.2,
+        "radial_min_mm": 1.5995024093566097,
+        "radial_max_mm": 1.6000004345307504
+      }
+    ]
+  }
+}

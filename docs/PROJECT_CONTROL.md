@@ -1,6 +1,12 @@
 # Requirements and configuration control
 
-## Current mechanical change - R13, 14 September 2026
+## Current mechanical change - R14 Uno mounts, 15 September 2026
+
+R14 supersedes the R13 board mounts and carrier fit coupon only. Four asymmetric Uno R3 centres replace the SunFounder pattern; diameter 6 bosses, diameter 2.8 blind pilots and 18 mm rear clearance. Retain R13 fascia, roof, planter and non-carrier accessories. The Uno request supersedes R07/R09 carrier mounting for this configuration; historical requirements remain below for traceability. See [R14 change note](../mechanical/concept_rev14_uno/REVISION_CHECKS.md), [assembly supplement](../mechanical/concept_rev14_uno/ASSEMBLY.md) and [acceptance register](../mechanical/concept_rev14_uno/ACCEPTANCE.md).
+
+Confirmed: valid single-solid STEP exports, closed single-component STL exports, and zero solid change outside old/new mounts. Physical board/screw fit, USB plug access, slicing and commissioning remain open. The retained three nominal button holes do not establish an approved third-control function. Existing wet/dry and fill-level limits remain open. Git publication authorised on 15 September 2026; this is a mechanical documentation release, with no firmware change.
+
+## Historical mechanical change - R13, 14 September 2026
 
 R13 supersedes R12. All five browser annotations are addressed; see ../mechanical/concept_rev13/README.md and the two R13 PDFs. Four main parts. Sensor entry lower edge at z60 is a geometric datum, not a fill mark. Existing electrical release gates remain open.
 
