@@ -1,7 +1,7 @@
 # R14 assembly supplement and configuration list
 
 Document ID: PLANT-WC-UNO-MOUNTS
-15 Sep 2026 | Revision R14 | Status: issued for prototype review; physical acceptance open.
+20 Sep 2026 | Geometry R14 | Documentation issue R14-D2 | Status: issued for prototype review; physical acceptance open.
 
 ## Required configuration
 
@@ -36,3 +36,11 @@ Do not print the full tower until coupon registration and screw fit pass. Do not
 ## Close-out
 
 Record results in [ACCEPTANCE.md](ACCEPTANCE.md), retaining photographs, actual screw specification and measured clearances. CAD fit is not physical acceptance.
+
+## Selecting files and recording the build
+
+Use `stl/tower_sump_body_uno.stl` and `stl/uno_mount_fit_coupon.stl` from this folder. Select the fascia, roof, planter and any required knob from the retained R13 exports. Do not also print the R13 tower or fit its carrier coupon to the Uno.
+
+Record the release manifest identifier, source-file SHA-256, slicer/version, printer, nozzle, material, layer height, orientation, supports and scale with the print job. Check the tower's 207 × 100 × 158 mm model bounds against the available build volume and support envelope. These are model dimensions, not a qualified printer requirement.
+
+Retain the completed acceptance record with the photographs and measurements. If a test fails, record the defect and affected file/revision before changing geometry or repeating the test.

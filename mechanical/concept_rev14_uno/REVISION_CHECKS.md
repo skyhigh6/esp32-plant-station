@@ -1,7 +1,7 @@
 # R14 change note and verification disposition
 
 Document ID: PLANT-CN-UNO-MOUNTS
-15 Sep 2026 | Revision R14 | Status: issued for prototype review; physical acceptance open.
+20 Sep 2026 | Geometry R14 | Documentation issue R14-D2 | Status: issued for prototype review; physical acceptance open.
 
 ## Outcome and scope
 
@@ -39,3 +39,8 @@ Physical acceptance is governed by [ACCEPTANCE.md](ACCEPTANCE.md). No slicing, p
 ## Revision history
 
 R14, 15 Sep 2026: Uno mounting conversion; new fit coupon, source CAD reference, export checks and release documentation. R13 remains the source for retained parts and earlier assembly guidance.
+
+
+R14-D2, 20 Sep 2026: documentation refresh only. Clarified retained-part selection and print-job traceability; added a first-article worksheet. CAD/STEP findings remain dated baseline evidence. Physical actions R14-A01–A07 remain open. The review archive is refreshed with the controlled repository files; untracked slicer projects and unrelated local electronics work are excluded.
+
+R14-D2 verification, 20 September 2026: independent STL checker rerun, PASS with exit 0. Results match the retained mesh report, including both source-file hashes. CAD/STEP was not rebuilt; no physical tests were performed.

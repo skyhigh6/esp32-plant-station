@@ -1,10 +1,12 @@
 {
   "revision": "R14 Uno",
+  "documentation_issue": "R14-D2",
+  "documentation_date": "2026-09-20",
   "scope": "Mechanical review; R14 supplement takes precedence over R13 carrier mounting instructions",
   "sha256": {
     "docs/Plant_Station_R13_Design_Review.md": "7d681bb12327cfc2eef23c4a92fea3c8aac684aba50d188048fe4389f78ea21e",
     "docs/Plant_Station_R13_Kit_Assembly_Instructions.md": "fb5725b078b6d17a1c58c26c20c0d75d329bbdc299843c270fe6c2ff6bfbe897",
-    "docs/PROJECT_CONTROL.md": "c2b7d0e88b42caaf3905376c46ce3b347bf95531d5c2eca83f5b7ce83345cae3",
+    "docs/PROJECT_CONTROL.md": "c3c1fccf405f036e926bdf186296115169d74e9c9abbc4f4f889e0eb40f645c9",
     "mechanical/concept_rev13/AI_IMAGE_PROVENANCE.md": "dc56b0770f72ab6c6dd99b69c444a2eaed21e11e23483db919940d4258a80e17",
     "mechanical/concept_rev13/assembly.png": "d2ad507203f6135a8906971bb98e8794f20526696b051aa88e133a1640d8bc1a",
     "mechanical/concept_rev13/assembly.step": "538c51610b42e4f4da0bcac6686766d40a0e926571c34a4d0b2aba86aea458c6",
@@ -69,17 +71,17 @@
     "mechanical/concept_rev13/viewer/index.html": "4305d16e82bbb53b649e001d79d90787fc6bd9cf857a2a7cd0102915776ac195",
     "mechanical/concept_rev13/viewer/README.md": "3c436b7763b6c87cdc0c9ebc7fe948ee04835a78e8ef66d1dfa2fca63d3859a4",
     "mechanical/concept_rev14_uno/.gitattributes": "172927ff8e3e5a9ec46000b0c652e339741c524620440bf1718747617cb3e90e",
-    "mechanical/concept_rev14_uno/ACCEPTANCE.md": "e678b16c7b3aeecc092b5822c9dc54b5fcefe1b9057230ae2c889609fa0fe26c",
-    "mechanical/concept_rev14_uno/ASSEMBLY.md": "9edf96853f96edf85200e25591dfe941198119cc13b0ed44b4389819af860457",
+    "mechanical/concept_rev14_uno/ACCEPTANCE.md": "3c9f99803779627f3c9077de197a4115279927febf2af375a2e38e648a43630c",
+    "mechanical/concept_rev14_uno/ASSEMBLY.md": "92665af85c39a962eb2f3577a4a2f69b6ccc0220dbefa2f2185d694bb326bb73",
     "mechanical/concept_rev14_uno/build.py": "672fd0c78ce8312e506d9bd4f838be01163c23282456b1a47962037fc4360007",
     "mechanical/concept_rev14_uno/check_exports.py": "ee1a563e4a70cc7c2b5332f6a547e15ae76b9f00a08a9a425dfd2e7c1d35e434",
     "mechanical/concept_rev14_uno/independent_mesh_check.json": "5d2bb8938ffcd0694000af8a60ce4caf73de6bbf3dd32513c910420ba68d845e",
     "mechanical/concept_rev14_uno/mount_section.png": "64bcd7919a30b51924c98b88c88e00131d33344a161ede04c7eb69954959ad95",
     "mechanical/concept_rev14_uno/preview.png": "a9ae2a0a1e0bdce088e23db590e7a133fc8d4ee5d455e5066f93a2989bb0ba46",
-    "mechanical/concept_rev14_uno/README.md": "d97dff9f34b1c78a46b16fa1f6aec3b542e698c704b39e327fe2237a3bd01885",
+    "mechanical/concept_rev14_uno/README.md": "c974d51e21de635881d9353d89dd96a7cd25c58bfe64e01ffbfef93c604fe18a",
     "mechanical/concept_rev14_uno/references/License.txt": "0bccb1994c9dbd6c8fd50f51fd1c7b6c68b3463b823b37595884f36d89e096a5",
     "mechanical/concept_rev14_uno/references/UNO-TH_Rev3e.brd": "599de43d9f8a0e1474564f75c732b474fee696529cf7f0cb38ab2511b51261f3",
-    "mechanical/concept_rev14_uno/REVISION_CHECKS.md": "1f53de49a4fd298b8858e9cb329c13602576a6ba7a2e6dbaa9f55f1e780cdbdd",
+    "mechanical/concept_rev14_uno/REVISION_CHECKS.md": "d85d7bd259fd41ec88437376e2bbf8c90ea04c0a356de58495d299125e6f5dc0",
     "mechanical/concept_rev14_uno/step/tower_sump_body_uno.step": "087e4f9d73bd23a2b762fd7ab090ee652909b78884545feab8c8ffa628cdab3f",
     "mechanical/concept_rev14_uno/step/uno_mount_fit_coupon.step": "b9687352d44bed4a5ce43390dca6f463bc6119c0346c322e3d82c87d7e3a0bf4",
     "mechanical/concept_rev14_uno/stl/tower_sump_body_uno.stl": "c400b6ca775cdc79c107d0617feb018be2a049320aa610a0bc6652c759b33d93",
@@ -91,6 +93,6 @@
     "mechanical/concept_rev8/references/sunfounder_interfaces.jpg": "1f38d05217179c6662261126b38cba14eb03cbee57915b28ec603f1caa0192e5",
     "output/pdf/Plant_Station_R13_Design_Review.pdf": "a7a5228aaafe6bfb310ea9431899c58528ce05763a59c1ba7c6b23fb7ddd8482",
     "output/pdf/Plant_Station_R13_Kit_Assembly_Instructions.pdf": "a0c821466c02be4f57c80b7b2d326f1d43e89760bf0ad7fac2b1c5c04e926e32",
-    "scripts/package_r14_uno.py": "a07f100413b625174506e4f682d47615195f854909f2efeb3e491bc172883923"
+    "scripts/package_r14_uno.py": "283c2e25caa446b7c162885544ee3ebe2c5dca66eee1ee5eecf7273e6e4008a4"
   }
 }
