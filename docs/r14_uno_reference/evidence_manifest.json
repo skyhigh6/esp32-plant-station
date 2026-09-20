@@ -1,0 +1,11 @@
+{
+  "manual": "PLANT-AM-R14-UNO Issue A",
+  "date": "2026-09-20",
+  "status": "Unmodified snapshot of existing local bench v2; no new compile or upload performed for manual",
+  "sha256": {
+    "docs/r14_uno_reference/PlantUno/PlantController.h": "bd0f709e3b481bc15a8f315156d491d0169b7c112157803d3f645c80fa7352f0",
+    "docs/r14_uno_reference/PlantUno/PlantUno.ino": "ad67f418b5d1af6155787e0344cf7d7cec9ca97b1f52c189f3ee98ae1d09ca0e",
+    "docs/r14_uno_reference/PlantUno/PlantView.h": "c80a53f9a4a322a9430364dace7ebba39185340d232402f3b83380a857d74194",
+    "docs/r14_uno_reference/bench_v2_serial_readback.txt": "0a47ebb3847ab1baa1e694f956ce7104140d0169af7362ded7a80410784425ea"
+  }
+}

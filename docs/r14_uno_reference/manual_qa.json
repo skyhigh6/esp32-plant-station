@@ -1,0 +1,11 @@
+{
+  "pages": 20,
+  "links": 11,
+  "wire_ids": "W01-W22 present",
+  "source_hashes": "pass",
+  "text_bounds": "pass",
+  "manual_sha256": "158052a05b0052196341c6d804e61d83837efc1e51348a94cbe7311bbcae10ba",
+  "cad_changed": false,
+  "new_hardware_test": false,
+  "visual_review": "20 pages inspected; wiring drawings reviewed at higher resolution"
+}

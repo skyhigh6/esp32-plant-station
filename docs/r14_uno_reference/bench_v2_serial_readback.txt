@@ -1,0 +1,7 @@
+PlantUno bench v2; motor disabled; dry=447 wet=221; triple LAMP toggles view
+LCD initialisation status=0
+t=1000 soil=227 moisture_pct=97 view=0 pot_raw=0 pot=0 water=0 lamp=0 locked=0 request=0 dose_ms=0 motor=OFF lcd=OK
+t=2000 soil=226 moisture_pct=97 view=0 pot_raw=0 pot=0 water=0 lamp=0 locked=0 request=0 dose_ms=0 motor=OFF lcd=OK
+t=3000 soil=227 moisture_pct=97 view=0 pot_raw=0 pot=0 water=0 lamp=0 locked=0 request=0 dose_ms=0 motor=OFF lcd=OK
+t=4000 soil=227 moisture_pct=97 view=0 pot_raw=0 pot=0 water=0 lamp=0 locked=0 request=0 dose_ms=0 motor=OFF lcd=OK
+t=5000 soil=227 moisture_pct=97 view=0 pot_raw=0 pot=0 water=0 lamp=0 locked=0 request=0 dose_ms=0 motor=OFF lcd=OK

@@ -7,11 +7,13 @@ OUT=ROOT/'mechanical/concept_rev14_uno'
 tracked=subprocess.run(['git','ls-files','-z','--','mechanical/concept_rev14_uno','mechanical/concept_rev13','mechanical/concept_rev8/references'],cwd=ROOT,check=True,stdout=subprocess.PIPE).stdout.decode('utf-8').split('\0')
 files=[ROOT/name for name in tracked if name and Path(name).name!='release_manifest.json' and '__pycache__' not in Path(name).parts]
 files += [ROOT/'docs/PROJECT_CONTROL.md',ROOT/'docs/Plant_Station_R13_Kit_Assembly_Instructions.md',ROOT/'docs/Plant_Station_R13_Design_Review.md',ROOT/'output/pdf/Plant_Station_R13_Kit_Assembly_Instructions.pdf',ROOT/'output/pdf/Plant_Station_R13_Design_Review.pdf',Path(__file__).resolve()]
+files += [ROOT/'output/pdf/Plant_Station_R14_Uno_Assembly_Manual.pdf', ROOT/'docs/Plant_Station_R14_Uno_Assembly_Manual.md', ROOT/'scripts/build_guide_r14_uno.py']
+files += [ROOT/name for name in subprocess.run(['git','ls-files','-z','--','docs/r14_uno_reference'],cwd=ROOT,check=True,stdout=subprocess.PIPE).stdout.decode('utf-8').split('\0') if name]
 files=sorted(set(files))
 for p in files:
     if not p.is_file():raise FileNotFoundError(p)
 manifest={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
-record={'revision':'R14 Uno','documentation_issue':'R14-D2','documentation_date':'2026-09-20','scope':'Mechanical review; R14 supplement takes precedence over R13 carrier mounting instructions','sha256':manifest}
+record={'revision':'R14 Uno','documentation_issue':'R14-D2','documentation_date':'2026-09-20','assembly_manual':'PLANT-AM-R14-UNO Issue A','scope':'Mechanical review; R14 supplement takes precedence over R13 carrier mounting instructions','sha256':manifest}
 (OUT/'release_manifest.json').write_text(json.dumps(record,indent=2),newline='\n')
 archive=ROOT/'Plant_Station_R14_Uno_Review.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:

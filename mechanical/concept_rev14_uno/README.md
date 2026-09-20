@@ -54,3 +54,7 @@ The ZIP includes the R14 documentation and retained R13 review material. Histori
 R14-D2 verification, 20 September 2026: independent STL checker rerun, PASS with exit 0. Results match the retained mesh report, including both source-file hashes. CAD/STEP was not rebuilt; no physical tests were performed.
 
 Run the packaging command from a Git checkout: it selects tracked mechanical files to exclude unreviewed local additions. Stage any intended new release files before packaging.
+
+## Complete Uno assembly manual - Issue A
+
+[Download the complete illustrated assembly PDF](../../output/pdf/Plant_Station_R14_Uno_Assembly_Manual.pdf). Includes the R14/R13 parts BOM, numbered assembly sequence, Uno wiring diagrams and wire schedules, purchase inspection, bench firmware snapshot and commissioning records. This manual supersedes the R13 kit guide for the documented Uno build. Pump, ring lamps, sounder and battery integration remain subject to the stated checks; the panel USB-C module is excluded.

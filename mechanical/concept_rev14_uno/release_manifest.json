@@ -2,11 +2,21 @@
   "revision": "R14 Uno",
   "documentation_issue": "R14-D2",
   "documentation_date": "2026-09-20",
+  "assembly_manual": "PLANT-AM-R14-UNO Issue A",
   "scope": "Mechanical review; R14 supplement takes precedence over R13 carrier mounting instructions",
   "sha256": {
     "docs/Plant_Station_R13_Design_Review.md": "7d681bb12327cfc2eef23c4a92fea3c8aac684aba50d188048fe4389f78ea21e",
     "docs/Plant_Station_R13_Kit_Assembly_Instructions.md": "fb5725b078b6d17a1c58c26c20c0d75d329bbdc299843c270fe6c2ff6bfbe897",
+    "docs/Plant_Station_R14_Uno_Assembly_Manual.md": "05ffd601b07008a0b5baaf8825769d87ae59e1acf8adfc0b34704cc431b4dd40",
     "docs/PROJECT_CONTROL.md": "c3c1fccf405f036e926bdf186296115169d74e9c9abbc4f4f889e0eb40f645c9",
+    "docs/r14_uno_reference/.gitattributes": "0022b1d0591d94346847b201e23f27ec51a7816e96171a20dde8391c961d217c",
+    "docs/r14_uno_reference/bench_v2_serial_readback.txt": "0a47ebb3847ab1baa1e694f956ce7104140d0169af7362ded7a80410784425ea",
+    "docs/r14_uno_reference/evidence_manifest.json": "7488994ab1795afb70c0e5aaf1d2bae41dd5c0a89451dfbff46c0852ec8cbfcd",
+    "docs/r14_uno_reference/manual_qa.json": "13f2dab6365ae9aa9f5306413a1f1a05eb009767fd380bd685fa378ed8795e05",
+    "docs/r14_uno_reference/PlantUno/PlantController.h": "bd0f709e3b481bc15a8f315156d491d0169b7c112157803d3f645c80fa7352f0",
+    "docs/r14_uno_reference/PlantUno/PlantUno.ino": "ad67f418b5d1af6155787e0344cf7d7cec9ca97b1f52c189f3ee98ae1d09ca0e",
+    "docs/r14_uno_reference/PlantUno/PlantView.h": "c80a53f9a4a322a9430364dace7ebba39185340d232402f3b83380a857d74194",
+    "docs/r14_uno_reference/README.md": "8f4c15e0ae754450233b6e474f5dbdb50eee88cd9773b0f7cc00b35a4b874b5a",
     "mechanical/concept_rev13/AI_IMAGE_PROVENANCE.md": "dc56b0770f72ab6c6dd99b69c444a2eaed21e11e23483db919940d4258a80e17",
     "mechanical/concept_rev13/assembly.png": "d2ad507203f6135a8906971bb98e8794f20526696b051aa88e133a1640d8bc1a",
     "mechanical/concept_rev13/assembly.step": "538c51610b42e4f4da0bcac6686766d40a0e926571c34a4d0b2aba86aea458c6",
@@ -78,7 +88,7 @@
     "mechanical/concept_rev14_uno/independent_mesh_check.json": "5d2bb8938ffcd0694000af8a60ce4caf73de6bbf3dd32513c910420ba68d845e",
     "mechanical/concept_rev14_uno/mount_section.png": "64bcd7919a30b51924c98b88c88e00131d33344a161ede04c7eb69954959ad95",
     "mechanical/concept_rev14_uno/preview.png": "a9ae2a0a1e0bdce088e23db590e7a133fc8d4ee5d455e5066f93a2989bb0ba46",
-    "mechanical/concept_rev14_uno/README.md": "c974d51e21de635881d9353d89dd96a7cd25c58bfe64e01ffbfef93c604fe18a",
+    "mechanical/concept_rev14_uno/README.md": "587d8134b40c64fcd59e0e3eddc986025d70fa9ca84016ea1cba405ffcf02a08",
     "mechanical/concept_rev14_uno/references/License.txt": "0bccb1994c9dbd6c8fd50f51fd1c7b6c68b3463b823b37595884f36d89e096a5",
     "mechanical/concept_rev14_uno/references/UNO-TH_Rev3e.brd": "599de43d9f8a0e1474564f75c732b474fee696529cf7f0cb38ab2511b51261f3",
     "mechanical/concept_rev14_uno/REVISION_CHECKS.md": "d85d7bd259fd41ec88437376e2bbf8c90ea04c0a356de58495d299125e6f5dc0",
@@ -93,6 +103,8 @@
     "mechanical/concept_rev8/references/sunfounder_interfaces.jpg": "1f38d05217179c6662261126b38cba14eb03cbee57915b28ec603f1caa0192e5",
     "output/pdf/Plant_Station_R13_Design_Review.pdf": "a7a5228aaafe6bfb310ea9431899c58528ce05763a59c1ba7c6b23fb7ddd8482",
     "output/pdf/Plant_Station_R13_Kit_Assembly_Instructions.pdf": "a0c821466c02be4f57c80b7b2d326f1d43e89760bf0ad7fac2b1c5c04e926e32",
-    "scripts/package_r14_uno.py": "283c2e25caa446b7c162885544ee3ebe2c5dca66eee1ee5eecf7273e6e4008a4"
+    "output/pdf/Plant_Station_R14_Uno_Assembly_Manual.pdf": "158052a05b0052196341c6d804e61d83837efc1e51348a94cbe7311bbcae10ba",
+    "scripts/build_guide_r14_uno.py": "c40c91ed683768c0e9ed94ec0deda9809ffd43d6c2d20be272fcedcd73092e6a",
+    "scripts/package_r14_uno.py": "2e10b847292bcc98357bde0271f64e5382868575770081e1dfcdc16a81a293ac"
   }
 }
