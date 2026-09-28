@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "../libraries/PlantController/src/PlantController.h"
+#include "../arduino/PlantUno/PlantController.h"
 using plant::Inputs;
 using plant::PlantController;
 int main() {

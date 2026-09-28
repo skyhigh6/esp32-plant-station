@@ -1,0 +1,11 @@
+{
+  "source": "User attachment, 28 September 2026",
+  "retained_file": "usb_c_supplied_dimension_image.png",
+  "sha256": "1306A61E1AC5348D4B4CF43BFB727640B51451C58361C74FDB53AFD78FA7BCBE",
+  "labelled_dimensions_mm": {
+    "flange_width": 20.1,
+    "pcb_width": 9.1,
+    "overall_depth": 14.5
+  },
+  "verification_status": "Image labels only. Mounting pitch, cut height, flange height/thickness and actual part remain unmeasured."
+}

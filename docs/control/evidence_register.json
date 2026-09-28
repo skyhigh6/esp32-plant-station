@@ -1,0 +1,148 @@
+[
+  {
+    "source": "docs/Plant_Station_R13_Design_Review.md",
+    "snapshot": "../verification/source_basis/source_snapshot/docs/Plant_Station_R13_Design_Review.md",
+    "sha256": "2054f3dd0a1188ff9715e499e24d4c530642286ee3d130f127435145b1aa7974",
+    "original_sha256": "7d681bb12327cfc2eef23c4a92fea3c8aac684aba50d188048fe4389f78ea21e",
+    "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+  },
+  {
+    "source": "docs/Plant_Station_R14_Uno_Assembly_Manual.md",
+    "snapshot": "../verification/source_basis/source_snapshot/docs/Plant_Station_R14_Uno_Assembly_Manual.md",
+    "sha256": "ae501f8fde0aba3b0bd2bb696ddbb14fc35bbd1526599670c531b8494b3eb6d9",
+    "original_sha256": "05ffd601b07008a0b5baaf8825769d87ae59e1acf8adfc0b34704cc431b4dd40",
+    "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+  },
+  {
+    "source": "docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md",
+    "snapshot": "../verification/source_basis/source_snapshot/docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md",
+    "sha256": "5947e4e6821f978d0dd95f70aa427aa79c84f4f8b30c3cd5f30aaec5ffc192df"
+  },
+  {
+    "source": "docs/UNO_WIRING_AND_COMMISSIONING.md",
+    "snapshot": "../verification/source_basis/source_snapshot/docs/UNO_WIRING_AND_COMMISSIONING.md",
+    "sha256": "2c27bfcefa2c904a2bc73ee290e74bfe9da16ef74b8b00bcc52073dd619aa424"
+  },
+  {
+    "source": "firmware/arduino/PlantUno/PlantController.h",
+    "snapshot": "../verification/source_basis/source_snapshot/firmware/arduino/PlantUno/PlantController.h",
+    "sha256": "0e2ba74bd069e7d30cae1887e44b72051c79913371e519b2f9a7638298caf1b6"
+  },
+  {
+    "source": "firmware/arduino/PlantUno/PlantUno.ino",
+    "snapshot": "../verification/source_basis/source_snapshot/firmware/arduino/PlantUno/PlantUno.ino",
+    "sha256": "0b702102a4ef74e1b1d6970b161125e77a69a9e28f2da299324b71a1908d146f"
+  },
+  {
+    "source": "firmware/arduino/PlantUno/PlantView.h",
+    "snapshot": "../verification/source_basis/source_snapshot/firmware/arduino/PlantUno/PlantView.h",
+    "sha256": "d57c930bb1d9fe0e41185da1ade8500d76779b543639617ecf87377ec6fd1246"
+  },
+  {
+    "source": "mechanical/concept_rev10/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev10/README.md",
+    "sha256": "852baad2d86b3c37f34643ebc1078c3cc21c9a7ba4769f4985e4342abe9abf62",
+    "original_sha256": "14ddd2e082738d94480bc2eda5c81cb1425e72d842a560bc705a41950d23b20c",
+    "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+  },
+  {
+    "source": "mechanical/concept_rev11/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev11/README.md",
+    "sha256": "41389cd032730150e1ac8edb4c26324923b841dbeb92d2957bd21584d8266c9d"
+  },
+  {
+    "source": "mechanical/concept_rev12/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev12/README.md",
+    "sha256": "5e695267db24a4a9c8167438e43cddc69eea0fe5eb72b1ee035db21ed997d928"
+  },
+  {
+    "source": "mechanical/concept_rev13/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev13/README.md",
+    "sha256": "47fbd5d67ecbbfa0ea8a8f233fbaa67fb382c85bde480b8f554b91a45c47a543"
+  },
+  {
+    "source": "mechanical/concept_rev14_uno/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev14_uno/README.md",
+    "sha256": "587d8134b40c64fcd59e0e3eddc986025d70fa9ca84016ea1cba405ffcf02a08"
+  },
+  {
+    "source": "mechanical/concept_rev15_uno/DESIGN_REVIEW.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev15_uno/DESIGN_REVIEW.md",
+    "sha256": "eb8d24147cfd0c6796eeda55683dae6fbb312f394b238766bb3b632845296978"
+  },
+  {
+    "source": "mechanical/concept_rev15_uno/independent_mesh_check.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev15_uno/independent_mesh_check.json",
+    "sha256": "cbcc84730ccb8cbe942c7590fd5de6ea558a7e0e3651e44863350877376c22a1"
+  },
+  {
+    "source": "mechanical/concept_rev15_uno/verification.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev15_uno/verification.json",
+    "sha256": "5460c743ed70540a34fed7b6b3c376fe2c2c4a2b75c3db7b1d32cb0a28a586b4"
+  },
+  {
+    "source": "mechanical/concept_rev16_uno_relay/REVIEW.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev16_uno_relay/REVIEW.md",
+    "sha256": "908dea7ff691da2e5a298a45f2b4f278875e00983f75a536102768db13335bf1"
+  },
+  {
+    "source": "mechanical/concept_rev16_uno_relay/independent_mesh_check.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev16_uno_relay/independent_mesh_check.json",
+    "sha256": "afb13b4bb18e93b2c3e4a1ecde32ab79905d8a63212bedb43f91c0db9e1eddfa"
+  },
+  {
+    "source": "mechanical/concept_rev16_uno_relay/verification.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev16_uno_relay/verification.json",
+    "sha256": "8d4775f78fffd8aee00577b847a1597e314c92fff2a9d48cf7b5a0e5e7588aa6"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/README.md",
+    "sha256": "d972c9537d05f045e4c707a3fe8ec097dd520120da15ad7087661d07caa19c59"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/build.py",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/build.py",
+    "sha256": "76bca6fa05fa8d0049fbf1aad18f837fce8ff5bf8b92b2b73defc09ec0e41985"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/check_exports.py",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/check_exports.py",
+    "sha256": "217f65ac77e3d15f756051d9d557b5d13bb0118fd55dcef32c65c33cf764b487"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/independent_mesh_check.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/independent_mesh_check.json",
+    "sha256": "ba6cbdca752f58e67b755c2a3c138291805906c7e8407109c01ab4cbf6bd2e5d"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/parameters.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/parameters.json",
+    "sha256": "d7c5c69d7e5e1cd88b69fd3dfd55c303fe9838d406df290d9dfca37d33c975b1"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/reference/source_record.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/reference/source_record.json",
+    "sha256": "78f80fb8b43b61fd3949c6feef9de0a1ef61a46ab2f45f239488b11f909dcf17"
+  },
+  {
+    "source": "mechanical/concept_rev17_uno_ports/verification.json",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev17_uno_ports/verification.json",
+    "sha256": "86ed76768f9c24705e4d10bd26bc19efe5efdaa3c8e836abbbbcbc3321ef36e3"
+  },
+  {
+    "source": "mechanical/concept_rev6/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev6/README.md",
+    "sha256": "ac16a02a6023bba8ef9495612b13169d452314037c6215e33d03c25d85b3858b"
+  },
+  {
+    "source": "mechanical/concept_rev7/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev7/README.md",
+    "sha256": "715bcfd3dfbd2f7c82c041e38213a3b099f3df4302f4610cde3cbf61584b2c0d"
+  },
+  {
+    "source": "mechanical/concept_rev8/README.md",
+    "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev8/README.md",
+    "sha256": "96d1603898cf2ce556f91fcc4fff1826872fcf8398558a3c942a1f0c2e675f84"
+  }
+]

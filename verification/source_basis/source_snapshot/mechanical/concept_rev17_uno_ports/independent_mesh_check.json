@@ -1,0 +1,200 @@
+{
+  "revision": "R17 USB-C and DC panel prototype",
+  "units": "mm",
+  "files": {
+    "tower_sump_body_uno_ports_r17": {
+      "sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 563673.3465931654,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "power_ports_fit_coupon_r17": {
+      "sha256": "804c145edd744a8d0ec9ebe25808a7c44709c067f01d6aa5afb3eff97f989f0f",
+      "bounds_mm": [
+        [
+          0.0,
+          20.0,
+          96.5
+        ],
+        [
+          6.0,
+          80.0,
+          120.5
+        ]
+      ],
+      "volume_mm3": 7855.5644444394275,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    }
+  },
+  "sections": {
+    "tower_sump_body_uno_ports_r17_x0.5": {
+      "dc_diameter_mm": 9.999526576422065,
+      "usb_fixing_diameters_mm": [
+        2.7998663305995337,
+        2.799866006466859
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.00011430768145159753
+      }
+    },
+    "tower_sump_body_uno_ports_r17_x3.0": {
+      "dc_diameter_mm": 9.998451574072579,
+      "usb_fixing_diameters_mm": [
+        2.7995664632032176,
+        2.799562624320666
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.0003649455239289612
+      }
+    },
+    "tower_sump_body_uno_ports_r17_x5.5": {
+      "dc_diameter_mm": 9.999526600592139,
+      "usb_fixing_diameters_mm": [
+        2.799867555623184,
+        2.7998660121673273
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.00011437673841330209
+      }
+    },
+    "power_ports_fit_coupon_r17_x0.5": {
+      "dc_diameter_mm": 9.999526576422065,
+      "usb_fixing_diameters_mm": [
+        2.7998663305995337,
+        2.799866006466859
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.00011430768145159753
+      }
+    },
+    "power_ports_fit_coupon_r17_x3.0": {
+      "dc_diameter_mm": 9.998451574072579,
+      "usb_fixing_diameters_mm": [
+        2.7995664632032176,
+        2.799562624320666
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.0003649455239289612
+      }
+    },
+    "power_ports_fit_coupon_r17_x5.5": {
+      "dc_diameter_mm": 9.999526600592139,
+      "usb_fixing_diameters_mm": [
+        2.799867555623184,
+        2.7998660121673273
+      ],
+      "usb_cut": {
+        "bounds_yz_mm": [
+          [
+            58.099998474121094,
+            106.4000015258789
+          ],
+          [
+            67.9000015258789,
+            110.5999984741211
+          ]
+        ],
+        "size_mm": [
+          9.800003051757812,
+          4.1999969482421875
+        ],
+        "corner_profile_max_error_mm": 0.00011437673841330209
+      }
+    }
+  },
+  "parameters_sha256": "d7c5c69d7e5e1cd88b69fd3dfd55c303fe9838d406df290d9dfca37d33c975b1",
+  "unsupported": [
+    "Full mesh self-intersection",
+    "Slicer layers",
+    "Physical fit and strength"
+  ]
+}

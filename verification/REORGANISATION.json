@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-28",
+  "design_revision": "R17",
+  "document_issue": "D02",
+  "firmware": "Uno UI v6",
+  "pre_cleanup_published_commit": "18ab0d889db349c712b43624d315e4f15ed3ebe2",
+  "historical_recovery": "Git history plus verified external local backup; no history rewrite.",
+  "changes": [
+    "Single current baseline and structured directories",
+    "Old complete revision trees and ZIPs removed from current tree",
+    "46 selected print exports and current firmware preserved byte-for-byte",
+    "Portable current CAD/document tools",
+    "Selected predecessor records retained only as controlled source basis"
+  ],
+  "publication_transforms": [
+    {
+      "source": "docs/Plant_Station_R13_Design_Review.md",
+      "snapshot": "../verification/source_basis/source_snapshot/docs/Plant_Station_R13_Design_Review.md",
+      "sha256": "2054f3dd0a1188ff9715e499e24d4c530642286ee3d130f127435145b1aa7974",
+      "original_sha256": "7d681bb12327cfc2eef23c4a92fea3c8aac684aba50d188048fe4389f78ea21e",
+      "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+    },
+    {
+      "source": "docs/Plant_Station_R14_Uno_Assembly_Manual.md",
+      "snapshot": "../verification/source_basis/source_snapshot/docs/Plant_Station_R14_Uno_Assembly_Manual.md",
+      "sha256": "ae501f8fde0aba3b0bd2bb696ddbb14fc35bbd1526599670c531b8494b3eb6d9",
+      "original_sha256": "05ffd601b07008a0b5baaf8825769d87ae59e1acf8adfc0b34704cc431b4dd40",
+      "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+    },
+    {
+      "source": "mechanical/concept_rev10/README.md",
+      "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev10/README.md",
+      "sha256": "852baad2d86b3c37f34643ebc1078c3cc21c9a7ba4769f4985e4342abe9abf62",
+      "original_sha256": "14ddd2e082738d94480bc2eda5c81cb1425e72d842a560bc705a41950d23b20c",
+      "publication_transform": "UTF-8 publication text; relative image paths; historical GitHub links pinned to pre-cleanup commit. Technical wording unchanged."
+    }
+  ],
+  "excluded": [
+    "Superseded release bundles and manuals",
+    "Obsolete ESP32 firmware and PCB experiments",
+    "Supplier prices, commercial work and third-party datasheet originals",
+    "Tools, build executables, browser profiles and temporary files"
+  ],
+  "engineering_change": "None: this repository reorganisation does not change R17 geometry, current firmware or issued PDF content."
+}

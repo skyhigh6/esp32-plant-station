@@ -1,0 +1,191 @@
+{
+  "revision": "R15 Uno prototype",
+  "units": "mm",
+  "files": {
+    "tower_sump_body_uno_r15.stl": {
+      "sha256": "9460a105e0a148bb893c8ce2d3ce35fd41ab85c4ebe224fcbf396e9fb7fce954",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 556560.4843893211,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "top_cover_flush_r15.stl": {
+      "sha256": "77d0d2397d0e10715e72a1ca3b8ca2e8143953d1976c898402c4239d3769dc96",
+      "bounds_mm": [
+        [
+          -1.5,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          97.5,
+          100.0,
+          163.5
+        ]
+      ],
+      "volume_mm3": 53767.43625585284,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "boss_trial_pilot_2p8.stl": {
+      "sha256": "707b183755b6379baae7162d24d2f4e791744f06ab0ab6ae3c24099c6797b867",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          25.0,
+          24.0
+        ]
+      ],
+      "volume_mm3": 4665.948732291395,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "boss_trial_pilot_3p0.stl": {
+      "sha256": "5a65ac9864d1b9cfab3d4ba797669d409a7e2c177f96beae662c25058d953582",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          25.0,
+          24.0
+        ]
+      ],
+      "volume_mm3": 4655.931204624042,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "lid_head_trial_r15.stl": {
+      "sha256": "259e177b83646243d1223f76465c75e35079c4b1d5268ff00878d8c7646421b1",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          16.0,
+          16.0,
+          5.5
+        ]
+      ],
+      "volume_mm3": 1295.279262965231,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "pump_route_trial_r15.stl": {
+      "sha256": "b72e92dab264e9d8162ec2d95bb66ec7bdf0794c51a9ba83c1c1e5539d02cd1c",
+      "bounds_mm": [
+        [
+          100.0,
+          55.0,
+          0.0
+        ],
+        [
+          165.0,
+          100.0,
+          80.0
+        ]
+      ],
+      "volume_mm3": 55336.73758420907,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    }
+  },
+  "sections": {
+    "pilot_(79.75, 107.56)": [
+      2.7995951930192606
+    ],
+    "boss_(79.75, 107.56)": [
+      8.8136633898386
+    ],
+    "pilot_(79.75, 79.62)": [
+      2.7995952750751556
+    ],
+    "boss_(79.75, 79.62)": [
+      8.81366364133881
+    ],
+    "pilot_(28.95, 122.8)": [
+      2.799595364578107
+    ],
+    "boss_(28.95, 122.8)": [
+      8.813629506842418
+    ],
+    "pilot_(27.68, 74.54)": [
+      2.799598969252908
+    ],
+    "boss_(27.68, 74.54)": [
+      8.813629283022182
+    ],
+    "lid_through_(3.5, 15.0)": [
+      3.3995284974624
+    ],
+    "lid_pocket_(3.5, 15.0)": [
+      6.599011416894235
+    ],
+    "lid_through_(3.5, 85.0)": [
+      3.399528009775425
+    ],
+    "lid_pocket_(3.5, 85.0)": [
+      6.599012015552635
+    ],
+    "lid_through_(92.5, 15.0)": [
+      3.3995278349455704
+    ],
+    "lid_pocket_(92.5, 15.0)": [
+      6.599010901626071
+    ],
+    "lid_through_(92.5, 85.0)": [
+      3.3995273472591814
+    ],
+    "lid_pocket_(92.5, 85.0)": [
+      6.599011500284415
+    ],
+    "trial_2p8": [
+      2.799598849414676
+    ],
+    "trial_3p0": [
+      2.999566780874625
+    ],
+    "lid_trial_pocket": [
+      6.5990113860503845
+    ]
+  }
+}

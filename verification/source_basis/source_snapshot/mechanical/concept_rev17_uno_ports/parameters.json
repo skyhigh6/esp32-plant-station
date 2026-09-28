@@ -1,0 +1,30 @@
+{
+  "revision": "R17 USB-C and DC panel prototype",
+  "units": "mm",
+  "authority": "2026-09-28: replace left USB pass-through with mounted USB connector and adjacent 10 mm power-jack extension hole; user authorises best guesses and holes matching the other PCBs",
+  "usb_centre_yz_mm": [63.0, 108.5],
+  "usb_aperture_width_height_mm": [9.8, 4.2],
+  "usb_aperture_corner_radius_mm": 1.2,
+  "usb_fixing_pitch_mm": 15.2,
+  "usb_fixing_pilot_diameter_mm": 2.8,
+  "dc_centre_yz_mm": [35.0, 108.5],
+  "dc_hole_diameter_mm": 10.0,
+  "reference_only": {
+    "usb_flange_width_mm": 20.1,
+    "usb_pcb_width_mm": 9.1,
+    "usb_overall_depth_mm": 14.5,
+    "usb_flange_height_mm_guess": 7.0,
+    "usb_flange_thickness_mm_guess": 1.5,
+    "usb_flange_hole_diameter_mm_guess": 3.1,
+    "dc_nut_envelope_diameter_mm_guess": 20.0,
+    "dc_internal_body_length_mm_guess": 20.0
+  },
+  "dimension_status": {
+    "usb_flange_width_pcb_width_overall_depth": "supplied image labels; actual part unmeasured",
+    "usb_cut_corner_radius_fixing_pitch": "authorised best guesses; coupon required",
+    "usb_fixing_pilot_diameter": "retained 2.8 mm nominal printed PCB pilot; through the 6 mm wall, not an 11 mm blind boss",
+    "dc_hole_diameter": "user-specified 10.0 mm; no automatic print allowance",
+    "connector_centres": "engineering-selected placement at existing USB height; 28 mm apart along left wall",
+    "reference_only_guesses": "clearance-review proxies only; no component fit or rating claim"
+  }
+}

@@ -1,0 +1,895 @@
+{
+  "document": "PLANT-TS-001_R17_D02.pdf",
+  "pages": 9,
+  "front_pages": 3,
+  "section_pages": {
+    "1": [
+      4
+    ],
+    "2": [
+      5
+    ],
+    "3": [
+      6
+    ],
+    "4": [
+      7
+    ],
+    "5": [
+      8
+    ],
+    "6": [
+      9
+    ]
+  },
+  "placements": [
+    {
+      "block_id": "s1-heading",
+      "section": 1,
+      "body_page": 1,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 4
+    },
+    {
+      "block_id": "s1-b1",
+      "section": 1,
+      "body_page": 1,
+      "rect": [
+        120.0,
+        82.0,
+        544.276,
+        121.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        121.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 4
+    },
+    {
+      "block_id": "s1-b2",
+      "section": 1,
+      "body_page": 1,
+      "rect": [
+        120.0,
+        126.0,
+        544.276,
+        378.0
+      ],
+      "bar_rect": [
+        108.0,
+        126.0,
+        108.0,
+        378.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 4
+    },
+    {
+      "block_id": "s1-b3",
+      "section": 1,
+      "body_page": 1,
+      "rect": [
+        120.0,
+        396.0,
+        544.276,
+        448.0
+      ],
+      "bar_rect": [
+        108.0,
+        396.0,
+        108.0,
+        448.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 4
+    },
+    {
+      "block_id": "s1-b4",
+      "section": 1,
+      "body_page": 1,
+      "rect": [
+        120.0,
+        461.0,
+        544.276,
+        500.0
+      ],
+      "bar_rect": [
+        108.0,
+        461.0,
+        108.0,
+        500.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 4
+    },
+    {
+      "block_id": "s2-heading",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b1",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        82.0,
+        544.2760000000001,
+        320.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        320.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b2",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        329.0,
+        544.276,
+        355.0
+      ],
+      "bar_rect": [
+        108.0,
+        329.0,
+        108.0,
+        355.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b3",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        360.0,
+        544.276,
+        386.0
+      ],
+      "bar_rect": [
+        108.0,
+        360.0,
+        108.0,
+        386.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b4",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        391.0,
+        544.276,
+        417.0
+      ],
+      "bar_rect": [
+        108.0,
+        391.0,
+        108.0,
+        417.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b5",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        422.0,
+        544.276,
+        448.0
+      ],
+      "bar_rect": [
+        108.0,
+        422.0,
+        108.0,
+        448.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b6",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        453.0,
+        544.276,
+        614.0
+      ],
+      "bar_rect": [
+        108.0,
+        453.0,
+        108.0,
+        614.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 5
+    },
+    {
+      "block_id": "s2-b7",
+      "section": 2,
+      "body_page": 2,
+      "rect": [
+        120.0,
+        623.0,
+        544.276,
+        649.0
+      ],
+      "bar_rect": [
+        108.0,
+        623.0,
+        108.0,
+        649.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 5
+    },
+    {
+      "block_id": "s3-heading",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b1",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        82.0,
+        544.2760000000001,
+        184.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        184.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b2",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        193.0,
+        544.276,
+        232.0
+      ],
+      "bar_rect": [
+        108.0,
+        193.0,
+        108.0,
+        232.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b3",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        237.0,
+        544.276,
+        276.0
+      ],
+      "bar_rect": [
+        108.0,
+        237.0,
+        108.0,
+        276.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b4",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        281.0,
+        544.276,
+        320.0
+      ],
+      "bar_rect": [
+        108.0,
+        281.0,
+        108.0,
+        320.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b5",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        325.0,
+        544.276,
+        351.0
+      ],
+      "bar_rect": [
+        108.0,
+        325.0,
+        108.0,
+        351.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b6",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        356.0,
+        544.276,
+        425.0
+      ],
+      "bar_rect": [
+        108.0,
+        356.0,
+        108.0,
+        425.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 6
+    },
+    {
+      "block_id": "s3-b7",
+      "section": 3,
+      "body_page": 3,
+      "rect": [
+        120.0,
+        434.0,
+        544.276,
+        460.0
+      ],
+      "bar_rect": [
+        108.0,
+        434.0,
+        108.0,
+        460.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 6
+    },
+    {
+      "block_id": "s4-heading",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b1",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        82.0,
+        544.2760000000001,
+        173.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        173.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b2",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        182.0,
+        544.276,
+        221.0
+      ],
+      "bar_rect": [
+        108.0,
+        182.0,
+        108.0,
+        221.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b3",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        226.0,
+        544.276,
+        265.0
+      ],
+      "bar_rect": [
+        108.0,
+        226.0,
+        108.0,
+        265.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b4",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        270.0,
+        544.276,
+        309.0
+      ],
+      "bar_rect": [
+        108.0,
+        270.0,
+        108.0,
+        309.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b5",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        314.0,
+        544.276,
+        353.0
+      ],
+      "bar_rect": [
+        108.0,
+        314.0,
+        108.0,
+        353.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b6",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        358.0,
+        544.276,
+        427.0
+      ],
+      "bar_rect": [
+        108.0,
+        358.0,
+        108.0,
+        427.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 7
+    },
+    {
+      "block_id": "s4-b7",
+      "section": 4,
+      "body_page": 4,
+      "rect": [
+        120.0,
+        436.0,
+        544.276,
+        462.0
+      ],
+      "bar_rect": [
+        108.0,
+        436.0,
+        108.0,
+        462.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 7
+    },
+    {
+      "block_id": "s5-heading",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b1",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        82.0,
+        544.2760000000001,
+        207.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        207.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b2",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        216.0,
+        544.276,
+        255.0
+      ],
+      "bar_rect": [
+        108.0,
+        216.0,
+        108.0,
+        255.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b3",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        260.0,
+        544.276,
+        299.0
+      ],
+      "bar_rect": [
+        108.0,
+        260.0,
+        108.0,
+        299.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b4",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        304.0,
+        544.276,
+        343.0
+      ],
+      "bar_rect": [
+        108.0,
+        304.0,
+        108.0,
+        343.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b5",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        348.0,
+        544.276,
+        440.0
+      ],
+      "bar_rect": [
+        108.0,
+        348.0,
+        108.0,
+        440.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 8
+    },
+    {
+      "block_id": "s5-b6",
+      "section": 5,
+      "body_page": 5,
+      "rect": [
+        120.0,
+        449.0,
+        544.276,
+        475.0
+      ],
+      "bar_rect": [
+        108.0,
+        449.0,
+        108.0,
+        475.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 8
+    },
+    {
+      "block_id": "s6-heading",
+      "section": 6,
+      "body_page": 6,
+      "rect": [
+        120.0,
+        63.0,
+        544.276,
+        82.0
+      ],
+      "bar_rect": [
+        108.0,
+        63.0,
+        108.0,
+        82.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 9
+    },
+    {
+      "block_id": "s6-b1",
+      "section": 6,
+      "body_page": 6,
+      "rect": [
+        120.0,
+        82.0,
+        544.276,
+        404.0
+      ],
+      "bar_rect": [
+        108.0,
+        82.0,
+        108.0,
+        404.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 9
+    },
+    {
+      "block_id": "s6-b2",
+      "section": 6,
+      "body_page": 6,
+      "rect": [
+        120.0,
+        413.0,
+        544.276,
+        452.0
+      ],
+      "bar_rect": [
+        108.0,
+        413.0,
+        108.0,
+        452.0
+      ],
+      "labels": [
+        "R17"
+      ],
+      "change_ids": [
+        "T17-4"
+      ],
+      "page": 9
+    },
+    {
+      "block_id": "s6-b3",
+      "section": 6,
+      "body_page": 6,
+      "rect": [
+        120.0,
+        466.0,
+        544.276,
+        518.0
+      ],
+      "bar_rect": [
+        108.0,
+        466.0,
+        108.0,
+        518.0
+      ],
+      "labels": [],
+      "change_ids": [],
+      "page": 9
+    }
+  ]
+}

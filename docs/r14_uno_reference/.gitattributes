@@ -1,2 +1,0 @@
-# Preserve evidence bytes and accept original CRLF line endings.
-* -text whitespace=cr-at-eol

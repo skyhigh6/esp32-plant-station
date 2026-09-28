@@ -1,0 +1,175 @@
+{
+  "revision": "R15 Uno prototype",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "parameters": {
+    "boss_tip_od_mm": 8.5,
+    "boss_root_od_mm": 10.0,
+    "boss_length_mm": 19.0,
+    "body_pilot_diameter_mm": 2.8,
+    "pilot_depth_mm": 11.0,
+    "pump_relief_xyz_mm": [
+      [
+        106.5,
+        132.0
+      ],
+      [
+        83.0,
+        94.0
+      ],
+      [
+        4.0,
+        52.0
+      ]
+    ],
+    "lid_thickness_mm": 5.5,
+    "lid_pocket_diameter_mm": 6.6,
+    "lid_pocket_depth_mm": 2.5
+  },
+  "exports": {
+    "tower_sump_body_uno_r15": {
+      "stl_sha256": "9460a105e0a148bb893c8ce2d3ce35fd41ab85c4ebe224fcbf396e9fb7fce954",
+      "step_sha256": "2848a4b54980b1ac114ff5319d10b8c07a4d59bffcdcc8624c9f986c771d7ed4",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 556560.4843893211,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "top_cover_flush_r15": {
+      "stl_sha256": "77d0d2397d0e10715e72a1ca3b8ca2e8143953d1976c898402c4239d3769dc96",
+      "step_sha256": "7ba17aaad792c9742fdd18af5165af7576c4b401837a291010f0f2ee2bdae88e",
+      "bounds_mm": [
+        [
+          -1.5,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          97.5,
+          100.0,
+          163.5
+        ]
+      ],
+      "volume_mm3": 53767.43625585284,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "boss_trial_pilot_2p8": {
+      "stl_sha256": "707b183755b6379baae7162d24d2f4e791744f06ab0ab6ae3c24099c6797b867",
+      "step_sha256": "524f83aff1f08cd82fc262b27ab2d886f64a9c52a7a9760076335daa7af7b2e1",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          25.0,
+          24.0
+        ]
+      ],
+      "volume_mm3": 4665.948732291395,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "boss_trial_pilot_3p0": {
+      "stl_sha256": "5a65ac9864d1b9cfab3d4ba797669d409a7e2c177f96beae662c25058d953582",
+      "step_sha256": "296fbb7c2574c150d1c71b21c4af4c7063461969e03733e6b5a9f6896de04895",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          25.0,
+          24.0
+        ]
+      ],
+      "volume_mm3": 4655.931204624042,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "lid_head_trial_r15": {
+      "stl_sha256": "259e177b83646243d1223f76465c75e35079c4b1d5268ff00878d8c7646421b1",
+      "step_sha256": "e2a4290425d84ee62f0a21731beb63e63152eaa35dffa66fe7becdead0e1db87",
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          16.0,
+          16.0,
+          5.5
+        ]
+      ],
+      "volume_mm3": 1295.279262965231,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "pump_route_trial_r15": {
+      "stl_sha256": "b72e92dab264e9d8162ec2d95bb66ec7bdf0794c51a9ba83c1c1e5539d02cd1c",
+      "step_sha256": "5a3cddc1ac26357f87e97f3875312dd78029d84a24220a12e9ee6d5a4b7ea558",
+      "bounds_mm": [
+        [
+          100.0,
+          55.0,
+          0.0
+        ],
+        [
+          165.0,
+          100.0,
+          80.0
+        ]
+      ],
+      "volume_mm3": 55336.73758420907,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    }
+  },
+  "interfaces": {
+    "change_outside_named_regions_mm3": {
+      "added": 0.0,
+      "removed": 0.0
+    },
+    "nominal_uno_board_interference_mm3": 0.0,
+    "riser_recess_void_mm3": 0.0,
+    "sump_floor_probe_mm3": 468.0,
+    "dry_web_probe_mm3": 1439.9999999999998,
+    "rear_wall_probe_mm3": 480.0,
+    "body_lid_interference_mm3": 0.0
+  },
+  "physical_status": {
+    "screw_fit": "pending coupon trial with actual screw and print process",
+    "lid_head_fit": "pending head measurement and screw engagement trial",
+    "pump_tube_fit": "pending fitted-pump and tube trial",
+    "wet_dry_and_leak_test": "pending printed-body test"
+  }
+}

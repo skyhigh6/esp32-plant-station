@@ -1,0 +1,188 @@
+{
+  "title": "Plant Station R13 Design Change and Verification",
+  "document_id": "PLANT-TR-001",
+  "design_revision": 13,
+  "original_identity": "Plant_Station_R13_Design_Review.pdf / Prototype issue",
+  "source_date": "14 September 2026",
+  "scope_note": "R13 design-change review against preserved R12 mechanical geometry. Digital geometry evidence is recorded separately from physical acceptance, which remains open where stated.",
+  "history_limit": "This is the first located PLANT-TR-001 source. No earlier same-family design-review PDF is evidenced; R12 is a supporting mechanical baseline, not a prior PLANT-TR-001 issue.",
+  "history": [
+    {
+      "revision": "R12 / supporting mechanical baseline",
+      "description": "Section 02 / page 5: separate 10 mm tube and 8 mm pump-wire routes, with the pump-wire crossover at z81, are retained where explicitly stated. No R12 PLANT-TR-001 issue has been found."
+    },
+    {
+      "revision": "R13 / 14 September 2026",
+      "description": "Sections 01-03 / pages 4-6: first located design-review issue. Section 01 records four main parts; Section 02 removes the clip/shelf/pilot and old holder bores/pads, revises local radii and feet, and lowers the sensor entry to z64; Section 03 records revision-specific digital verification evidence and the related low-entry limitation."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design change and verification",
+      "subtitle": "14 September 2026 / Supersedes R12 mechanical geometry / Units: mm",
+      "source_page": 1,
+      "blocks": [
+        {
+          "id": "s1-product-image",
+          "type": "image",
+          "path": "assets/product_ai.png",
+          "max_height": 330
+        },
+        {
+          "id": "s1-annotations",
+          "type": "paragraph",
+          "text": "Five browser annotations implemented."
+        },
+        {
+          "id": "s1-parts",
+          "type": "paragraph",
+          "text": "Four main enclosure parts; selected knob and fit coupons are separate.",
+          "bars": ["R13"],
+          "change_ids": ["T13-1"]
+        },
+        {
+          "id": "s1-authority",
+          "type": "paragraph",
+          "text": "The illustration is generated appearance guidance; the exported CAD remains dimensional authority."
+        },
+        {
+          "id": "s1-envelope",
+          "type": "paragraph",
+          "text": "Body: 207 x 100 x 158 mm. Overall roof height: 161 mm. Changes are local to the combined body and planter; fascia, roof and knob interfaces are retained."
+        }
+      ]
+    },
+    {
+      "title": "Annotation disposition and radius audit",
+      "source_page": 2,
+      "blocks": [
+        {
+          "id": "s2-clip",
+          "type": "paragraph",
+          "text": "1. <b>Clip:</b> removed the separate hose clip, its shelf and shelf pilot. The tower has no retained clip attachment point.",
+          "bars": ["R13"],
+          "change_ids": ["T13-1"]
+        },
+        {
+          "id": "s2-riser-radii",
+          "type": "paragraph",
+          "text": "2. <b>Hose route appearance:</b> enlarged vertical outside rounds from R1 to R7 and added R3 top rounds to the supported riser.",
+          "bars": ["R13"],
+          "change_ids": ["T13-2"]
+        },
+        {
+          "id": "s2-radius-notation",
+          "type": "paragraph",
+          "text": "Editorial notation: R1, R7, R3 and R2 in this section denote radii in millimetres, not Plant design revisions."
+        },
+        {
+          "id": "s2-retained-routes",
+          "type": "paragraph",
+          "text": "Separate 10 mm tube and 8 mm pump-wire bores remain.",
+          "bars": ["R12"],
+          "change_ids": ["T12-1"]
+        },
+        {
+          "id": "s2-bend-radius",
+          "type": "paragraph",
+          "text": "Physical tubing bend radius is still unknown."
+        },
+        {
+          "id": "s2-support-feet",
+          "type": "paragraph",
+          "text": "3. <b>Screw block:</b> replaced the rounded lower support profile with full feet and added concave R2 floor roots on both sides. Material probes verify the feet are filled.",
+          "bars": ["R13"],
+          "change_ids": ["T13-2"]
+        },
+        {
+          "id": "s2-radius-audit",
+          "type": "paragraph",
+          "text": "Audited cavity floor/vertical, shell rim, upper webs, board roots/tips, USB chamfers, sump/planter/lip and riser edge treatments; no further inverted root treatment identified in the source review."
+        },
+        {
+          "id": "s2-holder-removal",
+          "type": "paragraph",
+          "text": "4. <b>Battery:</b> removed both old holder bores and underlying unused pad/pilot features.",
+          "bars": ["R13"],
+          "change_ids": ["T13-3"]
+        },
+        {
+          "id": "s2-saddle-retained",
+          "type": "paragraph",
+          "text": "The integrated saddle and tie tunnel remain."
+        },
+        {
+          "id": "s2-sensor-entry",
+          "type": "paragraph",
+          "text": "5. <b>Sensor lead:</b> entry centre lowered from z128 to z64; its 8 mm hole starts at the z60 sump rim. A local skirt relief avoids a cable clash.",
+          "bars": ["R13"],
+          "change_ids": ["T13-4"]
+        },
+        {
+          "id": "s2-crossover",
+          "type": "paragraph",
+          "text": "This interpretation targets the separate sensor entry, not the pump-wire crossover, which remains at z81.",
+          "bars": ["R12"],
+          "change_ids": ["T12-1"]
+        },
+        {
+          "id": "s2-internal-image",
+          "type": "image",
+          "path": "assets/internal.png",
+          "max_height": 270
+        },
+        {
+          "id": "s2-datum",
+          "type": "paragraph",
+          "text": "Nominal datum: x right, y rear, z up; fascia faces forward. All new radii and route clearances are design choices, not measured component values."
+        }
+      ]
+    },
+    {
+      "title": "Geometry evidence and remaining acceptance",
+      "source_page": 3,
+      "blocks": [
+        {
+          "id": "s3-sensor-section",
+          "type": "image",
+          "path": "assets/sensor_entry_section.png",
+          "max_height": 250
+        },
+        {
+          "id": "s3-export-checks",
+          "type": "paragraph",
+          "text": "Export checks: 19 STL meshes, 19 single-solid STEP parts, four-solid assembly; six main-part pair intersections; 61 sampled planter lift positions from 0 to 120 mm. See accompanying JSON records for measured results and hashes.",
+          "bars": ["R13"],
+          "change_ids": ["T13-5"]
+        },
+        {
+          "id": "s3-check-scope",
+          "type": "paragraph",
+          "text": "Checks include closed meshes, consistent winding, two faces per edge, no degenerate faces, positive volumes, STEP validity, matching bounds/volumes, feature sections and positive/negative solid probes. Sampled lift checks do not constitute a continuous swept-volume proof."
+        },
+        {
+          "id": "s3-open-acceptance",
+          "type": "paragraph",
+          "text": "Physical fit, slicing, support removal, loads, water tightness, cable bend/retention and powered operation remain unverified. Full mesh self-intersection checking has not been performed. The local CadQuery runtime may exit 1 during shutdown even after assertions pass; distinguish that from any assertion traceback."
+        },
+        {
+          "id": "s3-wet-limit",
+          "type": "paragraph",
+          "text": "The low sensor entry is not a seal or approved fill level. Validate capillary, splash and drain-back behaviour before wet operation.",
+          "bars": ["R13"],
+          "change_ids": ["T13-4"]
+        },
+        {
+          "id": "s3-electrical-limit",
+          "type": "paragraph",
+          "text": "Existing electrical uncertainties and provisional third-control role remain unchanged."
+        },
+        {
+          "id": "s3-deliverables",
+          "type": "paragraph",
+          "text": "Deliverables: editable build.py, STL/STEP exports, assembly STEP, actual CAD images and sections, AI illustration/prompt, viewer, this review and the separate customer-format kit instructions. R12 is preserved."
+        }
+      ]
+    }
+  ]
+}

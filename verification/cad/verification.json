@@ -1,0 +1,119 @@
+{
+  "revision": "R17 USB-C and DC panel prototype",
+  "status": "PROVISIONAL USB DIMENSIONS - FIT COUPON FIRST",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "baseline_step": "mechanical\\concept_rev16_uno_relay\\step\\tower_sump_body_uno_relay_r16.step",
+  "baseline_step_sha256": "ba5be10d644155aea8b3ef027ae3a2fb3c745b3b655c923eaf497619b5a55817",
+  "parameters_sha256": "d7c5c69d7e5e1cd88b69fd3dfd55c303fe9838d406df290d9dfca37d33c975b1",
+  "parameters": {
+    "revision": "R17 USB-C and DC panel prototype",
+    "units": "mm",
+    "authority": "2026-09-28: replace left USB pass-through with mounted USB connector and adjacent 10 mm power-jack extension hole; user authorises best guesses and holes matching the other PCBs",
+    "usb_centre_yz_mm": [
+      63.0,
+      108.5
+    ],
+    "usb_aperture_width_height_mm": [
+      9.8,
+      4.2
+    ],
+    "usb_aperture_corner_radius_mm": 1.2,
+    "usb_fixing_pitch_mm": 15.2,
+    "usb_fixing_pilot_diameter_mm": 2.8,
+    "dc_centre_yz_mm": [
+      35.0,
+      108.5
+    ],
+    "dc_hole_diameter_mm": 10.0,
+    "reference_only": {
+      "usb_flange_width_mm": 20.1,
+      "usb_pcb_width_mm": 9.1,
+      "usb_overall_depth_mm": 14.5,
+      "usb_flange_height_mm_guess": 7.0,
+      "usb_flange_thickness_mm_guess": 1.5,
+      "usb_flange_hole_diameter_mm_guess": 3.1,
+      "dc_nut_envelope_diameter_mm_guess": 20.0,
+      "dc_internal_body_length_mm_guess": 20.0
+    },
+    "dimension_status": {
+      "usb_flange_width_pcb_width_overall_depth": "supplied image labels; actual part unmeasured",
+      "usb_cut_corner_radius_fixing_pitch": "authorised best guesses; coupon required",
+      "usb_fixing_pilot_diameter": "retained 2.8 mm nominal printed PCB pilot; through the 6 mm wall, not an 11 mm blind boss",
+      "dc_hole_diameter": "user-specified 10.0 mm; no automatic print allowance",
+      "connector_centres": "engineering-selected placement at existing USB height; 28 mm apart along left wall",
+      "reference_only_guesses": "clearance-review proxies only; no component fit or rating claim"
+    }
+  },
+  "interfaces": {
+    "change_outside_left_wall_mm3": {
+      "added": 0.0,
+      "removed": 0.0
+    },
+    "usb_passage_obstruction_mm3": 0.0,
+    "dc_passage_obstruction_mm3": 0.0,
+    "usb_fixing_0_obstruction_mm3": 0.0,
+    "usb_fixing_1_obstruction_mm3": 0.0,
+    "old_window_restored_strip_missing_mm3": 0.0,
+    "usb_module_guess_internal_interference_mm3": 0.0,
+    "dc_internal_guess_internal_interference_mm3": 0.0,
+    "uno_pcb_internal_interference_mm3": 0.0,
+    "relay_pcb_internal_interference_mm3": 0.0,
+    "usb_module_guess_to_uno_pcb_interference_mm3": 0.0,
+    "usb_module_guess_to_relay_pcb_interference_mm3": 0.0,
+    "dc_internal_guess_to_uno_pcb_interference_mm3": 0.0,
+    "dc_internal_guess_to_relay_pcb_interference_mm3": 0.0
+  },
+  "exports": {
+    "tower_sump_body_uno_ports_r17": {
+      "stl_sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+      "step_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 563673.3465931654,
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "step_one_valid_solid": true
+    },
+    "power_ports_fit_coupon_r17": {
+      "stl_sha256": "804c145edd744a8d0ec9ebe25808a7c44709c067f01d6aa5afb3eff97f989f0f",
+      "step_sha256": "d6d88d41ae089a7acb19a126c41e088e21f83164db9f15b5baed4ae72d19be95",
+      "bounds_mm": [
+        [
+          0.0,
+          20.0,
+          96.5
+        ],
+        [
+          6.0,
+          80.0,
+          120.5
+        ]
+      ],
+      "volume_mm3": 7855.5644444394275,
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "step_one_valid_solid": true
+    }
+  },
+  "physical_status": {
+    "usb_shell_flange_holes_plug_screws_solder_access": "Not tested; estimates require coupon",
+    "dc_thread_nut_panel_grip_depth_and_cable": "Not tested; 10 mm is only the requested cut diameter",
+    "r15_r16_physical_gates": "Remain open; prior Uno, relay, lid and pump trials still required",
+    "slicing_printing_strength_leaks": "Not performed",
+    "full_mesh_self_intersection": "Not checked",
+    "electrical_supply_wiring": "No change or electrical acceptance; six-pin USB/5 A image label is not a verified specification"
+  }
+}

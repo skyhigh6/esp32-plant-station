@@ -1,0 +1,278 @@
+[
+  {
+    "file": "print_files/main_parts/stl/tower_sump_body_uno_ports_r17.stl",
+    "source": "mechanical/concept_rev17_uno_ports/stl/tower_sump_body_uno_ports_r17.stl",
+    "sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/step/tower_sump_body_uno_ports_r17.step",
+    "source": "mechanical/concept_rev17_uno_ports/step/tower_sump_body_uno_ports_r17.step",
+    "sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/stl/top_cover_flush_r16.stl",
+    "source": "mechanical/concept_rev16_uno_relay/stl/top_cover_flush_r16.stl",
+    "sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/step/top_cover_flush_r16.step",
+    "source": "mechanical/concept_rev16_uno_relay/step/top_cover_flush_r16.step",
+    "sha256": "2e3b771a152ee91efbbb17e930799b88a081ab32bec3c42a7013f67ab8fb46c1",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/stl/fascia_charcoal.stl",
+    "source": "mechanical/concept_rev13/stl/fascia_charcoal.stl",
+    "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/step/fascia_charcoal.step",
+    "source": "mechanical/concept_rev13/step/fascia_charcoal.step",
+    "sha256": "659f2b4dccc36b2a2557f485f04079922de0ce02b9f36d2cac726a22ef2eeda4",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/stl/planter_sage.stl",
+    "source": "mechanical/concept_rev13/stl/planter_sage.stl",
+    "sha256": "27c7700a2273c40ddf47e691e22efac1e67a9443e92908890fbadb31194b2f21",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/main_parts/step/planter_sage.step",
+    "source": "mechanical/concept_rev13/step/planter_sage.step",
+    "sha256": "e602e86ee03d79f6007b351067b0ca5d6e0b2a6c6e6cd793b15903aa5a677da5",
+    "group": "main_parts"
+  },
+  {
+    "file": "print_files/fit_trials/stl/power_ports_fit_coupon_r17.stl",
+    "source": "mechanical/concept_rev17_uno_ports/stl/power_ports_fit_coupon_r17.stl",
+    "sha256": "804c145edd744a8d0ec9ebe25808a7c44709c067f01d6aa5afb3eff97f989f0f",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/power_ports_fit_coupon_r17.step",
+    "source": "mechanical/concept_rev17_uno_ports/step/power_ports_fit_coupon_r17.step",
+    "sha256": "d6d88d41ae089a7acb19a126c41e088e21f83164db9f15b5baed4ae72d19be95",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/boss_trial_pilot_2p8.stl",
+    "source": "mechanical/concept_rev15_uno/stl/boss_trial_pilot_2p8.stl",
+    "sha256": "707b183755b6379baae7162d24d2f4e791744f06ab0ab6ae3c24099c6797b867",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/boss_trial_pilot_2p8.step",
+    "source": "mechanical/concept_rev15_uno/step/boss_trial_pilot_2p8.step",
+    "sha256": "524f83aff1f08cd82fc262b27ab2d886f64a9c52a7a9760076335daa7af7b2e1",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/boss_trial_pilot_3p0.stl",
+    "source": "mechanical/concept_rev15_uno/stl/boss_trial_pilot_3p0.stl",
+    "sha256": "5a65ac9864d1b9cfab3d4ba797669d409a7e2c177f96beae662c25058d953582",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/boss_trial_pilot_3p0.step",
+    "source": "mechanical/concept_rev15_uno/step/boss_trial_pilot_3p0.step",
+    "sha256": "296fbb7c2574c150d1c71b21c4af4c7063461969e03733e6b5a9f6896de04895",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/lid_head_trial_r15.stl",
+    "source": "mechanical/concept_rev15_uno/stl/lid_head_trial_r15.stl",
+    "sha256": "259e177b83646243d1223f76465c75e35079c4b1d5268ff00878d8c7646421b1",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/lid_head_trial_r15.step",
+    "source": "mechanical/concept_rev15_uno/step/lid_head_trial_r15.step",
+    "sha256": "e2a4290425d84ee62f0a21731beb63e63152eaa35dffa66fe7becdead0e1db87",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/pump_route_trial_r15.stl",
+    "source": "mechanical/concept_rev15_uno/stl/pump_route_trial_r15.stl",
+    "sha256": "b72e92dab264e9d8162ec2d95bb66ec7bdf0794c51a9ba83c1c1e5539d02cd1c",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/pump_route_trial_r15.step",
+    "source": "mechanical/concept_rev15_uno/step/pump_route_trial_r15.step",
+    "sha256": "5a3cddc1ac26357f87e97f3875312dd78029d84a24220a12e9ee6d5a4b7ea558",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/relay_mount_trial_r16.stl",
+    "source": "mechanical/concept_rev16_uno_relay/stl/relay_mount_trial_r16.stl",
+    "sha256": "8f681ae7a845260c83a6c92686593454456e2cfabd7422b04d465d96e747da4d",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/relay_mount_trial_r16.step",
+    "source": "mechanical/concept_rev16_uno_relay/step/relay_mount_trial_r16.step",
+    "sha256": "f1453233643b36ee3278715346fe638df78a61f6acf155d2da0852a9a7f262e4",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/button_fit_coupon.stl",
+    "source": "mechanical/concept_rev13/stl/button_fit_coupon.stl",
+    "sha256": "62d68ce1502278c08820394fdacd870ea3d41c1cdab7b53c7cf1152b7f55b432",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/button_fit_coupon.step",
+    "source": "mechanical/concept_rev13/step/button_fit_coupon.step",
+    "sha256": "90db7aa973f60ed3dc2d8750e5fb5d0957606d77fa811fb5c1520250a927bfcf",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/lcd_fit_coupon.stl",
+    "source": "mechanical/concept_rev13/stl/lcd_fit_coupon.stl",
+    "sha256": "e29243501c86a47c00c6f4aebafadef26ac6fccb61291d400f665fab9391a0e6",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/lcd_fit_coupon.step",
+    "source": "mechanical/concept_rev13/step/lcd_fit_coupon.step",
+    "sha256": "148544c10686864990e5ef659eb09f8f7e0c31b2704fc0bf44f266f20d295619",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/knob_fit_coupon.stl",
+    "source": "mechanical/concept_rev13/stl/knob_fit_coupon.stl",
+    "sha256": "403e990f987118951629cb32e3347e41e3bca56bbef9b68da4ec4e4dd19d474f",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/knob_fit_coupon.step",
+    "source": "mechanical/concept_rev13/step/knob_fit_coupon.step",
+    "sha256": "ee2f068fa7b04792d4fdf0917735a566bf785e90d724f9609968661c71d11747",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/piezo_led_fit_coupon.stl",
+    "source": "mechanical/concept_rev13/stl/piezo_led_fit_coupon.stl",
+    "sha256": "d7481b99dd755709d404160e07d7f467409dcc11388c9ba87985376477281f50",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/piezo_led_fit_coupon.step",
+    "source": "mechanical/concept_rev13/step/piezo_led_fit_coupon.step",
+    "sha256": "0276fca21db261d6e78cfae632aa7beb7dfd82d5ba4db6417bbbadef3e0087dd",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/stl/upper_boss_print_coupon.stl",
+    "source": "mechanical/concept_rev13/stl/upper_boss_print_coupon.stl",
+    "sha256": "c00bb7223c71baf5d07cc7621597da28dbffc0d6e98b6db6ef17959c06cb57bc",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/fit_trials/step/upper_boss_print_coupon.step",
+    "source": "mechanical/concept_rev13/step/upper_boss_print_coupon.step",
+    "sha256": "86bc937bc0956a3a38510991435b7b9056c56287a7b0be6b26c5e372a924b1c4",
+    "group": "fit_trials"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_D_6p0.stl",
+    "source": "mechanical/concept_rev13/stl/knob_D_6p0.stl",
+    "sha256": "eaad1c643037e9878c3e935f849b1a88eb6fa1e0bc7aaf21af5da395c07db210",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_D_6p0.step",
+    "source": "mechanical/concept_rev13/step/knob_D_6p0.step",
+    "sha256": "c480f5b5743776e782e47c337ada13429f1497c11dae54909ffba530fa9f66d8",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_D_6p2.stl",
+    "source": "mechanical/concept_rev13/stl/knob_D_6p2.stl",
+    "sha256": "712d9eb5b1c1440d97b5a1088b936ec1c00e34c9e228628d22177d6cb6542771",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_D_6p2.step",
+    "source": "mechanical/concept_rev13/step/knob_D_6p2.step",
+    "sha256": "159b0c2d05202dc3eb5576d43e1d742c7f3a7911d5889cc8a3b10a7a0da6866e",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_5p0.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_5p0.stl",
+    "sha256": "b57b4a531acf56985602736350d501a2a27f4b71e1f3da5467cfca375aca4528",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_5p0.step",
+    "source": "mechanical/concept_rev13/step/knob_round_5p0.step",
+    "sha256": "ecc090657de5bef7840993e813b5a0fd66ca8d95683a6a7a0c02bfde170fda69",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_5p2.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_5p2.stl",
+    "sha256": "f140ae2e4cf4c7b5cf6c33417f9f728514ed1861ee4bd99d450f85e816da5442",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_5p2.step",
+    "source": "mechanical/concept_rev13/step/knob_round_5p2.step",
+    "sha256": "31e46638ef35505a6c865470ac9a66c067a3d952336003c50ab48f3b33a84f88",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_6p0.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_6p0.stl",
+    "sha256": "7a461f2f6b89d3bf4f131798cb05594d4973b6e78624daeb407f309dcdf44537",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_6p0.step",
+    "source": "mechanical/concept_rev13/step/knob_round_6p0.step",
+    "sha256": "1b411a668fb3eaa3276c9ba9063146b53cecc2e7720f348cf82dbf61ef4c1701",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_6p2.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_6p2.stl",
+    "sha256": "4ee6e46a8ef69574496550be589000a3b4830482a4436b6607387f848b86c630",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_6p2.step",
+    "source": "mechanical/concept_rev13/step/knob_round_6p2.step",
+    "sha256": "cdb1a0008407d3176c141227f6bbd8a724ce02d4842eb64992182a1d8b4de3a4",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_6p35.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_6p35.stl",
+    "sha256": "304f22a0f298888f187a6a620927f2c27dd02cff2400604183b56e3882453167",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_6p35.step",
+    "source": "mechanical/concept_rev13/step/knob_round_6p35.step",
+    "sha256": "f59540175f6bfcfd705c0cb09eab02f945994f2a9086a2078f2901243adc5ec5",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/stl/knob_round_6p55.stl",
+    "source": "mechanical/concept_rev13/stl/knob_round_6p55.stl",
+    "sha256": "46464d1058e5336e238088849ec54b1b40bbe664dd47f96352a464f5cbe5e95a",
+    "group": "knob_options"
+  },
+  {
+    "file": "print_files/knob_options/step/knob_round_6p55.step",
+    "source": "mechanical/concept_rev13/step/knob_round_6p55.step",
+    "sha256": "4e95c64f3b8293a950a71e7aa5932a7831569cc42d2fb0f5869f3f6e3a6995b9",
+    "group": "knob_options"
+  }
+]

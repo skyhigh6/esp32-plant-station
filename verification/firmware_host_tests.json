@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-28",
+  "compiler": "Zig 0.16.0 C++17",
+  "flags": "-nostdlib++ -Wall -Wextra -Werror",
+  "controller_build_exit": 0,
+  "controller_assertions_exit": 0,
+  "view_build_exit": 0,
+  "view_assertions_exit": 0,
+  "scope": "Current Uno headers; host software only",
+  "hardware_acceptance": "Not tested"
+}

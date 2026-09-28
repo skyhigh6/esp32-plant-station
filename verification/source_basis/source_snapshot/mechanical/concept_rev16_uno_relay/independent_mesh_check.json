@@ -1,0 +1,88 @@
+{
+  "revision": "R16 Uno relay prototype",
+  "units": "mm",
+  "files": {
+    "tower_sump_body_uno_relay_r16.stl": {
+      "sha256": "15bb86f9721c3dc0fe6fb364de080f8c1b99125ffba747221d90c077a8824a95",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 561089.0700805768,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "top_cover_flush_r16.stl": {
+      "sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+      "bounds_mm": [
+        [
+          -1.5,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          97.5,
+          100.0,
+          163.5
+        ]
+      ],
+      "volume_mm3": 53767.436255852845,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    },
+    "relay_mount_trial_r16.stl": {
+      "sha256": "8f681ae7a845260c83a6c92686593454456e2cfabd7422b04d465d96e747da4d",
+      "bounds_mm": [
+        [
+          16.0,
+          76.0,
+          28.0
+        ],
+        [
+          76.0,
+          100.0,
+          64.0
+        ]
+      ],
+      "volume_mm3": 17488.58569588151,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0
+    }
+  },
+  "sections": {
+    "body_pilot_(23.75, 35.75)": 2.799595838870558,
+    "body_boss_(23.75, 35.75)": 8.813663386644745,
+    "trial_pilot_(23.75, 35.75)": 2.799595838870558,
+    "trial_boss_(23.75, 35.75)": 8.813663386644745,
+    "body_pilot_(23.75, 56.25)": 2.799595838870558,
+    "body_boss_(23.75, 56.25)": 8.813663661173498,
+    "trial_pilot_(23.75, 56.25)": 2.799595838870558,
+    "trial_boss_(23.75, 56.25)": 8.813663661173498,
+    "body_pilot_(68.25, 35.75)": 2.7995953656797985,
+    "body_boss_(68.25, 35.75)": 8.813663425843085,
+    "trial_pilot_(68.25, 35.75)": 2.7995953656797985,
+    "trial_boss_(68.25, 35.75)": 8.813663425843085,
+    "body_pilot_(68.25, 56.25)": 2.7995953656797985,
+    "body_boss_(68.25, 56.25)": 8.813663624254268,
+    "trial_pilot_(68.25, 56.25)": 2.7995953656797985,
+    "trial_boss_(68.25, 56.25)": 8.813663624254268
+  },
+  "retained_lid_volume_difference_mm3": 7.275957614183426e-12
+}

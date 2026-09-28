@@ -1,0 +1,116 @@
+[
+  {
+    "id": "T06-1",
+    "revision": "R6",
+    "description": "60 mm sump and provisional pump envelope",
+    "source": "mechanical/concept_rev6/README.md"
+  },
+  {
+    "id": "T07-2",
+    "revision": "R7",
+    "description": "75 x 31 LCD centres and 71.4 x 24.6 aperture",
+    "source": "mechanical/concept_rev7/README.md"
+  },
+  {
+    "id": "T08-3",
+    "revision": "R8",
+    "description": "Piezo/LED seats and adhesive precautions",
+    "source": "mechanical/concept_rev8/README.md"
+  },
+  {
+    "id": "T08-4",
+    "revision": "R8",
+    "description": "Knob variants and axial clearance",
+    "source": "mechanical/concept_rev8/README.md"
+  },
+  {
+    "id": "T10-1",
+    "revision": "R10",
+    "description": "Integrated tower/sump body",
+    "source": "mechanical/concept_rev10/README.md"
+  },
+  {
+    "id": "T11-1",
+    "revision": "R11",
+    "description": "Integrated holder saddle and tie slot",
+    "source": "mechanical/concept_rev11/README.md"
+  },
+  {
+    "id": "T12-1",
+    "revision": "R12",
+    "description": "Separate tube/wire routes",
+    "source": "mechanical/concept_rev12/README.md"
+  },
+  {
+    "id": "T13-1",
+    "revision": "R13",
+    "description": "No separate hose clip or tray",
+    "source": "mechanical/concept_rev13/README.md"
+  },
+  {
+    "id": "T13-4",
+    "revision": "R13",
+    "description": "Sensor entry z64 and lower edge z60",
+    "source": "mechanical/concept_rev13/README.md"
+  },
+  {
+    "id": "T14-1",
+    "revision": "R14",
+    "description": "Asymmetric Uno board mounting centres",
+    "source": "mechanical/concept_rev14_uno/README.md"
+  },
+  {
+    "id": "T15-1",
+    "revision": "R15",
+    "description": "Reinforced Uno bosses after reported splitting",
+    "source": "mechanical/concept_rev15_uno/DESIGN_REVIEW.md"
+  },
+  {
+    "id": "T15-2",
+    "revision": "R15",
+    "description": "5.5 mm lid with flush-head pockets",
+    "source": "mechanical/concept_rev15_uno/DESIGN_REVIEW.md"
+  },
+  {
+    "id": "T15-3",
+    "revision": "R15",
+    "description": "Pump relief lowered to z4 and extended to x132",
+    "source": "mechanical/concept_rev15_uno/DESIGN_REVIEW.md"
+  },
+  {
+    "id": "T16-1",
+    "revision": "R16",
+    "description": "Four relay mounts below Uno",
+    "source": "mechanical/concept_rev16_uno_relay/REVIEW.md"
+  },
+  {
+    "id": "T17-1",
+    "revision": "R17",
+    "description": "Mounted USB-C cut replaces old pass-through; DC diameter 10",
+    "source": "mechanical/concept_rev17_uno_ports/README.md"
+  },
+  {
+    "id": "T17-2",
+    "revision": "R17",
+    "description": "Current UI v6 three-button and lamp/relay interface incorporated into manual",
+    "source": "docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md"
+  },
+  {
+    "id": "T17-3",
+    "revision": "R17",
+    "description": "Current dose, soil status, display return and backlight behaviour incorporated",
+    "source": "firmware/arduino/PlantUno/PlantUno.ino"
+  },
+  {
+    "id": "T17-4",
+    "revision": "R17",
+    "description": "Current digital evidence and cumulative physical acceptance plan",
+    "source": "mechanical/concept_rev17_uno_ports/verification.json"
+  },
+  {
+    "id": "T17-5",
+    "revision": "R17",
+    "description": "USB/barrel extensions remain an electrical interface hold",
+    "source": "mechanical/concept_rev17_uno_ports/README.md"
+  }
+]

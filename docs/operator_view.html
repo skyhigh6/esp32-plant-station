@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plant Uno | Wiring and button controls</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.5 system-ui, Segoe UI, sans-serif; background: #f1f4f3; color: #182824; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #15392f; color: white; padding: 2rem max(1.2rem, calc((100vw - 1120px)/2)); }
+    header p { max-width: 72ch; margin: .55rem 0 0; color: #d6e8df; }
+    h1 { font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.15; margin: .2rem 0; }
+    h2 { font-size: 1.35rem; margin: 0 0 .8rem; }
+    h3 { font-size: 1.08rem; margin: 0 0 .35rem; }
+    main { max-width: 1160px; margin: auto; padding: 1.2rem; }
+    section { margin: 0 0 1.2rem; }
+    .banner { border-left: 5px solid #c87818; background: #fff7e8; padding: .9rem 1rem; }
+    .banner strong { color: #704307; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+    .card, .panel { background: white; border: 1px solid #d2dfd9; border-radius: 12px; padding: 1rem 1.1rem; box-shadow: 0 2px 8px #12382c0a; }
+    .card { border-top-width: 6px; }
+    .red { border-top-color: #bd3d35; }
+    .yellow { border-top-color: #d7a314; }
+    .green { border-top-color: #27875a; }
+    .tag { display: inline-block; font-size: .76rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; background: #e6eee9; color: #214d3d; border-radius: 99px; padding: .15rem .6rem; }
+    .tag.hold { background: #fff1d4; color: #794903; }
+    .pin { font: 700 1rem/1.3 Consolas, ui-monospace, monospace; background: #eaf0ed; border-radius: 5px; padding: .1rem .35rem; white-space: nowrap; }
+    .wire { display: grid; grid-template-columns: minmax(8.4rem, 1fr) auto minmax(12rem, 2fr); gap: .35rem .8rem; align-items: center; padding: .55rem 0; border-top: 1px solid #e4ece7; }
+    .wire:first-of-type { border-top: 0; }
+    .arrow { color: #4c7565; font-weight: 800; }
+    .small { font-size: .89rem; color: #50665b; }
+    .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+    .flow { background: #f4f8f5; border-radius: 8px; padding: .7rem .8rem; font-weight: 650; overflow-wrap: anywhere; }
+    .holdbox { border-left: 5px solid #c87818; }
+    .diagram-wrap { overflow-x: auto; border: 1px solid #d2dfd9; border-radius: 12px; background: #fbfdfb; box-shadow: 0 2px 8px #12382c0a; }
+    .diagram-wrap svg { display: block; width: 100%; min-width: 1000px; height: auto; }
+    .diagram-note { margin: .55rem 0 0; }
+    .legend { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: .8rem 0 0; padding: 0; list-style: none; font-size: .88rem; }
+    .legend li { display: flex; align-items: center; gap: .4rem; }
+    .swatch { width: 1.5rem; height: .25rem; border-radius: 1rem; background: var(--swatch); }
+    .test { display: grid; grid-template-columns: 4.2rem 1fr; gap: .7rem; padding: .85rem 0; border-top: 1px solid #e4ece7; }
+    .test:first-of-type { border-top: 0; }
+    .test p { margin: .25rem 0; }
+    .test-id { font: 750 .94rem/1.4 Consolas, ui-monospace, monospace; color: #255747; }
+    .evidence { font-size: .86rem; color: #52675d; }
+    .demo-grid { display: grid; grid-template-columns: minmax(230px, .8fr) minmax(280px, 1.2fr); gap: 1.2rem; align-items: center; }
+    .lcd-demo { background: #314e28; border: 10px solid #263943; border-radius: 12px; color: #d7ff9d; padding: .8rem; font: 700 clamp(1.1rem, 2vw, 1.6rem)/1.5 Consolas, ui-monospace, monospace; letter-spacing: .03em; white-space: pre; box-shadow: inset 0 0 20px #152c1b, 0 4px 12px #12382c25; overflow-x: auto; }
+    .lcd-demo.sleeping { background: #29342c; color: #435044; box-shadow: inset 0 0 20px #1a241d; }
+    .demo-controls label { display: block; font-weight: 700; }
+    .demo-controls input { width: 100%; accent-color: #27875a; }
+    .demo-buttons { display: flex; flex-wrap: wrap; gap: .55rem; margin: .8rem 0; }
+    .demo-buttons button, .demo-clear { border: 0; border-radius: 8px; padding: .65rem .9rem; font: 700 .95rem system-ui, sans-serif; cursor: pointer; }
+    .demo-buttons button:focus-visible, .demo-clear:focus-visible { outline: 3px solid #245a47; outline-offset: 3px; }
+    .demo-water { background: #27875a; color: white; }.demo-page { background: #e2bb35; color: #302709; }.demo-stop { background: #bd4240; color: white; }
+    .demo-clear { background: #e9eeeb; color: #274236; }
+    .demo-lamps { display: flex; gap: 1rem; margin: .75rem 0; font-weight: 700; }
+    .demo-lamps span { display: inline-flex; gap: .4rem; align-items: center; }
+    .demo-lamps i { display: inline-block; width: 1.15rem; height: 1.15rem; border-radius: 50%; background: #9ba6a0; border: 2px solid #66756b; }
+    .demo-lamps .red-on { background: #e4443b; box-shadow: 0 0 12px #e4443b; }
+    .demo-lamps .yellow-on { background: #f3c31e; box-shadow: 0 0 12px #f3c31e; }
+    .demo-lamps .green-on { background: #39be68; box-shadow: 0 0 12px #39be68; }
+    .demo-lamps .red-dry { animation: blink-dry 1s steps(1) infinite; }
+    .demo-lamps .red-fault { animation: blink-fault 1s steps(1) infinite; }
+    @keyframes blink-dry { 0%, 49% { background: #e4443b; box-shadow: 0 0 12px #e4443b; } 50%, 100% { background: #9ba6a0; box-shadow: none; } }
+    @keyframes blink-fault { 0%, 9%, 20%, 29% { background: #e4443b; box-shadow: 0 0 12px #e4443b; } 10%, 19%, 30%, 100% { background: #9ba6a0; box-shadow: none; } }
+    @media (prefers-reduced-motion: reduce) { .demo-lamps .red-dry, .demo-lamps .red-fault { animation: none; background: #e4443b; } }
+    footer { max-width: 1160px; margin: auto; padding: 0 1.2rem 2rem; font-size: .87rem; color: #53685d; }
+    @media (max-width: 800px) { .cards, .grid2, .demo-grid { grid-template-columns: 1fr; } }
+    @media print { :root { background: white; } header { padding: 1rem 0; color: #182824; background: white; border-bottom: 2px solid #15392f; } header p { color: #425d50; } main { padding: .6rem 0; } .card,.panel { box-shadow: none; break-inside: avoid; } section { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="tag">27 September 2026 · current interface</span>
+    <h1>Plant Uno — wiring and button controls</h1>
+    <p>Three illuminated buttons, a 16×2 LCD and a relay controlled pump. The knob chooses a 1.0–4.0 second run; below 25% moisture the red lamp blinks, and at 25% or above the green lamp stays on.</p>
+  </header>
+  <main>
+    <section class="banner" aria-label="Current operating restriction">
+      <strong>LCD backlight timeout uploaded to COM8.</strong> The display remains on the Uno 5 V rail; D10 is unconnected. UI v6 initialised the LCD with status <code>0</code>, then logged backlight OFF after 60 seconds and ON after the knob moved. A pump run restarts the timer when it ends. Earlier LCD faults mean screen reliability still needs checking. The browser demo does not connect to the Arduino.
+    </section>
+
+    <section aria-labelledby="diagram-title">
+      <h2 id="diagram-title">1 · Visual wiring diagram</h2>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 1200 1220" role="img" aria-labelledby="svg-title svg-desc" xmlns="http://www.w3.org/2000/svg">
+          <title id="svg-title">Arduino Uno plant station wiring</title>
+          <desc id="svg-desc">LCD on A4 and A5; pot on A1; soil sensor on A0. For every button, red switch lead goes to its Uno input, black switch lead to ground, green LED positive lead through a current limit to its LED output, and yellow LED negative lead to ground. Green WATER uses D2 and D7; yellow LAMP TEST uses D3 and D6; red STOP uses D4 and D5. D9 is enabled for an active-high relay with a one to four second request. Dashed relay and pump paths show the connection scheme; ratings and measured timing remain to be recorded.</desc>
+          <style>
+            .box{fill:#fff;stroke:#98b2a5;stroke-width:2}.uno{fill:#e7f1ec;stroke:#245a47;stroke-width:3}.future{fill:#fff8e9;stroke:#bf7b20;stroke-width:2.5;stroke-dasharray:9 6}.pump{fill:#f3f5f7;stroke:#66757d;stroke-width:2}
+            .title{font:700 23px system-ui,sans-serif;fill:#193e30}.label{font:600 17px system-ui,sans-serif;fill:#1b3128}.small{font:15px system-ui,sans-serif;fill:#364d42}.tiny{font:700 13px system-ui,sans-serif;fill:#365247}.pinlabel{font:700 17px ui-monospace,Consolas,monospace;fill:#193e30}
+            .net{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.gnd{stroke:#4b555b}.v5{stroke:#df8317}.v3{stroke:#bc962b}.lcd-sda{stroke:#168d9b}.lcd-scl{stroke:#695bb0}.analog{stroke:#2678a8}.lead-plus{stroke:#238652}.lead-minus{stroke:#d4ad00}.switch-in{stroke:#bd4240}.switch-return{stroke:#222c31}.relay{stroke:#8654a1;stroke-dasharray:11 8}.motor{stroke:#ad493b}
+          </style>
+
+          <!-- Component envelopes. Connections are schematic, not a physical connector orientation. -->
+          <rect class="box" x="420" y="25" width="360" height="150" rx="15" fill="#fff" stroke="#98b2a5" stroke-width="2"/>
+          <rect class="uno" x="390" y="235" width="420" height="500" rx="20" fill="#e7f1ec" stroke="#245a47" stroke-width="3"/>
+          <rect class="box" x="30" y="250" width="260" height="155" rx="14" fill="#fff" stroke="#98b2a5" stroke-width="2"/>
+          <rect class="box" x="30" y="460" width="260" height="160" rx="14" fill="#fff" stroke="#98b2a5" stroke-width="2"/>
+          <rect x="890" y="235" width="260" height="160" rx="14" fill="#edf8f0" stroke="#238652" stroke-width="2"/>
+          <rect x="890" y="415" width="260" height="160" rx="14" fill="#fff9e7" stroke="#c29708" stroke-width="2"/>
+          <rect x="890" y="595" width="260" height="160" rx="14" fill="#fdf0ee" stroke="#bd4240" stroke-width="2"/>
+          <rect class="future" x="35" y="855" width="255" height="130" rx="14" fill="#fff8e9" stroke="#bf7b20" stroke-width="2.5" stroke-dasharray="9 6"/>
+          <rect class="future" x="430" y="855" width="380" height="130" rx="14" fill="#fff8e9" stroke="#bf7b20" stroke-width="2.5" stroke-dasharray="9 6"/>
+
+          <!-- LCD to Uno: SDA, SCL, power, ground. -->
+          <path class="net lcd-sda" d="M475 175 V235" fill="none" stroke="#168d9b" stroke-width="5"/><path class="net lcd-scl" d="M545 175 V235" fill="none" stroke="#695bb0" stroke-width="5"/>
+          <path class="net v5" d="M615 175 V235" fill="none" stroke="#df8317" stroke-width="5"/><path class="net gnd" d="M685 175 V235" fill="none" stroke="#4b555b" stroke-width="5"/>
+
+          <!-- Dose potentiometer and soil sensor. Supply voltages require module verification. -->
+          <path class="net analog" d="M290 300 H390" fill="none" stroke="#2678a8" stroke-width="5"/><path class="net v5" d="M290 340 H390" fill="none" stroke="#df8317" stroke-width="5"/><path class="net gnd" d="M290 380 H390" fill="none" stroke="#4b555b" stroke-width="5"/>
+          <path class="net analog" d="M290 500 H390" fill="none" stroke="#2678a8" stroke-width="5"/><path class="net v3" d="M290 540 H390" fill="none" stroke="#bc962b" stroke-width="5"/><path class="net gnd" d="M290 580 H390" fill="none" stroke="#4b555b" stroke-width="5"/>
+
+          <!-- Each button has the same reported rear lead colours, regardless of face colour. -->
+          <path class="net switch-in" d="M810 280 H890 M810 460 H890 M810 640 H890" fill="none" stroke="#bd4240" stroke-width="5"/>
+          <path class="net lead-plus" d="M810 325 H840 M875 325 H890 M810 505 H840 M875 505 H890 M810 685 H840 M875 685 H890" fill="none" stroke="#238652" stroke-width="5"/>
+          <rect x="840" y="314" width="35" height="22" rx="3" fill="#fff" stroke="#238652" stroke-width="2"/>
+          <rect x="840" y="494" width="35" height="22" rx="3" fill="#fff" stroke="#238652" stroke-width="2"/>
+          <rect x="840" y="674" width="35" height="22" rx="3" fill="#fff" stroke="#238652" stroke-width="2"/>
+          <text class="tiny" x="846" y="309">R?</text><text class="tiny" x="846" y="489">R?</text><text class="tiny" x="846" y="669">R?</text>
+
+          <!-- Yellow LED− and black switch returns stay separate until the GND rail. -->
+          <path class="net gnd" d="M1180 350 V770 H760 V735" fill="none" stroke="#4b555b" stroke-width="5"/>
+          <path class="net lead-minus" d="M1150 350 H1180 M1150 530 H1180 M1150 710 H1180" fill="none" stroke="#d4ad00" stroke-width="5"/>
+          <path class="net switch-return" d="M1150 375 H1180 M1150 555 H1180 M1150 735 H1180" fill="none" stroke="#222c31" stroke-width="5"/>
+          <circle cx="1180" cy="350" r="5" fill="#d4ad00"/><circle cx="1180" cy="375" r="5" fill="#222c31"/>
+          <circle cx="1180" cy="530" r="5" fill="#d4ad00"/><circle cx="1180" cy="555" r="5" fill="#222c31"/>
+          <circle cx="1180" cy="710" r="5" fill="#d4ad00"/><circle cx="1180" cy="735" r="5" fill="#222c31"/>
+
+          <!-- Dashed relay wiring is a design path; physical connections remain unverified. -->
+          <path class="net relay" d="M600 735 V855" fill="none" stroke="#8654a1" stroke-width="5" stroke-dasharray="11 8"/>
+          <path class="net gnd" d="M760 770 V855" fill="none" stroke="#4b555b" stroke-width="5" stroke-dasharray="11 8"/>
+          <path class="net v5" d="M290 900 H430" fill="none" stroke="#df8317" stroke-width="5" stroke-dasharray="11 8"/>
+          <text class="tiny" x="820" y="811">RELAY WIRING: VERIFY</text>
+
+          <!-- Component labels. -->
+          <text class="title" x="442" y="60">16 × 2 I²C LCD</text>
+          <text class="small" x="442" y="93">Existing display/backpack</text>
+          <text class="pinlabel" x="456" y="151">SDA</text><text class="pinlabel" x="527" y="151">SCL</text>
+          <text class="pinlabel" x="600" y="151">5V</text><text class="pinlabel" x="663" y="151">GND</text>
+          <text class="pinlabel" x="459" y="215">A4</text><text class="pinlabel" x="529" y="215">A5</text>
+          <text class="pinlabel" x="601" y="215">5V</text><text class="pinlabel" x="663" y="215">GND</text>
+
+          <text class="title" x="432" y="280">ARDUINO UNO R3</text>
+          <text class="small" x="455" y="410">Soil &lt;25%: red blinks</text>
+          <text class="small" x="455" y="440">Soil ≥25%: green stays on</text>
+          <text class="small" x="455" y="470">D9 active HIGH · 1–4 second run</text>
+          <text class="pinlabel" x="405" y="306">A1</text><text class="pinlabel" x="405" y="346">5V</text><text class="pinlabel" x="405" y="386">GND</text>
+          <text class="pinlabel" x="405" y="506">A0</text><text class="pinlabel" x="405" y="546">3V3</text><text class="pinlabel" x="405" y="586">GND</text>
+          <text class="pinlabel" x="767" y="286">D2</text><text class="pinlabel" x="767" y="331">D7</text>
+          <text class="pinlabel" x="767" y="466">D3</text><text class="pinlabel" x="767" y="511">D6</text>
+          <text class="pinlabel" x="767" y="646">D4</text><text class="pinlabel" x="767" y="691">D5</text>
+          <text class="pinlabel" x="575" y="707">D9</text><text class="pinlabel" x="735" y="707">GND</text>
+
+          <text class="title" x="50" y="284">Dose potentiometer</text>
+          <text class="small" x="50" y="317">wiper → A1</text><text class="small" x="50" y="357">outer → 5V</text><text class="small" x="50" y="392">outer → GND</text>
+          <text class="title" x="50" y="494">Soil sensor</text>
+          <text class="small" x="50" y="515">AOUT → A0</text><text class="small" x="50" y="555">VCC → 3.3V*</text><text class="small" x="50" y="595">GND return</text>
+
+          <text class="title" x="908" y="266">GREEN · WATER</text>
+          <text class="small" x="908" y="295">red SW → D2</text><text class="small" x="908" y="340">green LED+ ← D7 via R?</text>
+          <text class="small" x="908" y="360">yellow LED− → GND</text><text class="small" x="908" y="383">black SW → GND</text>
+          <text class="title" x="908" y="446">YELLOW · PAGE/TEST</text>
+          <text class="small" x="908" y="475">red SW → D3</text><text class="small" x="908" y="520">green LED+ ← D6 via R?</text>
+          <text class="small" x="908" y="540">yellow LED− → GND</text><text class="small" x="908" y="563">black SW → GND</text>
+          <text class="title" x="908" y="626">RED · STOP</text>
+          <text class="small" x="908" y="655">red SW → D4</text><text class="small" x="908" y="700">green LED+ ← D5 via R?</text>
+          <text class="small" x="908" y="720">yellow LED− → GND</text><text class="small" x="908" y="743">black SW → GND</text>
+
+          <text class="title" x="55" y="888">Relay 5 V supply</text>
+          <text class="small" x="55" y="922">Module coil supply</text>
+          <text class="small" x="55" y="954">Rating/current to verify</text>
+          <text class="title" x="450" y="888">5 V relay module</text>
+          <text class="small" x="450" y="922">IN: D9 · HIGH = ON (reported)</text>
+          <text class="small" x="450" y="954">Logic GND: Uno GND · VERIFY</text>
+
+          <!-- Isolated, normally-open pump contact circuit. No Uno power rail supplies the pump. -->
+          <path d="M25 1014 H1175" stroke="#c8d6ce" stroke-width="2"/>
+          <text class="tiny" x="40" y="1037">SEPARATE PUMP POWER CIRCUIT · WIRING / RATINGS UNVERIFIED</text>
+          <rect class="pump" x="40" y="1050" width="250" height="115" rx="14" fill="#f3f5f7" stroke="#66757d" stroke-width="2"/>
+          <rect class="pump" x="480" y="1050" width="250" height="115" rx="14" fill="#f3f5f7" stroke="#66757d" stroke-width="2"/>
+          <rect class="pump" x="900" y="1050" width="260" height="115" rx="14" fill="#f3f5f7" stroke="#66757d" stroke-width="2"/>
+          <path class="net motor" d="M290 1090 H345 M410 1090 H480 M730 1090 H900" fill="none" stroke="#ad493b" stroke-width="5" stroke-dasharray="11 8"/>
+          <rect x="345" y="1078" width="65" height="24" rx="4" fill="#fff1ea" stroke="#ad493b" stroke-width="2"/>
+          <text class="tiny" x="358" y="1072">FUSE</text>
+          <path class="net gnd" d="M900 1138 H840 V1190 H290 V1138" fill="none" stroke="#4b555b" stroke-width="5" stroke-dasharray="11 8"/>
+          <text class="title" x="58" y="1080">Pump supply</text>
+          <text class="small" x="58" y="1110">3.5 V tried by user</text>
+          <text class="small" x="58" y="1141">Pump rating unknown</text>
+          <text class="title" x="500" y="1080">Relay contacts</text>
+          <text class="small" x="500" y="1110">COM → NO planned</text>
+          <text class="small" x="500" y="1141">OFF state to verify</text>
+          <text class="title" x="920" y="1080">DC pump</text>
+          <text class="small" x="920" y="1110">Rated supply required</text>
+          <text class="small" x="920" y="1141">Suppress motor transient</text>
+        </svg>
+      </div>
+      <ul class="legend" aria-label="Diagram wire colour key">
+        <li><span class="swatch" style="--swatch:#238652"></span>Green lead: LED+</li>
+        <li><span class="swatch" style="--swatch:#d4ad00"></span>Yellow lead: LED−</li>
+        <li><span class="swatch" style="--swatch:#bd4240"></span>Red lead: switch input</li>
+        <li><span class="swatch" style="--swatch:#222c31"></span>Black lead: switch GND</li>
+        <li><span class="swatch" style="--swatch:#168d9b"></span>LCD/data signals</li>
+        <li><span class="swatch" style="--swatch:#df8317"></span>5 V supply</li>
+        <li><span class="swatch" style="--swatch:#4b555b"></span>Ground/negative</li>
+        <li><span class="swatch" style="--swatch:#8654a1"></span>Purple: enabled D9 relay signal</li>
+      </ul>
+      <p class="small diagram-note">Button box colours identify the front lamps; the red/black/green/yellow wire colours show your reported rear leads on every button. Verify the mapping on each physical unit. Each R? is a current limit to choose after checking that button's LED rating and any built-in resistor. *Confirm the actual soil module's supply rating. Dashed relay and pump paths are proposed physical wiring, not verified connections.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="demo-title">
+      <h2 id="demo-title">2 · Try the LCD controls</h2>
+      <p>This is a browser simulation of the new controls. The percentage is the sketch's calibrated soil index, not a laboratory moisture measurement. This page does not send commands to the Arduino or energise the pump.</p>
+      <div class="demo-grid">
+        <div class="lcd-demo" role="status" aria-live="polite" aria-label="Simulated sixteen by two character LCD"><div id="demo-top">Soil  50% READY</div><div id="demo-bottom">Dose set 1.0 s</div></div>
+        <div class="demo-controls">
+          <label for="demo-pot">Dose knob: <output id="demo-time">1.0 s</output></label>
+          <input id="demo-pot" type="range" min="0" max="1023" value="0">
+          <label for="demo-soil">Simulated soil: <output id="demo-soil-value">50%</output></label>
+          <input id="demo-soil" type="range" min="0" max="100" value="50">
+          <label><input id="demo-fault" type="checkbox" style="width:auto"> Simulate a disconnected / rail-low sensor</label>
+          <div class="demo-lamps" aria-label="Simulated button lamps">
+            <span><i id="demo-red"></i>Red</span><span><i id="demo-yellow"></i>Yellow</span><span><i id="demo-green"></i>Green</span>
+          </div>
+          <div class="demo-buttons">
+            <button class="demo-water" id="demo-water" type="button">Green · WATER</button>
+            <button class="demo-page" id="demo-page" type="button">Yellow · NEXT SCREEN</button>
+            <button class="demo-stop" id="demo-stop" type="button">Red · STOP</button>
+          </div>
+          <button class="demo-clear" id="demo-clear" type="button">Simulate holding red for 2 seconds</button>
+          <button class="demo-clear" id="demo-idle" type="button">Simulate 60 seconds idle</button>
+          <p class="small" id="demo-backlight-state">LCD backlight ON</p>
+          <p class="small">Below 25% moisture, red blinks slowly; at 25% or above, green stays lit. The firmware waits for 500 ms of stable readings across this boundary. A rail-low sensor gets a fast double red flash instead of a false wet signal. The physical knob is sampled when WATER starts. Yellow tests all lamps while held and advances one page per press; yellow or red cancels a run. Hold red for two seconds to clear session totals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="buttons-title">
+      <h2 id="buttons-title">3 · Buttons and their built-in LEDs</h2>
+      <div class="cards">
+        <article class="card green">
+          <h3>Green · WATER</h3>
+          <p><span class="pin">D2</span> → red switch lead; black switch lead → GND.</p>
+          <p><span class="pin">D7</span> → verified current limit → green LED+ lead; yellow LED− lead → GND.</p>
+          <p><strong>Action:</strong> one press starts the 1–4 second run selected by the knob. The LCD shows a countdown, then returns directly to the soil percentage when the run ends. Releasing WATER does not cancel a run.</p>
+          <p><strong>Light:</strong> steady when soil is 25% or wetter, including during a run; or on during all-lamp test. It is off during a STOP lockout or sensor fault.</p>
+        </article>
+        <article class="card yellow">
+          <h3>Yellow · NEXT SCREEN / LAMP TEST</h3>
+          <p><span class="pin">D3</span> → red switch lead; black switch lead → GND.</p>
+          <p><span class="pin">D6</span> → verified current limit → green LED+ lead; yellow LED− lead → GND.</p>
+          <p><strong>Action:</strong> each idle press cycles Status → Raw readings → Session totals. Holding it lights all three button lamps. Pressing it during a run cancels that run and returns to soil status after release.</p>
+          <p><strong>Light:</strong> dose in progress, or all-lamp test.</p>
+        </article>
+        <article class="card red">
+          <h3>Red · STOP / cancel</h3>
+          <p><span class="pin">D4</span> → red switch lead; black switch lead → GND.</p>
+          <p><span class="pin">D5</span> → verified current limit → green LED+ lead; yellow LED− lead → GND.</p>
+          <p><strong>Action:</strong> press to cancel a run; the LCD returns to soil status. An idle press shows a STOP message. Hold for two seconds to clear completed/cancelled session totals.</p>
+          <p><strong>Light:</strong> slow blink below 25% moisture, fast double flash for a rail-low sensor, solid during STOP/lockout, or on during all-lamp test. STOP is a software control, not power isolation.</p>
+        </article>
+      </div>
+      <p class="small">The rear lead colours are user-reported for these buttons. For each physical button, confirm red/black are the normally open switch pair and green/yellow are LED+/LED− before applying power. Switch and LED pairs stay separate. The LED rating and any internal resistor remain to be verified.</p>
+    </section>
+
+    <section class="grid2" aria-label="Existing display and relay connections">
+      <div class="panel">
+        <h2>4 · Existing LCD and analogue inputs</h2>
+        <div class="wire"><span><span class="pin">A4</span> / SDA</span><span class="arrow">→</span><span>LCD SDA</span></div>
+        <div class="wire"><span><span class="pin">A5</span> / SCL</span><span class="arrow">→</span><span>LCD SCL</span></div>
+        <div class="wire"><span><span class="pin">5V</span> / GND</span><span class="arrow">→</span><span>LCD supply / return, by backpack label</span></div>
+        <div class="wire"><span><span class="pin">D10</span></span><span class="arrow">→</span><span>Unconnected; do not wire LCD VCC to a GPIO</span></div>
+        <div class="wire"><span><span class="pin">A0</span> / <span class="pin">A1</span></span><span class="arrow">→</span><span>Soil output / dose-pot wiper</span></div>
+        <p class="small">Soil reading is advisory. The pot maps its lowest reading to 1.0 seconds and highest to 4.0 seconds; duration is not a calibrated water volume. Backlight control uses the LCD's I²C backpack; VCC remains at 5 V. The 60-second timer resets on button use, significant knob movement, and when a pump run ends. UI v6 initialised at LCD status <code>0</code>; previous boots had intermittent faults. Check LCD supply stability, ground, A4/A5 and relay/pump suppression if it fails again.</p>
+      </div>
+      <div class="panel holdbox">
+        <h2>5 · Relay stage <span class="tag hold">Ratings open</span></h2>
+        <p><span class="pin">D9</span> drives the relay module's logic IN. Your reported trigger is <strong>HIGH = ON</strong>. The operator reports that the pump and relay work; input current, boot-state behaviour, contact and pump ratings have not been measured here.</p>
+        <p class="flow">Verified 5 V coil supply → relay module<br>Uno GND → module logic GND as specified<br>Separate pump supply + → fuse/disconnect → COM → NO → pump +<br>Pump − → pump supply −</p>
+        <p class="small">Use a relay module with a coil driver, not a bare coil on D9. Verify input current, coil supply, contact and pump ratings, suppression, and OFF through reset and supply sequencing. Provide a measured default-OFF input bias and a physical pump disconnect.</p>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="tests-title">
+      <h2 id="tests-title">6 · Check the revised controls</h2>
+      <div class="test"><div class="test-id">T01</div><div><strong>Verify all four leads with power removed.</strong><p>For each button, red/black must be open released and closed pressed. Confirm green is LED+ and yellow is LED− from part markings or a current-limited test. Establish the LED rating and current limit before connecting D5–D7.</p><div class="evidence">Record: button part IDs, continuity, LED polarity/rating, resistor decision and photograph.</div></div></div>
+      <div class="test"><div class="test-id">T02</div><div><strong>Upload and boot readback — passed this boot.</strong><p>COM8 upload passed after the operator reported pump power OFF. Serial showed <code>PlantUno UI v6</code>, <code>relay=OFF</code> at rest and LCD initialisation status <code>0</code>. Prior boots had intermittent LCD faults; measure power and I²C wiring if one recurs.</p><div class="evidence">Record: port, sketch hash, serial log, rail voltage and LCD status.</div></div></div>
+      <div class="test"><div class="test-id">T03</div><div><strong>Check the three LCD pages.</strong><p>Press yellow once per page: Status shows moisture and the selected 1.0–4.0 second run; Raw shows soil and knob ADC values; Session shows completed/cancelled counts and the last completed run. Holding yellow lights all lamps.</p><div class="evidence">Record: screen photographs at minimum and maximum knob settings.</div></div></div>
+      <div class="test"><div class="test-id">T04</div><div><strong>Check control logic.</strong><p>One dose per WATER press. At the instant the timed run ends, the LCD should return from the countdown to the Status page with soil percentage, even if WATER is still held. Red or yellow cancels a run; all buttons must be released before another. Hold red for two seconds to clear session counters. Confirm the knob only changes the next run once started.</p><div class="evidence">Record: screen video at pump stop, minimum and maximum timing, cancellation and reset.</div></div></div>
+      <div class="test"><div class="test-id">T05</div><div><strong>Relay check with pump supply OFF.</strong><p>Identify the module and verify its 5 V supply, input current, HIGH = ON, LOW = OFF, and contact state during cold start, reset and either supply-start order. Record any transient contact closure.</p><div class="evidence">Record: module identifier/datasheet, measured values, contact state and test setup.</div></div></div>
+      <div class="test"><div class="test-id">T06</div><div><strong>Supervised 1–4 second trial.</strong><p>The operator reports the pump works at 3.5 V. Measure actual low and high run times and delivered volume with the installed tubing. The pump rating and running/startup/stall current remain unknown.</p><div class="evidence">Record: pump identity, measured current/voltage, timing and delivered volume.</div></div></div>
+      <div class="test"><div class="test-id">T07</div><div><strong>Soil lamp threshold — serial classification seen.</strong><p>Serial reported DRY at 0%, WET above 25%, then DRY again below 25%. The physical lamps were not observed. With a valid sensor, hold below 25% for at least 500 ms: red should blink once per second and green should be off. At 25% or above, green should stay on. Raw A0 of 20 or less should give a fast double red flash and <code>soil_state=FAULT</code>. Confirm STOP/lockout makes red solid and lamp test lights all three.</p><div class="evidence">Record: soil raw and percentage, observed lamp pattern, boundary crossing and sensor position.</div></div></div>
+      <div class="test"><div class="test-id">T08</div><div><strong>LCD backlight timeout — serial commands passed.</strong><p>At status <code>0</code>, serial logged <code>LCD backlight=OFF idle</code> just after 60 seconds. A knob movement logged <code>LCD backlight=ON activity</code>. Confirm visually, then finish a dose and check that the full 60-second period restarts at pump stop. Do not move LCD VCC to D10.</p><div class="evidence">Record: LCD photographs and elapsed times. Pump-end reset and physical light change remain open.</div></div></div>
+    </section>
+  </main>
+  <footer>Source: <code>firmware/arduino/PlantUno/PlantUno.ino</code> and <code>docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md</code>. UI v6 compiled and uploaded to COM8 on 27 September 2026. Serial confirmed controller commands only; the browser LCD and lamps are demonstrations.</footer>
+  <script>
+    (() => {
+      const pot = document.getElementById('demo-pot');
+      const selected = document.getElementById('demo-time');
+      const soil = document.getElementById('demo-soil');
+      const soilValue = document.getElementById('demo-soil-value');
+      const fault = document.getElementById('demo-fault');
+      const red = document.getElementById('demo-red');
+      const yellow = document.getElementById('demo-yellow');
+      const green = document.getElementById('demo-green');
+      const lcdDemo = document.querySelector('.lcd-demo');
+      const backlightState = document.getElementById('demo-backlight-state');
+      const top = document.getElementById('demo-top');
+      const bottom = document.getElementById('demo-bottom');
+      let page = 0, runningUntil = 0, runMs = 1000, done = 0, cut = 0, last = 0, returnToSoil = false;
+      let noticeTop = '', noticeBottom = '', noticeUntil = 0, lampUntil = 0, stopUntil = 0;
+      let lastInteraction = performance.now();
+      const activity = () => { lastInteraction = performance.now(); };
+      const seconds = ms => `${Math.floor(ms / 1000)}.${Math.floor((ms % 1000) / 100)}`;
+      const planned = () => 1000 + Math.floor(Number(pot.value) * 3000 / 1023);
+      const row = (element, value) => { element.textContent = value.padEnd(16, ' ').slice(0, 16); };
+      const notice = (first, second) => {
+        noticeTop = first; noticeBottom = second; noticeUntil = performance.now() + 2000;
+      };
+      const cancel = () => {
+        stopUntil = performance.now() + 500;
+        if (runningUntil) {
+          runningUntil = 0; cut = Math.min(999, cut + 1);
+          page = 0; returnToSoil = true; noticeUntil = 0;
+        } else {
+          returnToSoil = false; notice('STOP pressed', 'Hold 2s: clear');
+        }
+      };
+      function render() {
+        const now = performance.now();
+        const moisture = Number(soil.value);
+        const dry = moisture < 25;
+        const sensorFault = fault.checked;
+        const lampTest = now < lampUntil;
+        const stopLock = now < stopUntil;
+        selected.textContent = `${seconds(planned())} s`;
+        soilValue.textContent = `${moisture}%`;
+        if (runningUntil && now >= runningUntil) {
+          runningUntil = 0; done = Math.min(999, done + 1); last = runMs;
+          page = 0; returnToSoil = true; noticeUntil = 0;
+          lastInteraction = now;
+        }
+        const backlightOff = !runningUntil && now - lastInteraction >= 60000;
+        lcdDemo.classList.toggle('sleeping', backlightOff);
+        backlightState.textContent = backlightOff ? 'LCD backlight OFF — use a control to wake it' : 'LCD backlight ON';
+        red.className = lampTest || stopLock ? 'red-on' : sensorFault ? 'red-fault' : dry ? 'red-dry' : '';
+        yellow.className = lampTest || runningUntil ? 'yellow-on' : '';
+        green.className = lampTest || (!stopLock && !sensorFault && !dry) ? 'green-on' : '';
+        if (runningUntil) {
+          row(top, 'PUMP RUNNING');
+          row(bottom, `Left ${seconds(Math.max(0, runningUntil - now))}s STOP`);
+        } else if (now < lampUntil) {
+          row(top, 'LAMP TEST'); row(bottom, `Screen ${page + 1} of 3`);
+        } else if (!returnToSoil && now < noticeUntil) {
+          row(top, noticeTop); row(bottom, noticeBottom);
+        } else if (page === 0) {
+          if (sensorFault) {
+            row(top, 'CHECK SOIL A0'); row(bottom, 'Raw    0');
+          } else {
+            row(top, `${dry ? 'DRY' : 'WET'} ${String(moisture).padStart(3, ' ')}% ${dry ? 'WATER' : 'READY'}`);
+            row(bottom, `Dose set ${seconds(planned())} s`);
+          }
+        } else if (page === 1) {
+          const raw = sensorFault ? 0 : 447 - Math.floor(moisture * 226 / 100);
+          row(top, `Soil raw ${String(raw).padStart(4, ' ')}`);
+          row(bottom, `Pot raw  ${String(pot.value).padStart(4, ' ')}`);
+        } else {
+          row(top, `OK${String(done).padStart(3, ' ')} CUT${String(cut).padStart(3, ' ')}`);
+          row(bottom, done ? `Last ${seconds(last)} sec` : 'No doses yet');
+        }
+      }
+      document.getElementById('demo-water').addEventListener('click', () => {
+        activity();
+        if (runningUntil) return;
+        runMs = planned(); runningUntil = performance.now() + runMs; returnToSoil = false;
+        render();
+      });
+      document.getElementById('demo-page').addEventListener('click', () => {
+        activity();
+        if (runningUntil) cancel();
+        else { page = (page + 1) % 3; returnToSoil = false; }
+        lampUntil = performance.now() + 500; render();
+      });
+      document.getElementById('demo-stop').addEventListener('click', () => { activity(); cancel(); render(); });
+      document.getElementById('demo-clear').addEventListener('click', () => {
+        activity();
+        if (runningUntil) cancel();
+        done = 0; cut = 0; last = 0; returnToSoil = false;
+        notice('COUNTERS CLEAR', 'Pump is OFF'); render();
+      });
+      document.getElementById('demo-idle').addEventListener('click', () => {
+        if (runningUntil) return;
+        lastInteraction = performance.now() - 60000;
+        render();
+      });
+      pot.addEventListener('input', () => { activity(); render(); });
+      soil.addEventListener('input', render);
+      fault.addEventListener('change', render);
+      setInterval(render, 100);
+      render();
+    })();
+  </script>
+</body>
+</html>

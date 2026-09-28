@@ -1,0 +1,138 @@
+{
+  "revision": "R16 Uno relay prototype",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "parameters": {
+    "relay_board_xz_min_mm": [
+      21.0,
+      33.0
+    ],
+    "relay_board_xz_size_mm": [
+      50.0,
+      26.0
+    ],
+    "relay_hole_centres_xz_mm": [
+      [
+        23.75,
+        35.75
+      ],
+      [
+        23.75,
+        56.25
+      ],
+      [
+        68.25,
+        35.75
+      ],
+      [
+        68.25,
+        56.25
+      ]
+    ],
+    "relay_hole_pitch_xz_mm": [
+      44.5,
+      20.5
+    ],
+    "relay_hole_diameter_mm_nominal": 3.1,
+    "relay_board_seat_y_mm": 76.0,
+    "relay_component_height_mm_nominal": 18.5,
+    "relay_boss_tip_root_od_mm": [
+      8.5,
+      10.0
+    ],
+    "relay_boss_length_mm": 19.0,
+    "relay_pilot_diameter_mm_provisional": 2.8,
+    "relay_pilot_depth_mm": 11.0
+  },
+  "exports": {
+    "tower_sump_body_uno_relay_r16": {
+      "stl_sha256": "15bb86f9721c3dc0fe6fb364de080f8c1b99125ffba747221d90c077a8824a95",
+      "step_sha256": "ba5be10d644155aea8b3ef027ae3a2fb3c745b3b655c923eaf497619b5a55817",
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "volume_mm3": 561089.0700805768,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "top_cover_flush_r16": {
+      "stl_sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+      "step_sha256": "2e3b771a152ee91efbbb17e930799b88a081ab32bec3c42a7013f67ab8fb46c1",
+      "bounds_mm": [
+        [
+          -1.5,
+          -8.881784197001252e-16,
+          158.0
+        ],
+        [
+          97.5,
+          100.0,
+          163.5
+        ]
+      ],
+      "volume_mm3": 53767.436255852845,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    },
+    "relay_mount_trial_r16": {
+      "stl_sha256": "8f681ae7a845260c83a6c92686593454456e2cfabd7422b04d465d96e747da4d",
+      "step_sha256": "f1453233643b36ee3278715346fe638df78a61f6acf155d2da0852a9a7f262e4",
+      "bounds_mm": [
+        [
+          16.0,
+          76.0,
+          28.0
+        ],
+        [
+          76.0,
+          100.0,
+          64.0
+        ]
+      ],
+      "volume_mm3": 17488.58569588151,
+      "watertight": true,
+      "consistent_winding": true,
+      "mesh_components": 1,
+      "step_single_valid_solid": true
+    }
+  },
+  "interfaces": {
+    "change_outside_relay_zone_mm3": {
+      "added": 0.0,
+      "removed": 0.0
+    },
+    "nominal_relay_pcb_interference_mm3": 0.0,
+    "nominal_relay_component_interference_mm3": 0.0,
+    "nominal_uno_pcb_interference_mm3": 0.0,
+    "body_lid_interference_mm3": 0.0,
+    "relay_driver_interference_mm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nominal_relay_to_uno_edge_z_clearance_mm": 13.0,
+    "nominal_relay_to_battery_saddle_z_clearance_mm": 12.0,
+    "nominal_contact_terminal_to_right_inner_wall_x_clearance_mm": 19.0,
+    "nominal_logic_terminal_to_left_inner_wall_x_clearance_mm": 15.0
+  },
+  "physical_status": {
+    "relay_hole_pattern_and_underside": "pending four-hole and solder-clearance trial",
+    "relay_screw": "pending fastener selection, head clearance and torque trial",
+    "relay_terminals_and_wires": "pending fitted-module screwdriver and wire-bend trial",
+    "r15_uno_lid_pump": "R15 physical acceptance remains open"
+  }
+}

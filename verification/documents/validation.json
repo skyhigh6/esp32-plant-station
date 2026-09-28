@@ -1,0 +1,39 @@
+{
+  "documents": {
+    "AM_R17": {
+      "pdf": "PLANT-AM-001_R17_D02.pdf",
+      "pages": 20,
+      "front_pages": 4,
+      "sha256": "5ee74745950df35c7e934d3907fdf38ffe01ffacd00c21217e3a83b3baeb4525",
+      "barred_placements": 77,
+      "identity_loep_sections_bounds": true
+    },
+    "TR_R17": {
+      "pdf": "PLANT-TR-001_R17_D02.pdf",
+      "pages": 11,
+      "front_pages": 3,
+      "sha256": "3dec637c818bf32813be4be0cfcdff22a8cf88e08be26014ea121db6f8cea79a",
+      "barred_placements": 27,
+      "identity_loep_sections_bounds": true
+    },
+    "TS_R17": {
+      "pdf": "PLANT-TS-001_R17_D02.pdf",
+      "pages": 9,
+      "front_pages": 3,
+      "sha256": "3d57d89aaf68c73e1642685b4f5ec04aedb47d3bbe8aa0f7b62d800f34cf56b2",
+      "barred_placements": 17,
+      "identity_loep_sections_bounds": true
+    }
+  },
+  "source_hash_records": 28,
+  "checks": [
+    "PDF identity and page count",
+    "Every effective-page row",
+    "Every section map",
+    "Every body placement within frame",
+    "Revision bars resolve to matrix",
+    "All frozen-source hashes",
+    "Current configuration content checks",
+    "Every PDF page rendered"
+  ]
+}

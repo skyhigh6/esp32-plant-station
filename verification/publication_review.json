@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-28",
+  "repository": "skyhigh6/esp32-plant-station",
+  "branch": "main",
+  "visibility": "public",
+  "pre_cleanup_remote_commit": "18ab0d889db349c712b43624d315e4f15ed3ebe2",
+  "scope": "Complete current R17 publication tree, PDFs, editable text, CAD exports, image metadata and frozen ZIP members; complete staged blobs inspected before push",
+  "pdf_count": 3,
+  "pdf_pages": 40,
+  "pdf_attachments": 0,
+  "unique_nonpage_images_visually_reviewed": 9,
+  "rendered_document_pages": "All 40 previously visually reviewed; exact page hashes reproduced by clean rebuild after relocation",
+  "candidate_disposition": "Technical projection/geometry wording and exclusion descriptions only; no secret, private absolute path or price data found",
+  "staged_blob_gate": "Complete final Git index and recursive archive members inspected before commit/push",
+  "unpushed_predecessor_commits": 0,
+  "excluded": "Superseded releases, old ESP32/PCB work, seller originals and commercial sourcing, browser profiles, tools, executables and temporary files",
+  "recovery": "1,354 original file hashes matched external backup; Git bundle verified; published history preserved",
+  "physical_acceptance": "Open"
+}

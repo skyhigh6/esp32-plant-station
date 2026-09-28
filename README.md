@@ -1,43 +1,47 @@
-# ESP32 Plant Station
+# Plant Station — R17
 
-A compact, manual-dose ESP32 plant-watering prototype with a printable enclosure, removable planting compartment and lower pump sump.
+Arduino Uno plant station prototype. Current design **R17**, controlled document issue **D02**, firmware **Uno UI v6**. Physical fit and electrical acceptance remain open.
 
-**Current mechanical revision: R14 Uno mounts, 15 September 2026.** R13 integrated tower/sump revised with four asymmetric Uno R3 standoffs. The remaining enclosure parts are R13. Physical board, fastener and USB cable fit remain open.
+## Start here
 
-![R14 tower](mechanical/concept_rev14_uno/preview.png)
+- [Project control and acceptance gates](PROJECT_CONTROL.md)
+- [Illustrated assembly manual — PLANT-AM-001](docs/documents/AM_R17/PLANT-AM-001_R17_D02.pdf)
+- [Design review — PLANT-TR-001](docs/documents/TR_R17/PLANT-TR-001_R17_D02.pdf)
+- [Test and acceptance sheets — PLANT-TS-001](docs/documents/TS_R17/PLANT-TS-001_R17_D02.pdf)
+- [Complete R17 download](releases/R17/Plant_Station_R17_D02.zip)
+- [Document index](docs/START_HERE.html) and [operator wiring view](docs/operator_view.html) — download and open locally
 
-## Downloads and revision records
+## Repository structure
 
-- [Complete R14 mechanical review package](Plant_Station_R14_Uno_Review.zip).
-- [R14 configuration and source](mechanical/concept_rev14_uno/README.md).
-- [Replacement tower STL](mechanical/concept_rev14_uno/stl/tower_sump_body_uno.stl), [STEP](mechanical/concept_rev14_uno/step/tower_sump_body_uno.step), [fit coupon](mechanical/concept_rev14_uno/stl/uno_mount_fit_coupon.stl).
-- [Assembly supplement](mechanical/concept_rev14_uno/ASSEMBLY.md), [change and verification record](mechanical/concept_rev14_uno/REVISION_CHECKS.md), [acceptance actions](mechanical/concept_rev14_uno/ACCEPTANCE.md).
-- [Retained R13 parts and assembly guidance](mechanical/concept_rev13/README.md). Its carrier mounting instructions are superseded by R14; its electronics guidance is historical for the Uno configuration.
+| Folder | Contents |
+|---|---|
+| `technical/cad/` | Current R17 generator, parameters, frozen STEP input and independent checker |
+| `technical/print/` | 4 main parts, 11 fit trials, 8 knob choices; matching STL and STEP, with source hashes |
+| `firmware/` | Current Uno sketch, adjacent headers, host assertions and build instructions |
+| `docs/` | Three illustrated PDFs, editable JSON/Markdown, assets, page renders and document controls |
+| `references/` | Supplied USB dimension image and illustration provenance |
+| `verification/` | CAD/document results, selected predecessor source basis and release checks |
+| `releases/R17/` | Frozen complete package and SHA-256 manifest |
+| `scripts/` | Portable document rebuild, export verification and packaging tools |
 
-Two new meshes and STEP exports checked. No changed volume outside the mount regions; nominal board envelope clear. Independent mesh checks exit 0. CAD build reports PASS then exits 1 during shutdown; cause unresolved. Print the coupon before the tower. Slicing, physical fit, USB access, strength, leaks and commissioning remain open.
+The tower replaces the broad USB cable opening with an estimated **9.8 × 4.2 mm** USB-C aperture, **Ø2.8 mm** fixing pilots at **15.2 mm** pitch, and an adjacent **Ø10 mm** DC-extension hole. Print the port coupon first. USB dimensions are authorised estimates; actual fit has not been tested.
 
-## Firmware
+Use the R17 tower, retained R16 lid carrying R15 geometry, retained R13 fascia/planter and **one** suitable knob. Revision suffixes identify part provenance. Do not print all alternatives.
 
-[Source and build instructions](firmware/README.md) implement one bounded manual timed dose per WATER press. Proposed STOP and LAMP TEST cancel the dose. Moisture is advisory; no automatic watering is implemented.
+## Traceability
 
-The pump output is disabled by default. The firmware uses an explicitly selected classic ESP32 compile-review profile, not an approved pin map for the actual SunFounder camera carrier. LCD text output is not implemented, and the probe path still needs I2C initialisation. Camera functionality, battery charging and wet operation are not validated.
+`PROJECT_CONTROL.md` is the single current baseline pointer. The D02 manuals carry revision history, effective-page lists and source-backed change bars. The [print manifest](technical/print/manifest.json) identifies every selected export. The [evidence register](docs/control/evidence_register.json) identifies the documentary source basis; snapshot records are historical evidence, not current instructions.
 
-Review compilation against ESP32 Arduino core 2.0.17 used 272,957 bytes flash and 21,944 bytes global RAM. No hardware upload was performed for R5.
+Superseded release folders and archives have been removed from the current branch tree. Git history retains published predecessors; a verified external local backup preserves unpublished work. Repository visibility and existing history are unchanged.
 
-## Rebuilding the artefacts
+## Rebuild and verify
 
-The CAD source uses Python, CadQuery 2.8, trimesh, NumPy and VTK. The PDF source uses ReportLab. Install dependencies in an isolated environment; local bundled runtimes are not included in this repository.
+See [document instructions](docs/README.md), [CAD instructions](technical/cad/README.md), [firmware instructions](firmware/README.md) and [verification scope](verification/README.md).
 
 ```powershell
-python mechanical/concept_rev14_uno/build.py
-python mechanical/concept_rev14_uno/check_exports.py
-python scripts/package_r14_uno.py
+python scripts/rebuild_documents.py
+python scripts/verify_release.py
+python scripts/package_release.py
 ```
 
-Read the firmware README and PDF before compiling or attempting an upload. Confirm the exact board revision and GPIO reservations first; even a pump-disabled build configures other pins as outputs.
-
-## Project records
-
-[Requirements and unknowns](docs/PROJECT_CONTROL.md) and [electronics notes](docs/ELECTRONICS.md) retain the engineering context. The R13 kit guide supersedes the old R8 mechanical part and fastener quantities; [R8 electronics BOM](docs/BOM_R8.md) remains provisional background. Dimensional reference images are included with attribution; local build tools are excluded.
-
-Next steps: measure the actual components, validate the carrier-specific pin map, print fit trials, review slicing, and complete dry electrical and controlled leak/flow tests.
+Requires Python 3.12 and the libraries listed in `requirements-docs.txt` and `requirements-cad.txt`. The CAD runtime has a recorded shutdown exit-code anomaly; the independent export checker remains a separate gate. No physical, powered, wet or printer acceptance is implied by publication.

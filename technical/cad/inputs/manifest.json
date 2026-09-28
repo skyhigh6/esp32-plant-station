@@ -1,0 +1,8 @@
+[
+  {
+    "file": "technical/cad/inputs/body_before_ports.step",
+    "source": "mechanical/concept_rev16_uno_relay/step/tower_sump_body_uno_relay_r16.step",
+    "sha256": "ba5be10d644155aea8b3ef027ae3a2fb3c745b3b655c923eaf497619b5a55817",
+    "purpose": "Frozen R16 body input carrying retained R15 geometry; required to rebuild R17."
+  }
+]

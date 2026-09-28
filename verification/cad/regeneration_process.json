@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-28",
+  "build_source": "technical/cad/build.py",
+  "input": "technical/cad/inputs/body_before_ports.step",
+  "cad_runtime": "CadQuery 2.8.0",
+  "builder_printed_pass": true,
+  "builder_process_exit": -1073741819,
+  "builder_windows_status": "0xC0000005",
+  "clean_process_exit": false,
+  "independent_regenerated_mesh_checker_exit": 0,
+  "released_stl_hashes_unchanged": true,
+  "canonical_exports_preserved": true,
+  "disposition": "Export generation and independent sections passed, but CAD process terminated abnormally. Retain shutdown anomaly as open; no clean build claim."
+}

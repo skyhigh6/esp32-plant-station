@@ -1,6 +1,9 @@
+# Preserve released file hashes, including frozen evidence and editable sources.
+* -text whitespace=cr-at-eol
+verification/source_basis/** whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 *.pdf binary
 *.png binary
 *.jpg binary
 *.stl binary
+*.step binary
 *.zip binary
-*.step -text
