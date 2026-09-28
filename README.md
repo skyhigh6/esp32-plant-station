@@ -16,7 +16,7 @@ Arduino Uno plant station prototype. Current design **R17**, controlled document
 | Folder | Contents |
 |---|---|
 | `technical/cad/` | Current R17 generator, parameters, frozen STEP input and independent checker |
-| `technical/print/` | 4 main parts, 11 fit trials, 8 knob choices; matching STL and STEP, with source hashes |
+| `technical/print/` | 4 main parts, 11 fit trials, 8 knob choices; matching STL and STEP, source hashes, four-plate layout and four operator slicer exports |
 | `firmware/` | Current Uno sketch, adjacent headers, host assertions and build instructions |
 | `docs/` | Three illustrated PDFs, editable JSON/Markdown, assets, page renders and document controls |
 | `references/` | Supplied USB dimension image and illustration provenance |
@@ -27,6 +27,10 @@ Arduino Uno plant station prototype. Current design **R17**, controlled document
 The tower replaces the broad USB cable opening with an estimated **9.8 × 4.2 mm** USB-C aperture, **Ø2.8 mm** fixing pilots at **15.2 mm** pitch, and an adjacent **Ø10 mm** DC-extension hole. Print the port coupon first. USB dimensions are authorised estimates; actual fit has not been tested.
 
 Use the R17 tower, retained R16 lid carrying R15 geometry, retained R13 fascia/planter and **one** suitable knob. Revision suffixes identify part provenance. Do not print all alternatives.
+
+The [four-plate Bambu Studio layout](technical/print/plate_layout/r17_plate_layout.3mf) contains the four main models. Its component geometry matches the released STL files; print settings and physical results remain unvalidated. Financial fields and an account identifier were removed from the publication copy; the original is retained locally.
+
+The [operator slicer exports](technical/print/slicer_exports/README.md) contain four separately exported printer files. Their executable commands are preserved, with source/publication hashes and metadata changes recorded. Their inclusion records the supplied files; it does not approve their settings or physical operation.
 
 ## Traceability
 

@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-28",
+  "status": "Received operator exports; physical acceptance open",
+  "originals": "Unmodified originals retained in external local archive",
+  "records": [
+    {
+      "source_filename": "Tower R17.gcode.3mf",
+      "original_sha256": "cb65d8778b4391914af9e077c755889f5a9acdceeb9b89b2329ee8c0b98baf21",
+      "file": "technical/print/slicer_exports/tower_r17.gcode.3mf",
+      "sha256": "0c86ebab5877d83d6d8f27c3847707de56c8b22b09df0b7244baf7be4a391f67",
+      "members": 35,
+      "gcode_member": "Metadata/plate_1.gcode",
+      "original_gcode_sha256": "591f72b6ee206da67dfb926e9f38dab071d63a723253e9ff34b8958a6de149e4",
+      "published_gcode_sha256": "863bae9f4680014c4f0c6e6ccd545c3e951539c5644fab50d9a11c93c5808a77",
+      "executable_commands_unchanged": true,
+      "gcode_md5_updated_and_verified": true,
+      "archive_crc_and_all_members_verified": true,
+      "changed_members": [
+        "3D/3dmodel.model",
+        "Metadata/plate_1.gcode",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/project_settings.config"
+      ],
+      "publication_transform": "Remove account identifier and filament-price metadata/comment; update corresponding MD5 only.",
+      "settings_status": "Operator-supplied Bambu Studio X1 Carbon export; no machine execution or manufacturing validation performed."
+    },
+    {
+      "source_filename": "Planter R17.gcode.3mf",
+      "original_sha256": "5f7415930e2ad170ad847fdb15ed68acd8014995de4fd294c1e8164c1402106a",
+      "file": "technical/print/slicer_exports/planter_r17.gcode.3mf",
+      "sha256": "b54473a0a5f3c6dec6e48251de6392ce2b504ab5833128ca71a5cd1ff98a61aa",
+      "members": 35,
+      "gcode_member": "Metadata/plate_2.gcode",
+      "original_gcode_sha256": "4c4e166c5094659176256e0563306f783267d9ff85f32a9eed9814dcd424e57f",
+      "published_gcode_sha256": "97ff66a077b38e8a6cda5fb16ad1a4d7151e864047fa61712063f919f6de9726",
+      "executable_commands_unchanged": true,
+      "gcode_md5_updated_and_verified": true,
+      "archive_crc_and_all_members_verified": true,
+      "changed_members": [
+        "3D/3dmodel.model",
+        "Metadata/plate_2.gcode",
+        "Metadata/plate_2.gcode.md5",
+        "Metadata/project_settings.config"
+      ],
+      "publication_transform": "Remove account identifier and filament-price metadata/comment; update corresponding MD5 only.",
+      "settings_status": "Operator-supplied Bambu Studio X1 Carbon export; no machine execution or manufacturing validation performed."
+    },
+    {
+      "source_filename": "Lid R17.gcode.3mf",
+      "original_sha256": "ad9958d52800b5c973a601cc248033777a07ce66a2a69589f74600180ebc4475",
+      "file": "technical/print/slicer_exports/lid_r17.gcode.3mf",
+      "sha256": "7deb854f74c61607375da500f326e3d88153997dfe1b9ce393acb6dde45f5859",
+      "members": 35,
+      "gcode_member": "Metadata/plate_3.gcode",
+      "original_gcode_sha256": "7eb869b906a939b5fe576e9813c1e020c82205296d6a6351f78973e81c399bc1",
+      "published_gcode_sha256": "c3ae12de3d153c7d087f28aee42172c1453d1aa789e405ee42190df31358d0b8",
+      "executable_commands_unchanged": true,
+      "gcode_md5_updated_and_verified": true,
+      "archive_crc_and_all_members_verified": true,
+      "changed_members": [
+        "3D/3dmodel.model",
+        "Metadata/plate_3.gcode",
+        "Metadata/plate_3.gcode.md5",
+        "Metadata/project_settings.config"
+      ],
+      "publication_transform": "Remove account identifier and filament-price metadata/comment; update corresponding MD5 only.",
+      "settings_status": "Operator-supplied Bambu Studio X1 Carbon export; no machine execution or manufacturing validation performed."
+    },
+    {
+      "source_filename": "front panel R17.gcode.3mf",
+      "original_sha256": "72ec590ad6ad65e19be5813954b509a7018841627cf6b14a61fcfef19fb7d0f3",
+      "file": "technical/print/slicer_exports/fascia_r17.gcode.3mf",
+      "sha256": "7397729a145704aba971fe08ad33855e1530445fbf21d0f8e46b7118900ce3b0",
+      "members": 35,
+      "gcode_member": "Metadata/plate_4.gcode",
+      "original_gcode_sha256": "0cfddf4c5c007a4b17295a6e75f201d89e53058e4e2a994e36f8cffea88f68b0",
+      "published_gcode_sha256": "8c89dd80ee488acc912787c496a739d42d962b3cfc107e4529393131b5729f51",
+      "executable_commands_unchanged": true,
+      "gcode_md5_updated_and_verified": true,
+      "archive_crc_and_all_members_verified": true,
+      "changed_members": [
+        "3D/3dmodel.model",
+        "Metadata/plate_4.gcode",
+        "Metadata/plate_4.gcode.md5",
+        "Metadata/project_settings.config"
+      ],
+      "publication_transform": "Remove account identifier and filament-price metadata/comment; update corresponding MD5 only.",
+      "settings_status": "Operator-supplied Bambu Studio X1 Carbon export; no machine execution or manufacturing validation performed."
+    }
+  ]
+}

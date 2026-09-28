@@ -8,6 +8,8 @@
 | `REORGANISATION.json` | Scope, pre-cleanup baseline, publication transforms and exclusions |
 | `release_checks.json` | Current print/input/firmware integrity and export check results |
 | `firmware_host_tests.json` | Actual host assertion execution for this release |
+| `plate_layout.json` | User-created 3MF source/publication hashes, metadata removal and comparison to all four current main models |
+| `slicer_exports.json` | Four operator-supplied printer files; archive hashes, price/account metadata removal, executable-command preservation and G-code MD5 checks |
 | `publication_review.json` | Outgoing publication-surface audit |
 
 Snapshot path names identify their original configuration. Old links and rebuild commands in those records are historical; use the root README and PROJECT_CONTROL for current instructions. Some publication copies convert Windows-1252 text to UTF-8, remove private absolute paths and pin old GitHub links. The evidence register preserves original and publication hashes with the transformation record.

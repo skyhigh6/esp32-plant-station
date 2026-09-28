@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-28",
+  "source": "User-created all plates r17.3mf added during publication",
+  "original_sha256": "96d5db0985b164a80e35ee0ac665b009a90d08a87804dd0944bac60082cb02ad",
+  "published_file": "technical/print/plate_layout/r17_plate_layout.3mf",
+  "published_sha256": "e6fc11e80708da4ea7c5d34030e66ae2a3d438bf6985524a4290dff3725e798c",
+  "members": 37,
+  "crc_pass": true,
+  "publication_transforms": [
+    {
+      "member": "3D/3dmodel.model",
+      "removed": "DesignerUserId account identifier"
+    },
+    {
+      "member": "Metadata/project_settings.config",
+      "removed": "filament_cost financial fields"
+    }
+  ],
+  "geometry_checks": [
+    {
+      "3mf_part": "planter_sage.stl",
+      "canonical_stl": "technical/print/main_parts/stl/planter_sage.stl",
+      "faces": 4284,
+      "max_bidirectional_vertex_error_mm": 1.9523225718712083e-06,
+      "geometry_matches_within_0p0002_mm": true
+    },
+    {
+      "3mf_part": "fascia_charcoal.stl",
+      "canonical_stl": "technical/print/main_parts/stl/fascia_charcoal.stl",
+      "faces": 14720,
+      "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+      "geometry_matches_within_0p0002_mm": true
+    },
+    {
+      "3mf_part": "tower_sump_body_uno_ports_r17.stl",
+      "canonical_stl": "technical/print/main_parts/stl/tower_sump_body_uno_ports_r17.stl",
+      "faces": 81676,
+      "max_bidirectional_vertex_error_mm": 5.787242873431575e-06,
+      "geometry_matches_within_0p0002_mm": true
+    },
+    {
+      "3mf_part": "top_cover_flush_r15.stl",
+      "canonical_stl": "technical/print/main_parts/stl/top_cover_flush_r16.stl",
+      "faces": 4572,
+      "max_bidirectional_vertex_error_mm": 2.6019094384356373e-06,
+      "geometry_matches_within_0p0002_mm": true
+    }
+  ],
+  "print_settings": "User-supplied Bambu Studio X1 Carbon four-plate layout; settings preserved except financial fields. Not validated for manufacture.",
+  "toolpaths": "No G-code members present; plate metadata alone does not prove current successful slicing or printing.",
+  "original_recovery": "Unmodified original retained in external local archive."
+}

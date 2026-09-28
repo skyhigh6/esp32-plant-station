@@ -8,12 +8,14 @@
   "pdf_count": 3,
   "pdf_pages": 40,
   "pdf_attachments": 0,
-  "unique_nonpage_images_visually_reviewed": 9,
+  "unique_nonpage_images_visually_reviewed": 29,
   "rendered_document_pages": "All 40 previously visually reviewed; exact page hashes reproduced by clean rebuild after relocation",
-  "candidate_disposition": "Technical projection/geometry wording and exclusion descriptions only; no secret, private absolute path or price data found",
+  "candidate_disposition": "Technical projection/geometry wording and descriptions of removed or excluded price fields only; no secrets, private absolute paths, retained account identifiers or actual price data found",
   "staged_blob_gate": "Complete final Git index and recursive archive members inspected before commit/push",
   "unpushed_predecessor_commits": 0,
   "excluded": "Superseded releases, old ESP32/PCB work, seller originals and commercial sourcing, browser profiles, tools, executables and temporary files",
   "recovery": "1,354 original file hashes matched external backup; Git bundle verified; published history preserved",
-  "physical_acceptance": "Open"
+  "physical_acceptance": "Open",
+  "plate_layout": "Four plate thumbnails reviewed; 37 nested members inspected; geometry matches all four main models; account identifier and filament prices removed from publication copy; original preserved locally",
+  "slicer_exports": "Four received operator exports inspected recursively; account identifiers and financial metadata/comments removed in publication copies; all executable commands unchanged and G-code MD5 verified; originals preserved locally"
 }

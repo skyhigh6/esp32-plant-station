@@ -12,6 +12,8 @@
 | Firmware | `firmware/arduino/PlantUno/`; UI v6 source preserved unchanged |
 | Geometry parameters | `technical/cad/parameters.json`; mm; x right, y rear, z up |
 | Manufacture exports | `technical/print/manifest.json`; four main parts plus one chosen knob |
+| User plate layout | `technical/print/plate_layout/r17_plate_layout.3mf`; source/published hashes and geometry comparison in `verification/plate_layout.json`; settings unvalidated |
+| Operator slicer exports | `technical/print/slicer_exports/`; four supplied printer files; original/publication hashes, comment-only toolpath change and MD5 checks in `verification/slicer_exports.json`; no machine execution performed |
 | Documentary lineage | `docs/control/`; selected source basis under `verification/source_basis/` |
 | Release integrity | `releases/R17/manifest.json` and `SHA256SUMS.txt` |
 

@@ -5,5 +5,7 @@
 - `main_parts/`: R17 integrated body, R16 lid with R15 geometry, R13 fascia and R13 planter.
 - `fit_trials/`: 11 representative port, screw/boss, relay, lid, pump-route and control-fit trials. Print relevant trials before the full body.
 - `knob_options/`: eight bore choices; select one using the actual shaft and fit trial.
+- `plate_layout/`: user-supplied Bambu Studio four-plate project for the main models. Its published hash and component geometry comparison are in `../../verification/plate_layout.json`; settings are not manufacturing approval.
+- `slicer_exports/`: four operator-supplied sliced printer files; executable commands unchanged, publication metadata and checksums controlled in `../../verification/slicer_exports.json`. Physical operation remains untested.
 
 Trial outcomes remain open. The port coupon has the same estimated USB aperture/pilots and user-requested Ø10 mm DC opening as the current tower. See the assembly manual and test sheets for selection, print orientation and acceptance criteria.

@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -36,6 +37,28 @@ def main() -> None:
             preserved_firmware += 1
     if preserved_firmware != 3:
         raise AssertionError('Expected three preserved Uno source files')
+    layout = json.loads((ROOT / 'verification/plate_layout.json').read_text())
+    layout_file = contained(layout['published_file'])
+    if digest(layout_file) != layout['published_sha256']:
+        raise AssertionError('Controlled 3MF layout hash changed')
+    with zipfile.ZipFile(layout_file) as archive:
+        if archive.testzip() is not None or len(archive.namelist()) != layout['members']:
+            raise AssertionError('3MF layout CRC/membership failure')
+    slicer = json.loads((ROOT / 'verification/slicer_exports.json').read_text())['records']
+    if len(slicer) != 4:
+        raise AssertionError('Expected four controlled operator slicer exports')
+    for row in slicer:
+        path = contained(row['file'])
+        if digest(path) != row['sha256']:
+            raise AssertionError(f'Slicer export hash changed: {row["file"]}')
+        with zipfile.ZipFile(path) as archive:
+            if archive.testzip() is not None or len(archive.namelist()) != row['members']:
+                raise AssertionError(f'Slicer export CRC/membership failure: {row["file"]}')
+            gcode = archive.read(row['gcode_member'])
+            if hashlib.sha256(gcode).hexdigest() != row['published_gcode_sha256']:
+                raise AssertionError('Stored toolpath SHA-256 mismatch')
+            if hashlib.md5(gcode).hexdigest().upper().encode() != archive.read(row['gcode_member'] + '.md5'):
+                raise AssertionError('Stored toolpath MD5 mismatch')
     for command in ([sys.executable, str(ROOT / 'technical/cad/check_exports.py')],
                     [sys.executable, str(ROOT / 'docs/tooling/validate_set.py')]):
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
@@ -45,6 +68,8 @@ def main() -> None:
     report = {'date':'2026-09-28', 'status':'PASS', 'print_export_hashes':len(prints),
               'frozen_cad_input_hashes':len(inputs), 'source_basis_hashes':len(evidence),
               'current_firmware_files_preserved':preserved_firmware, 'independent_mesh_checker_exit':0,
+              'plate_layout_hash_crc_membership':True,
+              'controlled_operator_slicer_exports':len(slicer),
               'pdf_validator_exit':0, 'engineering_scope':'No geometry, firmware or issued PDF content change',
               'physical_acceptance':'Open; no hardware or printer test performed'}
     (ROOT / 'verification/release_checks.json').write_text(json.dumps(report, indent=2) + '\n')

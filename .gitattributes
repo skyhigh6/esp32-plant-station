@@ -7,3 +7,4 @@ verification/source_basis/** whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 *.stl binary
 *.step binary
 *.zip binary
+*.3mf binary

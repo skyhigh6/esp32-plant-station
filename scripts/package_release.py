@@ -9,12 +9,16 @@ RELEASE = ROOT / 'releases/R17'
 FOLDERS = ('technical', 'firmware', 'docs', 'references', 'verification', 'scripts')
 ROOT_FILES = ('README.md', 'PROJECT_CONTROL.md', '.gitignore', '.gitattributes',
               'requirements-docs.txt', 'requirements-cad.txt')
-SUFFIXES = {'.md','.json','.py','.cpp','.ino','.h','.html','.png','.jpg','.stl','.step','.pdf'}
+SUFFIXES = {'.md','.json','.py','.cpp','.ino','.h','.html','.png','.jpg','.stl','.step','.pdf','.3mf'}
 
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 def main() -> None:
+    layout = json.loads((ROOT / 'verification/plate_layout.json').read_text())
+    slicer = json.loads((ROOT / 'verification/slicer_exports.json').read_text())['records']
+    approved_projects = {layout['published_file']} | {row['file'] for row in slicer}
+    approved_exports = {row['file'] for row in json.loads((ROOT / 'technical/print/manifest.json').read_text())}
     files = [ROOT / name for name in ROOT_FILES]
     for folder in FOLDERS:
         for path in (ROOT / folder).rglob('*'):
@@ -22,6 +26,11 @@ def main() -> None:
                 continue
             if path.suffix.lower() not in SUFFIXES:
                 raise ValueError(f'Unexpected publication type: {path.relative_to(ROOT)}')
+            relative = path.relative_to(ROOT).as_posix()
+            if path.suffix.lower() == '.3mf' and relative not in approved_projects:
+                raise ValueError(f'Unreviewed 3MF project; add controlled evidence first: {relative}')
+            if path.suffix.lower() in ('.stl','.step') and path.is_relative_to(ROOT / 'technical/print') and relative not in approved_exports:
+                raise ValueError(f'Uncontrolled print export: {relative}')
             files.append(path)
     manifest = {p.relative_to(ROOT).as_posix():digest(p.read_bytes()) for p in sorted(files)}
     RELEASE.mkdir(parents=True, exist_ok=True)
