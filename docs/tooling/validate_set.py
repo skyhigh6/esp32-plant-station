@@ -16,12 +16,21 @@ def main():
     for row in evidence:
         if hashlib.sha256((SET/row['snapshot']).read_bytes()).hexdigest()!=row['sha256']:
             raise AssertionError(f"Evidence hash changed: {row['source']}")
+    for row in json.loads((SET/'control/document_register.json').read_text()):
+        pdf=SET/row['file']
+        if hashlib.sha256(pdf.read_bytes()).hexdigest()!=row['sha256']:
+            raise AssertionError('Current document register PDF hash mismatch')
+        source=pdf.parent/'document.json'
+        if row.get('source_sha256') and hashlib.sha256(source.read_bytes()).hexdigest()!=row['source_sha256']:
+            raise AssertionError('Current document register editable-source hash mismatch')
+        with fitz.open(pdf) as current:
+            if len(current)!=row['pages']:raise AssertionError('Current document register page count mismatch')
     report={'documents':{},'source_hash_records':len(evidence),'checks':[]}
     for folder in sorted((SET/'documents').iterdir()):
         d=json.loads((folder/'document.json').read_text(encoding='utf-8'))
         placements=json.loads((folder/'placements.json').read_text())
         pdf_path=folder/placements['document']
-        expected=f"{d['document_id']}  |  DESIGN R17  |  D02"
+        expected=f"{d['document_id']}  |  DESIGN R{d['design_revision']}  |  {d['document_issue']}"
         with fitz.open(pdf_path) as pdf:
             pages=len(pdf)
             texts=[]
@@ -40,7 +49,7 @@ def main():
                 texts.append(text)
             front='\n'.join(texts[:placements['front_pages']])
             for p in range(1,pages+1):
-                if not re.search(rf'(?:^|\n){p}\s*\nD02\s*\n',front):
+                if not re.search(rf'(?:^|\n){p}\s*\n{d['document_issue']}\s*\n',front):
                     raise AssertionError(f'Missing effective-page row {folder.name} {p}')
             for si,sec in enumerate(d['sections'],1):
                 actual=placements['section_pages'][str(si)]
@@ -58,7 +67,7 @@ def main():
                 'AM_R17':['9.8 x 4.2','15.2','1,000-4,000','D10 is unconnected','3.5 V','Unassigned'],
                 'TR_R17':['R15','R16','9.998','exits 1','Unassigned'],
                 'TS_R17':['A17-01','A17-13','Not tested','Not yet defined','Unassigned'],
-            }[folder.name]
+            }.get(folder.name, {'AM':['9.8 x 4.2','15.2','1,000-4,000','integrated','Unassigned'], 'TR':['R18','fascia','pump','Unassigned'], 'TS':['A17-01','A17-13','A18-','Not tested','Unassigned']}[folder.name.split('_')[0]])
             for term in required:
                 if term not in body:raise AssertionError(f'Missing key content {folder.name}: {term}')
             report['documents'][folder.name]={'pdf':pdf_path.name,'pages':pages,

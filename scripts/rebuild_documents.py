@@ -15,13 +15,14 @@ def digest(path: Path) -> str:
 
 def main() -> None:
     outcomes = {}
-    with tempfile.TemporaryDirectory(prefix='plant-r17-document-rebuild-') as temp:
+    with tempfile.TemporaryDirectory(prefix='plant-current-document-rebuild-') as temp:
         fresh = Path(temp) / 'docs'
         (fresh / 'control').mkdir(parents=True)
         (fresh / 'tooling').mkdir()
         shutil.copy2(DOCS / 'control/change_matrix.json', fresh / 'control/change_matrix.json')
         shutil.copy2(DOCS / 'tooling/build_document.py', fresh / 'tooling/build_document.py')
-        for key in ('AM_R17', 'TR_R17', 'TS_R17'):
+        for record in json.loads((DOCS / 'control/document_register.json').read_text()):
+            key = Path(record['file']).parent.name
             original = DOCS / 'documents' / key
             target = fresh / 'documents' / key
             shutil.copytree(original / 'assets', target / 'assets')

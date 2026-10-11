@@ -1,0 +1,9 @@
+{
+  "source_hash_recheck_unchanged": true,
+  "mesh_section_checker_first_attempt_exit": 1,
+  "mesh_section_checker_first_attempt_reason": "Unavailable shapely import; replaced by local NumPy point-to-polyline calculation, without installing dependencies.",
+  "mesh_section_checker_final_exit": 0,
+  "STEP_checker_exit": 1,
+  "STEP_checker_note": "Complete evidence saved and printed; then CAD runtime exited1 without traceback, not a clean process exit.",
+  "slicing_performed": false
+}

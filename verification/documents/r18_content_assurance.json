@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-11",
+  "scope": "Independent combined R18 AM/TR/TS document content and visual assurance; no source/PDF edits",
+  "result": "PASS within reviewed scope",
+  "documents": [
+    {
+      "document": "AM_R18",
+      "source": "docs/documents/AM_R18/document.json",
+      "source_sha256": "fdcb00f47ca6248f1b896ea099199273c4c7a6b8c05fe08a3529ad77fe1dbfdb",
+      "pdf": "docs/documents/AM_R18/PLANT-AM-001_R18_D03.pdf",
+      "pdf_sha256": "fdc330f02a0252c9a8afe04d3f4370c9eb2d917936b1e190312b5c1f6d9b9753",
+      "pages": 21,
+      "content_review": "Manual review of current JSON and affected rendered pages; PASS",
+      "contact_sheet_pages_viewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "full_pages_viewed": [
+        6,
+        10,
+        13,
+        15,
+        21
+      ],
+      "viewed_images": [
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-01.png",
+          "sha256": "b202042e8a8d95801a5e8b838325194558c15d5d6352b50cb7bc616fcde900c8"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-02.png",
+          "sha256": "5e7059e69167af76e5addc0cb055def2aed1947c35e1348d8c26c74b505f1836"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-03.png",
+          "sha256": "0b742dc86c99a11239910d03ec7daf4687900ad71046b68b03c3fc33c6331d7f"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-04.png",
+          "sha256": "7c0f317290290f2956b0275f7f311950867504c3b3e9ccc1977ef6a002486396"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-05.png",
+          "sha256": "f41ad20189b8180158844d7d5f182f35614c1b29c6d866989650a0af106b142b"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/contact-06.png",
+          "sha256": "3ddbb658317e0317867e6208bb8ac15288a446f98bd72c0d631ef38110fbfcdb"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/page-006.png",
+          "sha256": "e001f38ec1f3d00f627f337d164a988d06d65d1569eb4e60e3dec3b0e69b9ce7"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/page-010.png",
+          "sha256": "815404b63dc96cf50996a80712eff2621df925c879db0df342a96f41c6280524"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/page-013.png",
+          "sha256": "7169d11f25fa90116b85baaec93f1c691165abf8797ed46fee253758a985e1d6"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/page-015.png",
+          "sha256": "4bbc5217f0fff6d27f0f316d2f4e3a6f60ab035572cbda04fe65e89b39f84bb4"
+        },
+        {
+          "file": "docs/documents/AM_R18/rendered/page-021.png",
+          "sha256": "880465cf014118f0eb202147ef02d42daebd3846c1f6feddb5a9f4d24f244a41"
+        }
+      ],
+      "layout_result": "No substantive layout defect observed",
+      "formal_validation": "Root-owned validation.json: identity, LOEP, sections and bounds PASS; PDF hash matched in this audit"
+    },
+    {
+      "document": "TR_R18",
+      "source": "docs/documents/TR_R18/document.json",
+      "source_sha256": "0b225631ad7ed7e516e80adecbffe99a072e9772c9793bea5ebc2d7750b7d85e",
+      "pdf": "docs/documents/TR_R18/PLANT-TR-001_R18_D03.pdf",
+      "pdf_sha256": "1e7854ce8dabd0da68188aa806be7f4d7f9bc1a515a38b82039a60072d4a99d1",
+      "pages": 14,
+      "content_review": "Manual review of current JSON and affected rendered pages; PASS",
+      "contact_sheet_pages_viewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "full_pages_viewed": [
+        7,
+        11,
+        12
+      ],
+      "viewed_images": [
+        {
+          "file": "docs/documents/TR_R18/rendered/contact-01.png",
+          "sha256": "57a1fa98c8f771f90aa57b5db3aae490780727bbfd92f13b0501c4a44656fd43"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/contact-02.png",
+          "sha256": "d608d83826023c807c453093485ff1dbdb7b8b7f33227a695d98f53d97bb4fa3"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/contact-03.png",
+          "sha256": "51ed2d5be8274f16ec371365d34711b1c13c72a538fa5fff8352b2b2a28b9673"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/contact-04.png",
+          "sha256": "c08d6a1a9e7895d2e23436d0305c75e8c2da1c8a5723d9eb8422de6f5023fe2c"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/page-007.png",
+          "sha256": "584563e630a4fbef31fe0e3256d9db3d2e0455a735af03a164ef82a9648a7d60"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/page-011.png",
+          "sha256": "5370e131a9c4f736d9ec407210165e3b1bfbc8114f7d654770c3f22f2eec6deb"
+        },
+        {
+          "file": "docs/documents/TR_R18/rendered/page-012.png",
+          "sha256": "ef1f4484f2cace475e1e9ab31bbbbb7acb0e8a48438281a46868c6aa60b71768"
+        }
+      ],
+      "layout_result": "No substantive layout defect observed",
+      "formal_validation": "Root-owned validation.json: identity, LOEP, sections and bounds PASS; PDF hash matched in this audit"
+    },
+    {
+      "document": "TS_R18",
+      "source": "docs/documents/TS_R18/document.json",
+      "source_sha256": "340fc0baeb59e21566acd11919b525ae613cdf08386ecfb39ec06826ad03bf69",
+      "pdf": "docs/documents/TS_R18/PLANT-TS-001_R18_D03.pdf",
+      "pdf_sha256": "e34282d781beccfc53456fb4ba36bcdd7d0ffe366649201316b51c443e775c89",
+      "pages": 10,
+      "content_review": "Manual review of current JSON and affected rendered pages; PASS",
+      "contact_sheet_pages_viewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "full_pages_viewed": [
+        9,
+        10
+      ],
+      "viewed_images": [
+        {
+          "file": "docs/documents/TS_R18/rendered/contact-01.png",
+          "sha256": "15dff8b7b8a52a974eefad66daddde63db227cae2cc6485645e15ea8e120c9f6"
+        },
+        {
+          "file": "docs/documents/TS_R18/rendered/contact-02.png",
+          "sha256": "fbbcc1d819cc10acdac9add70ba74a9608045bc7c1196de0eb19ca626b92540a"
+        },
+        {
+          "file": "docs/documents/TS_R18/rendered/contact-03.png",
+          "sha256": "5400948f1e1df76ba80e97f8c05298ec195d5e05c0712dfffdf05755223c6be5"
+        },
+        {
+          "file": "docs/documents/TS_R18/rendered/page-009.png",
+          "sha256": "0ef2a53897598e7fd5e0db583cf1689839e8f88cde63789707b7a3b1a1ba2919"
+        },
+        {
+          "file": "docs/documents/TS_R18/rendered/page-010.png",
+          "sha256": "d605f16b27b04b52fe3e228caf61cff0761892524223ea4c4740ecce6b53afea"
+        }
+      ],
+      "layout_result": "No substantive layout defect observed",
+      "formal_validation": "Root-owned validation.json: identity, LOEP, sections and bounds PASS; PDF hash matched in this audit"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "current_file_selection",
+      "result": "PASS",
+      "evidence": "AM page 6 selects tower_open_pump_route_r18 and fascia_no_aux_apertures_r18 together with retained top_cover_flush_r16 and planter_sage; optional route_trial_r18 is a trial only."
+    },
+    {
+      "id": "historical_printer_files",
+      "result": "PASS",
+      "evidence": "AM page 6 and TR page 12 explicitly qualify R17 plate/sliced files as historical, with no accepted R18 slice or new physical print recorded."
+    },
+    {
+      "id": "integrated_button_lamps",
+      "result": "PASS",
+      "evidence": "AM pages 13/15 preserve all three illuminated buttons and their separate switch/lamp circuits: switches D2/D3/D4, lamps green D7, yellow D6, red D5. Current limiting and reported lead colours require verification."
+    },
+    {
+      "id": "obsolete_apertures_only",
+      "result": "PASS",
+      "evidence": "AM page 13 and TR page 7 describe only three standalone LED bores and one speaker bore filled through y1..4; rear collars and piezo seat retained. No separate LED or sounder is fitted; D10 unused."
+    },
+    {
+      "id": "reported_board_fit",
+      "result": "PASS",
+      "evidence": "TR page 11 and AM page 21 distinguish the 11 October user report from measured/screw/underside evidence. TS page 10 leaves A17-02/05 open with registration Reported only."
+    },
+    {
+      "id": "open_acceptance_actions",
+      "result": "PASS",
+      "evidence": "TS pages 9/10 retain all A17-01..13 and A18-01..04 open, with blank actual results. No owner, date, test measurement or closure is invented."
+    },
+    {
+      "id": "scope_and_unknowns",
+      "result": "PASS",
+      "evidence": "Source content retains protected geometry, source masks, hardware identity, fastener, current/rating, cable/bend/retention, material/process, leak/power and full assembly unknowns. CAD and slices are not physical acceptance."
+    },
+    {
+      "id": "runtime_and_slicer_limits",
+      "result": "PASS",
+      "evidence": "AM page 21 and TR pages 11/12 disclose CAD PASS followed by nonzero shutdown exits, comparative-only support estimates, ZFiller/preset/temperature warnings and anomalous timing metadata."
+    }
+  ],
+  "substantive_defects": [],
+  "visual_defects_observed": [],
+  "visual_coverage": {
+    "contact_sheet_pages": 45,
+    "individual_full_pages": 10
+  },
+  "limitations": [
+    "All current pages were viewed in contact sheets; only the listed ten full pages received individual image inspection.",
+    "Formal PDF page count/identity/LOEP/bounds results are root-owned and linked by current PDF hash, not rerun here.",
+    "Digital geometry and comparative slicer evidence do not establish actual hardware, lead, print, electrical, leak, strength or service acceptance.",
+    "A17 and A18 acceptance gates remain open."
+  ]
+}

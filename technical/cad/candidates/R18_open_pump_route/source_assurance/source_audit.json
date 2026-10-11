@@ -1,0 +1,2913 @@
+{
+  "audit_date": "2026-10-11",
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "trimesh_version": "5.1.0",
+  "units": "mm",
+  "files": [
+    {
+      "file": "technical/print/main_parts/stl/all plates r17.3mf",
+      "sha256": "c8343ca833e78734466df041dc11677183dbe5941f2b859ea60ff4f0b57a7792",
+      "archive_crc_error": null,
+      "member_count": 37,
+      "gcode_members": [],
+      "mesh_member_sha256": {
+        "3D/Objects/object_7.model": "e4a7fddfb46a8100d6f7087beb50a80ac53497e6a677f3a34c96912cf51f4c60",
+        "3D/Objects/object_2.model": "1c34237b498f207d9a1af3984015b3eeee069288798d6e3213208cf3fef812fb",
+        "3D/Objects/object_6.model": "06686e5973a4ddd74a4fbfb9d3e6295db0b355533895cd5ffc9d3582ea3d8854",
+        "3D/Objects/object_5.model": "aa73fbd775376a9efc1af02df23cf4dd7bdd21658ca3894a25fc42c07a1718bc"
+      },
+      "unit": "millimeter",
+      "application": "BambuStudio-02.05.00.66",
+      "creation_date": "2026-09-30",
+      "modification_date": "2026-09-30",
+      "settings": {
+        "printer_model": "Bambu Lab X1 Carbon",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "print_settings_id": "0.20mm Strength @BBL X1C",
+        "layer_height": "0.2",
+        "wall_loops": "6",
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "ABS",
+          "PLA"
+        ],
+        "enable_support": "1",
+        "support_type": "tree(auto)",
+        "support_on_build_plate_only": "0",
+        "support_threshold_angle": "30",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "support_interface_top_layers": "2",
+        "support_interface_bottom_layers": "2",
+        "brim_type": "outer_only",
+        "brim_width": "5"
+      },
+      "parts": [
+        {
+          "object_id": "6",
+          "part_id": "5",
+          "name": "planter_sage.stl",
+          "source_file": "planter_sage.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            154.0,
+            50.0,
+            85.5
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 435.2 127.99999 28.5",
+          "mesh_member": "3D/Objects/object_7.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2134,
+          "face_count": 4284,
+          "source_bounds_mm": [
+            [
+              102.0,
+              1.0,
+              57.0
+            ],
+            [
+              206.0,
+              99.0,
+              114.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              383.2,
+              78.99999,
+              0.0
+            ],
+            [
+              487.2,
+              176.99999,
+              57.0
+            ]
+          ],
+          "build_height_mm": 57.0,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/planter_sage.stl",
+            "sha256": "27c7700a2273c40ddf47e691e22efac1e67a9443e92908890fbadb31194b2f21",
+            "max_bidirectional_vertex_error_mm": 1.9523225718712083e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 4284,
+            "canonical_bounds_mm": [
+              [
+                102.0,
+                1.0,
+                57.0
+              ],
+              [
+                206.0,
+                99.0,
+                114.0
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "4",
+          "part_id": "3",
+          "name": "fascia_charcoal.stl",
+          "source_file": "fascia_charcoal.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            47.99999928474426,
+            6.5,
+            79.00000309944153
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 -3.814697265625e-06 0 0 0 1",
+          "build_transform": "1 0 0 0 2.22044605e-16 1 0 -1 2.22044605e-16 435.19999 -179.19999 5.5",
+          "mesh_member": "3D/Objects/object_6.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 -3.81469727e-06",
+          "vertex_count": 7328,
+          "face_count": 14720,
+          "source_bounds_mm": [
+            [
+              3.4000007847442646,
+              1.0,
+              3.40000459944153
+            ],
+            [
+              92.59999778474426,
+              12.0,
+              154.60000919944153
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              390.5999915,
+              -254.79999228530275,
+              -1.687538997430238e-14
+            ],
+            [
+              479.79998850000004,
+              -103.59998768530275,
+              11.00000000000001
+            ]
+          ],
+          "build_height_mm": 11.000000000000028,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/fascia_charcoal.stl",
+            "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+            "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 14720,
+            "canonical_bounds_mm": [
+              [
+                3.4000000953674316,
+                1.0,
+                3.4000000953674316
+              ],
+              [
+                92.5999984741211,
+                12.0,
+                154.60000610351562
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "2",
+          "part_id": "1",
+          "name": "tower_sump_body_uno_ports_r17.stl",
+          "source_file": "tower_sump_body_uno_ports_r17.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            103.5,
+            50.0,
+            79.0
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 127.99999 127.99999 79",
+          "mesh_member": "3D/Objects/object_5.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 40814,
+          "face_count": 81676,
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              207.0,
+              100.0,
+              158.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              24.499989999999997,
+              77.99999,
+              0.0
+            ],
+            [
+              231.49999,
+              177.99999,
+              158.0
+            ]
+          ],
+          "build_height_mm": 158.0,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/tower_sump_body_uno_ports_r17.stl",
+            "sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+            "max_bidirectional_vertex_error_mm": 5.787242873431575e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 81676,
+            "canonical_bounds_mm": [
+              [
+                -8.881784197001252e-16,
+                -8.881784197001252e-16,
+                -1.1102230246251565e-16
+              ],
+              [
+                207.0,
+                100.0,
+                158.0
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "8",
+          "part_id": "7",
+          "name": "top_cover_flush_r15.stl",
+          "source_file": "top_cover_flush_r15.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            48.0,
+            50.0,
+            160.75
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 127.99999 -179.19999 2.75",
+          "mesh_member": "3D/Objects/object_2.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2280,
+          "face_count": 4572,
+          "source_bounds_mm": [
+            [
+              -1.5,
+              0.0,
+              158.0
+            ],
+            [
+              97.5,
+              100.0,
+              163.5
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              78.49999,
+              -229.19999,
+              0.0
+            ],
+            [
+              177.49999,
+              -129.19999,
+              5.5
+            ]
+          ],
+          "build_height_mm": 5.5,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/top_cover_flush_r16.stl",
+            "sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+            "max_bidirectional_vertex_error_mm": 2.6019094384356373e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": false,
+            "canonical_faces": 4572,
+            "canonical_bounds_mm": [
+              [
+                -1.5,
+                -8.881784197001252e-16,
+                158.0
+              ],
+              [
+                97.5,
+                100.0,
+                163.5
+              ]
+            ]
+          }
+        }
+      ],
+      "plates": [
+        {
+          "metadata": {
+            "plater_id": "1",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_1.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_1.png",
+            "top_file": "Metadata/top_1.png",
+            "pick_file": "Metadata/pick_1.png"
+          },
+          "instances": [
+            {
+              "object_id": "2",
+              "instance_id": "0",
+              "identify_id": "234"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "2",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_2.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_2.png",
+            "top_file": "Metadata/top_2.png",
+            "pick_file": "Metadata/pick_2.png"
+          },
+          "instances": [
+            {
+              "object_id": "6",
+              "instance_id": "0",
+              "identify_id": "315"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "3",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_3.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_3.png",
+            "top_file": "Metadata/top_3.png",
+            "pick_file": "Metadata/pick_3.png"
+          },
+          "instances": [
+            {
+              "object_id": "8",
+              "instance_id": "0",
+              "identify_id": "109"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "4",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_4.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_4.png",
+            "top_file": "Metadata/top_4.png",
+            "pick_file": "Metadata/pick_4.png"
+          },
+          "instances": [
+            {
+              "object_id": "4",
+              "instance_id": "0",
+              "identify_id": "275"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "technical/print/main_parts/stl/fascia_charcoal.3mf",
+      "sha256": "8affac6f39286460068aaa49c8ff7c89dd5471ae7b13280b354badcfc6e41589",
+      "archive_crc_error": null,
+      "member_count": 69,
+      "gcode_members": [],
+      "mesh_member_sha256": {
+        "3D/Objects/object_29.model": "c44b2a6f09e7c89be1c6b1d8d0e5e8bb9b3cb28daff94452eb73ddbeee46b232",
+        "3D/Objects/object_9.model": "cad2239f2a8dca9da3d78255527f24316c5422cdc6d7712dd478acab13eca2ec",
+        "3D/Objects/object_3.model": "c44b2a6f09e7c89be1c6b1d8d0e5e8bb9b3cb28daff94452eb73ddbeee46b232",
+        "3D/Objects/object_8.model": "755bb31cc32ebc7d07e9729f16947acc711bf754c92ea577648348eb6ea4ec61",
+        "3D/Objects/object_2.model": "16e3b569db2c9a9c11269eaad56118a6819bf2ab85a88ddd6e3a464ec22ded8c",
+        "3D/Objects/object_4.model": "c44b2a6f09e7c89be1c6b1d8d0e5e8bb9b3cb28daff94452eb73ddbeee46b232",
+        "3D/Objects/object_6.model": "448e6f7989dd7741b022e7689b36e41e03b5733c7c7aa7c08d3c306090fdd8cd",
+        "3D/Objects/object_7.model": "96fca12566a3705a31e4ff8f6ae6017cbf14a2cbb4fe5500ae2d86c0388a7f28",
+        "3D/Objects/object_5.model": "0c25364a45bbf5da9716743de883a41a18c2dd8bd109ebd0312ac661117affc9",
+        "3D/Objects/object_24.model": "9ad01cc0bbcaa7f1fe921c0934981050bd38257b966f5c920d6114fa05557ad1",
+        "3D/Objects/object_10.model": "4f56753c6847385440ecf0ea864c75f269484a492e6a21b9716c40bf86639255",
+        "3D/Objects/object_28.model": "c44b2a6f09e7c89be1c6b1d8d0e5e8bb9b3cb28daff94452eb73ddbeee46b232",
+        "3D/Objects/object_1.model": "df903f8cc2f40c408a5be76189dd6ce5047cb134d0b1225b9c46073dfe46e2f6",
+        "3D/Objects/object_27.model": "c44b2a6f09e7c89be1c6b1d8d0e5e8bb9b3cb28daff94452eb73ddbeee46b232",
+        "3D/Objects/object_26.model": "15719a876236c046caf50e33f0f0870dda3970414335b8b0860d85e755d3aedf",
+        "3D/Objects/object_25.model": "d895fc516be37502c3cdd9fa6b412a48779f774189e41ab15c05f42ffd275e4b",
+        "3D/Objects/object_12.model": "a9b01b89d90e9c207f5f97d479bd60aaa6c2018caa608bb784403e906a17eaec",
+        "3D/Objects/object_11.model": "632e49d92fbfb115998e80ea0797f6a115d2a89a8ede9aa5608e4cf5204cddc1"
+      },
+      "unit": "millimeter",
+      "application": "BambuStudio-02.05.00.66",
+      "creation_date": "2026-10-07",
+      "modification_date": "2026-10-07",
+      "settings": {
+        "printer_model": "Bambu Lab X1 Carbon",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "print_settings_id": "custom 1 @BBL X1C - Copy",
+        "layer_height": "0.2",
+        "wall_loops": "6",
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "ABS",
+          "PLA"
+        ],
+        "enable_support": "1",
+        "support_type": "normal(auto)",
+        "support_on_build_plate_only": "1",
+        "support_threshold_angle": "30",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "support_interface_top_layers": "2",
+        "support_interface_bottom_layers": "2",
+        "brim_type": "outer_only",
+        "brim_width": "2"
+      },
+      "parts": [
+        {
+          "object_id": "2",
+          "part_id": "1",
+          "name": "Body1.stl",
+          "source_file": "Body1.stl",
+          "object_overrides": {
+            "support_on_build_plate_only": "0",
+            "support_type": "tree(auto)"
+          },
+          "source_offset_mm": [
+            0.0,
+            21.0,
+            89.80000305175781
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "-1 0 0 0 -1 0 0 0 1 129.99998 -184 87.8000031",
+          "mesh_member": "3D/Objects/object_1.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 5486,
+          "face_count": 11164,
+          "source_bounds_mm": [
+            [
+              -117.387154,
+              -82.0,
+              1.9999999517578146
+            ],
+            [
+              117.387154,
+              124.0,
+              177.6000061517578
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              12.612825999999998,
+              -287.0,
+              0.0
+            ],
+            [
+              247.387134,
+              -81.0,
+              175.6000062
+            ]
+          ],
+          "build_height_mm": 175.6000062
+        },
+        {
+          "object_id": "6",
+          "part_id": "5",
+          "name": "PRINT_base_bone_web_1.stl",
+          "source_file": "PRINT_base_bone_web_1.stl",
+          "object_overrides": {
+            "support_on_build_plate_only": "0",
+            "support_type": "tree(auto)"
+          },
+          "source_offset_mm": [
+            0.0,
+            0.0,
+            72.0
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 742.4 127.60001 72",
+          "mesh_member": "3D/Objects/object_25.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 4761,
+          "face_count": 9606,
+          "source_bounds_mm": [
+            [
+              -75.0,
+              -75.0,
+              0.0
+            ],
+            [
+              75.0,
+              75.0,
+              144.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              667.4,
+              52.60001,
+              0.0
+            ],
+            [
+              817.4,
+              202.60001,
+              144.0
+            ]
+          ],
+          "build_height_mm": 144.0
+        },
+        {
+          "object_id": "28",
+          "part_id": "27",
+          "name": "P11_C05_dipole_former.stl",
+          "source_file": "P11_C05_dipole_former.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            0.0,
+            0.0,
+            -22.19999998807907
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 -9.5367431640625e-07 0 0 0 1",
+          "build_transform": "1 0 0 0 2.22044605e-16 -1 0 1 2.22044605e-16 785.13097 -233.43406 4",
+          "mesh_member": "3D/Objects/object_6.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 -9.53674316e-07",
+          "vertex_count": 570,
+          "face_count": 1160,
+          "source_bounds_mm": [
+            [
+              -27.5,
+              -4.0,
+              -44.99999918807907
+            ],
+            [
+              27.5,
+              4.0,
+              0.6000011119209283
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              757.63097,
+              -256.2340601536743,
+              1.3322676295501878e-15
+            ],
+            [
+              812.63097,
+              -210.6340598536743,
+              8.000000000000004
+            ]
+          ],
+          "build_height_mm": 8.000000000000002
+        },
+        {
+          "object_id": "19",
+          "part_id": "18",
+          "name": "lid.stl",
+          "source_file": "lid.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            0.0,
+            16.0,
+            176.25
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 -1 0 0 0 -1 434.99999 -179.2 5.75",
+          "mesh_member": "3D/Objects/object_5.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 1440,
+          "face_count": 2920,
+          "source_bounds_mm": [
+            [
+              -81.9686737,
+              -50.0,
+              170.5
+            ],
+            [
+              81.9686737,
+              82.0,
+              182.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              353.0313163,
+              -245.2,
+              0.0
+            ],
+            [
+              516.9686637,
+              -113.19999999999999,
+              11.5
+            ]
+          ],
+          "build_height_mm": 11.5
+        },
+        {
+          "object_id": "14",
+          "part_id": "7",
+          "name": "PRINT_servo_upper_cap_D06_6.stl",
+          "source_file": "PRINT_servo_upper_cap_D06_6.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -67.6591796875,
+            0.0,
+            43.45000076293945
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 -1 0 0 0 -1 362.80449 202.66707 5",
+          "mesh_member": "3D/Objects/object_26.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 264,
+          "face_count": 536,
+          "source_bounds_mm": [
+            [
+              -73.8183593775,
+              -17.5,
+              38.45000076293945
+            ],
+            [
+              -61.4999999975,
+              17.5,
+              48.45000076293945
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              356.64531031,
+              185.16707,
+              0.0
+            ],
+            [
+              368.96366968999996,
+              220.16707,
+              10.0
+            ]
+          ],
+          "build_height_mm": 10.0
+        },
+        {
+          "object_id": "11",
+          "part_id": "7",
+          "name": "PRINT_servo_upper_cap_D06_6.stl",
+          "source_file": "PRINT_servo_upper_cap_D06_6.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -67.6591796875,
+            0.0,
+            43.45000076293945
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 -1 0 0 0 -1 516.3832 69.84331 5",
+          "mesh_member": "3D/Objects/object_26.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 264,
+          "face_count": 536,
+          "source_bounds_mm": [
+            [
+              -73.8183593775,
+              -17.5,
+              38.45000076293945
+            ],
+            [
+              -61.4999999975,
+              17.5,
+              48.45000076293945
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              510.22402031,
+              52.34331,
+              0.0
+            ],
+            [
+              522.54237969,
+              87.34331,
+              10.0
+            ]
+          ],
+          "build_height_mm": 10.0
+        },
+        {
+          "object_id": "31",
+          "part_id": "30",
+          "name": "P10_C05_folded_mast_roof_rest.stl",
+          "source_file": "P10_C05_folded_mast_roof_rest.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            0.0,
+            -18.0,
+            195.75
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 715.63098 -226.63406 5.75",
+          "mesh_member": "3D/Objects/object_7.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 358,
+          "face_count": 728,
+          "source_bounds_mm": [
+            [
+              -18.0,
+              -34.0,
+              190.0
+            ],
+            [
+              18.0,
+              -2.0,
+              201.5
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              697.63098,
+              -242.63406,
+              0.0
+            ],
+            [
+              733.63098,
+              -210.63406,
+              11.5
+            ]
+          ],
+          "build_height_mm": 11.5
+        },
+        {
+          "object_id": "16",
+          "part_id": "15",
+          "name": "top_cover_flush_r16.stl",
+          "source_file": "top_cover_flush_r16.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            48.0,
+            50.0,
+            160.75
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 77.60001 127.79999 2.75",
+          "mesh_member": "3D/Objects/object_12.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2280,
+          "face_count": 4572,
+          "source_bounds_mm": [
+            [
+              -1.5,
+              0.0,
+              158.0
+            ],
+            [
+              97.5,
+              100.0,
+              163.5
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              28.100009999999997,
+              77.79999,
+              0.0
+            ],
+            [
+              127.10001,
+              177.79998999999998,
+              5.5
+            ]
+          ],
+          "build_height_mm": 5.5,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/top_cover_flush_r16.stl",
+            "sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+            "max_bidirectional_vertex_error_mm": 2.6019094384356373e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 4572,
+            "canonical_bounds_mm": [
+              [
+                -1.5,
+                -8.881784197001252e-16,
+                158.0
+              ],
+              [
+                97.5,
+                100.0,
+                163.5
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "13",
+          "part_id": "12",
+          "name": "Satcom_C05_MECHANICAL_CANDIDATE_R02_P11_C05_esp mount.stl",
+          "source_file": "Satcom_C05_MECHANICAL_CANDIDATE_R02_P11_C05_esp mount.stl",
+          "object_overrides": {
+            "support_on_build_plate_only": "0",
+            "support_type": "tree(auto)"
+          },
+          "source_offset_mm": [
+            3.754344940185547,
+            0.0,
+            -2.991334915161133
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "-0.766044674 3.27343411e-06 -0.642787335 3.27343411e-06 1 1.19143192e-06 0.642787335 -1.19143192e-06 -0.766044674 769.7259 -126.89978 18.8368653",
+          "mesh_member": "3D/Objects/object_10.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 768,
+          "face_count": 1556,
+          "source_bounds_mm": [
+            [
+              -21.06622125981445,
+              -24.7338943,
+              -45.000001915161135
+            ],
+            [
+              28.574911140185545,
+              24.7338943,
+              39.01733208483887
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              741.7690269209452,
+              -151.63373400403756,
+              -2.5817104898351317e-08
+            ],
+            [
+              812.630964264947,
+              -102.16593412330396,
+              56.64456535370673
+            ]
+          ],
+          "build_height_mm": 56.64456537952384
+        },
+        {
+          "object_id": "23",
+          "part_id": "22",
+          "name": "P05_C05_leg_3.stl",
+          "source_file": "P05_C05_leg_3.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -1.5,
+            111.00738906860352,
+            92.48844909667969
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 -3.814697265625e-06 0 0 1 0 0 0 0 1",
+          "build_transform": "2.22044605e-16 0 -1 0 1 0 1 0 2.22044605e-16 129.09057 -439.1462 10.5",
+          "mesh_member": "3D/Objects/object_2.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 -3.81469727e-06 0",
+          "vertex_count": 376,
+          "face_count": 756,
+          "source_bounds_mm": [
+            [
+              -12.0,
+              99.48111346860351,
+              19.99999999667969
+            ],
+            [
+              9.0,
+              122.53367236860352,
+              164.97689819667968
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              56.60212090000002,
+              -450.6724794146973,
+              -1.5987211554602254e-14
+            ],
+            [
+              201.5790191,
+              -427.6199205146973,
+              21.000000000000014
+            ]
+          ],
+          "build_height_mm": 21.00000000000003
+        },
+        {
+          "object_id": "25",
+          "part_id": "24",
+          "name": "P07_C05_antenna_roof_mount.stl",
+          "source_file": "P07_C05_antenna_roof_mount.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            0.0,
+            40.0,
+            195.75
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 694.76902 -122.16593 5.75",
+          "mesh_member": "3D/Objects/object_9.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 480,
+          "face_count": 984,
+          "source_bounds_mm": [
+            [
+              -23.0,
+              20.0,
+              190.0
+            ],
+            [
+              23.0,
+              60.0,
+              201.5
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              671.76902,
+              -142.16593,
+              0.0
+            ],
+            [
+              717.76902,
+              -102.16593,
+              11.5
+            ]
+          ],
+          "build_height_mm": 11.5
+        },
+        {
+          "object_id": "26",
+          "part_id": "22",
+          "name": "P05_C05_leg_3.stl",
+          "source_file": "P05_C05_leg_3.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -1.5,
+            111.00738906860352,
+            92.48844909667969
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 -3.814697265625e-06 0 0 1 0 0 0 0 1",
+          "build_transform": "2.22044605e-16 0 -1 0 1 0 1 0 2.22044605e-16 129.09057 -486.02407 10.5",
+          "mesh_member": "3D/Objects/object_2.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 -3.81469727e-06 0",
+          "vertex_count": 376,
+          "face_count": 756,
+          "source_bounds_mm": [
+            [
+              -12.0,
+              99.48111346860351,
+              19.99999999667969
+            ],
+            [
+              9.0,
+              122.53367236860352,
+              164.97689819667968
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              56.60212090000002,
+              -497.5503494146973,
+              -1.5987211554602254e-14
+            ],
+            [
+              201.5790191,
+              -474.4977905146973,
+              21.000000000000014
+            ]
+          ],
+          "build_height_mm": 21.00000000000003
+        },
+        {
+          "object_id": "29",
+          "part_id": "22",
+          "name": "P05_C05_leg_3.stl",
+          "source_file": "P05_C05_leg_3.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -1.5,
+            111.00738906860352,
+            92.48844909667969
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 -3.814697265625e-06 0 0 1 0 0 0 0 1",
+          "build_transform": "2.22044605e-16 0 -1 0 1 0 1 0 2.22044605e-16 127.30942 -532.85701 10.5",
+          "mesh_member": "3D/Objects/object_2.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 -3.81469727e-06 0",
+          "vertex_count": 376,
+          "face_count": 756,
+          "source_bounds_mm": [
+            [
+              -12.0,
+              99.48111346860351,
+              19.99999999667969
+            ],
+            [
+              9.0,
+              122.53367236860352,
+              164.97689819667968
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              54.820970900000006,
+              -544.3832894146972,
+              -1.5987211554602254e-14
+            ],
+            [
+              199.7978691,
+              -521.3307305146972,
+              21.000000000000014
+            ]
+          ],
+          "build_height_mm": 21.00000000000003
+        },
+        {
+          "object_id": "21",
+          "part_id": "20",
+          "name": "P08_C05_folding_mast.stl",
+          "source_file": "P08_C05_folding_mast.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            9.0,
+            39.498029708862305,
+            242.00811004638672
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 1.9073486328125e-06 0 0 1 7.62939453125e-06 0 0 0 1",
+          "build_transform": "2.22044605e-16 0 1 0 1 0 -1 0 2.22044605e-16 762.13908 -181.13602 17",
+          "mesh_member": "3D/Objects/object_8.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 1.90734863e-06 7.62939453e-06",
+          "vertex_count": 527,
+          "face_count": 1078,
+          "source_bounds_mm": [
+            [
+              -8.0,
+              33.999998088862306,
+              191.5162124463867
+            ],
+            [
+              26.0,
+              44.99605750886231,
+              292.4999923463867
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              711.6471900706055,
+              -186.63404971265138,
+              -1.0658141036401503e-14
+            ],
+            [
+              812.6309699706055,
+              -175.63799029265138,
+              34.00000000000001
+            ]
+          ],
+          "build_height_mm": 34.000000000000014
+        },
+        {
+          "object_id": "17",
+          "part_id": "7",
+          "name": "PRINT_servo_upper_cap_D06_6.stl",
+          "source_file": "PRINT_servo_upper_cap_D06_6.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -67.6591796875,
+            0.0,
+            43.45000076293945
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 -1 0 0 0 -1 492.06486 51.34661 5",
+          "mesh_member": "3D/Objects/object_26.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 264,
+          "face_count": 536,
+          "source_bounds_mm": [
+            [
+              -73.8183593775,
+              -17.5,
+              38.45000076293945
+            ],
+            [
+              -61.4999999975,
+              17.5,
+              48.45000076293945
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              485.90568031000004,
+              33.84661,
+              0.0
+            ],
+            [
+              498.22403969,
+              68.84661,
+              10.0
+            ]
+          ],
+          "build_height_mm": 10.0
+        },
+        {
+          "object_id": "4",
+          "part_id": "3",
+          "name": "tvc1 top deck.stl",
+          "source_file": "tvc1 top deck.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            0.01678466796875,
+            0.0,
+            153.1999969482422
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 447.55917 146.76112 9.19999695",
+          "mesh_member": "3D/Objects/object_24.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2691,
+          "face_count": 5438,
+          "source_bounds_mm": [
+            [
+              -74.96643063203125,
+              -74.9916077,
+              143.99999999824217
+            ],
+            [
+              74.99999996796875,
+              74.9916077,
+              162.3999938982422
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              372.5759547,
+              71.7695123,
+              0.0
+            ],
+            [
+              522.5423853,
+              221.7527277,
+              18.3999939
+            ]
+          ],
+          "build_height_mm": 18.3999939
+        },
+        {
+          "object_id": "8",
+          "part_id": "7",
+          "name": "PRINT_servo_upper_cap_D06_6.stl",
+          "source_file": "PRINT_servo_upper_cap_D06_6.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            -67.6591796875,
+            0.0,
+            43.45000076293945
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 -1 0 0 0 -1 354.41678 155.66709 5",
+          "mesh_member": "3D/Objects/object_26.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 264,
+          "face_count": 536,
+          "source_bounds_mm": [
+            [
+              -73.8183593775,
+              -17.5,
+              38.45000076293945
+            ],
+            [
+              -61.4999999975,
+              17.5,
+              48.45000076293945
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              348.25760031000004,
+              138.16709,
+              0.0
+            ],
+            [
+              360.57595969,
+              173.16709,
+              10.0
+            ]
+          ],
+          "build_height_mm": 10.0
+        },
+        {
+          "object_id": "10",
+          "part_id": "9",
+          "name": "fascia_charcoal.stl",
+          "source_file": "fascia_charcoal.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            47.99999928474426,
+            6.5,
+            79.00000309944153
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 -3.814697265625e-06 0 0 0 1",
+          "build_transform": "1 0 0 0 2.22044605e-16 1 0 -1 2.22044605e-16 183.7 127.80001 5.5",
+          "mesh_member": "3D/Objects/object_11.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 -3.81469727e-06",
+          "vertex_count": 7328,
+          "face_count": 14720,
+          "source_bounds_mm": [
+            [
+              3.4000007847442646,
+              1.0,
+              3.40000459944153
+            ],
+            [
+              92.59999778474426,
+              12.0,
+              154.60000919944153
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              139.1000015,
+              52.200007714697264,
+              -1.687538997430238e-14
+            ],
+            [
+              228.2999985,
+              203.40001231469728,
+              11.00000000000001
+            ]
+          ],
+          "build_height_mm": 11.000000000000028,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/fascia_charcoal.stl",
+            "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+            "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 14720,
+            "canonical_bounds_mm": [
+              [
+                3.4000000953674316,
+                1.0,
+                3.4000000953674316
+              ],
+              [
+                92.5999984741211,
+                12.0,
+                154.60000610351562
+              ]
+            ]
+          }
+        }
+      ],
+      "plates": [
+        {
+          "metadata": {
+            "plater_id": "1",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_1.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_1.png",
+            "top_file": "Metadata/top_1.png",
+            "pick_file": "Metadata/pick_1.png"
+          },
+          "instances": [
+            {
+              "object_id": "10",
+              "instance_id": "0",
+              "identify_id": "496"
+            },
+            {
+              "object_id": "16",
+              "instance_id": "0",
+              "identify_id": "536"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "2",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_2.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_2.png",
+            "top_file": "Metadata/top_2.png",
+            "pick_file": "Metadata/pick_2.png"
+          },
+          "instances": [
+            {
+              "object_id": "4",
+              "instance_id": "0",
+              "identify_id": "959"
+            },
+            {
+              "object_id": "8",
+              "instance_id": "0",
+              "identify_id": "1039"
+            },
+            {
+              "object_id": "11",
+              "instance_id": "0",
+              "identify_id": "1075"
+            },
+            {
+              "object_id": "14",
+              "instance_id": "0",
+              "identify_id": "1097"
+            },
+            {
+              "object_id": "17",
+              "instance_id": "0",
+              "identify_id": "1119"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "3",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_3.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_3.png",
+            "top_file": "Metadata/top_3.png",
+            "pick_file": "Metadata/pick_3.png"
+          },
+          "instances": [
+            {
+              "object_id": "6",
+              "instance_id": "0",
+              "identify_id": "998"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "4",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_4.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_4.png",
+            "top_file": "Metadata/top_4.png",
+            "pick_file": "Metadata/pick_4.png"
+          },
+          "instances": [
+            {
+              "object_id": "2",
+              "instance_id": "0",
+              "identify_id": "91"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "5",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_5.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_5.png",
+            "top_file": "Metadata/top_5.png",
+            "pick_file": "Metadata/pick_5.png"
+          },
+          "instances": [
+            {
+              "object_id": "19",
+              "instance_id": "0",
+              "identify_id": "237"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "6",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_6.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_6.png",
+            "top_file": "Metadata/top_6.png",
+            "pick_file": "Metadata/pick_6.png"
+          },
+          "instances": [
+            {
+              "object_id": "13",
+              "instance_id": "0",
+              "identify_id": "452"
+            },
+            {
+              "object_id": "21",
+              "instance_id": "0",
+              "identify_id": "367"
+            },
+            {
+              "object_id": "25",
+              "instance_id": "0",
+              "identify_id": "407"
+            },
+            {
+              "object_id": "28",
+              "instance_id": "0",
+              "identify_id": "287"
+            },
+            {
+              "object_id": "31",
+              "instance_id": "0",
+              "identify_id": "327"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "7",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_7.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_7.png",
+            "top_file": "Metadata/top_7.png",
+            "pick_file": "Metadata/pick_7.png"
+          },
+          "instances": [
+            {
+              "object_id": "23",
+              "instance_id": "0",
+              "identify_id": "135"
+            },
+            {
+              "object_id": "26",
+              "instance_id": "0",
+              "identify_id": "174"
+            },
+            {
+              "object_id": "29",
+              "instance_id": "0",
+              "identify_id": "196"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "technical/print/plate_layout/r17_plate_layout.3mf",
+      "sha256": "e6fc11e80708da4ea7c5d34030e66ae2a3d438bf6985524a4290dff3725e798c",
+      "archive_crc_error": null,
+      "member_count": 37,
+      "gcode_members": [],
+      "mesh_member_sha256": {
+        "3D/Objects/object_7.model": "e4a7fddfb46a8100d6f7087beb50a80ac53497e6a677f3a34c96912cf51f4c60",
+        "3D/Objects/object_2.model": "1c34237b498f207d9a1af3984015b3eeee069288798d6e3213208cf3fef812fb",
+        "3D/Objects/object_6.model": "06686e5973a4ddd74a4fbfb9d3e6295db0b355533895cd5ffc9d3582ea3d8854",
+        "3D/Objects/object_5.model": "aa73fbd775376a9efc1af02df23cf4dd7bdd21658ca3894a25fc42c07a1718bc"
+      },
+      "unit": "millimeter",
+      "application": "BambuStudio-02.05.00.66",
+      "creation_date": "2026-09-28",
+      "modification_date": "2026-09-28",
+      "settings": {
+        "printer_model": "Bambu Lab X1 Carbon",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "print_settings_id": "0.20mm Strength @BBL X1C",
+        "layer_height": "0.2",
+        "wall_loops": "6",
+        "filament_type": [
+          "ABS",
+          "PLA",
+          "ABS",
+          "PLA"
+        ],
+        "enable_support": "1",
+        "support_type": "tree(auto)",
+        "support_on_build_plate_only": "0",
+        "support_threshold_angle": "30",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "support_interface_top_layers": "2",
+        "support_interface_bottom_layers": "2",
+        "brim_type": "outer_only",
+        "brim_width": "5"
+      },
+      "parts": [
+        {
+          "object_id": "6",
+          "part_id": "5",
+          "name": "planter_sage.stl",
+          "source_file": "planter_sage.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            154.0,
+            50.0,
+            85.5
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 435.2 127.99999 28.5",
+          "mesh_member": "3D/Objects/object_7.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2134,
+          "face_count": 4284,
+          "source_bounds_mm": [
+            [
+              102.0,
+              1.0,
+              57.0
+            ],
+            [
+              206.0,
+              99.0,
+              114.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              383.2,
+              78.99999,
+              0.0
+            ],
+            [
+              487.2,
+              176.99999,
+              57.0
+            ]
+          ],
+          "build_height_mm": 57.0,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/planter_sage.stl",
+            "sha256": "27c7700a2273c40ddf47e691e22efac1e67a9443e92908890fbadb31194b2f21",
+            "max_bidirectional_vertex_error_mm": 1.9523225718712083e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 4284,
+            "canonical_bounds_mm": [
+              [
+                102.0,
+                1.0,
+                57.0
+              ],
+              [
+                206.0,
+                99.0,
+                114.0
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "4",
+          "part_id": "3",
+          "name": "fascia_charcoal.stl",
+          "source_file": "fascia_charcoal.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            47.99999928474426,
+            6.5,
+            79.00000309944153
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 -3.814697265625e-06 0 0 0 1",
+          "build_transform": "1 0 0 0 2.22044605e-16 1 0 -1 2.22044605e-16 435.19999 -179.19999 5.5",
+          "mesh_member": "3D/Objects/object_6.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 -3.81469727e-06",
+          "vertex_count": 7328,
+          "face_count": 14720,
+          "source_bounds_mm": [
+            [
+              3.4000007847442646,
+              1.0,
+              3.40000459944153
+            ],
+            [
+              92.59999778474426,
+              12.0,
+              154.60000919944153
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              390.5999915,
+              -254.79999228530275,
+              -1.687538997430238e-14
+            ],
+            [
+              479.79998850000004,
+              -103.59998768530275,
+              11.00000000000001
+            ]
+          ],
+          "build_height_mm": 11.000000000000028,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/fascia_charcoal.stl",
+            "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+            "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 14720,
+            "canonical_bounds_mm": [
+              [
+                3.4000000953674316,
+                1.0,
+                3.4000000953674316
+              ],
+              [
+                92.5999984741211,
+                12.0,
+                154.60000610351562
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "2",
+          "part_id": "1",
+          "name": "tower_sump_body_uno_ports_r17.stl",
+          "source_file": "tower_sump_body_uno_ports_r17.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            103.5,
+            50.0,
+            79.0
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 127.99999 127.99999 79",
+          "mesh_member": "3D/Objects/object_5.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 40814,
+          "face_count": 81676,
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              207.0,
+              100.0,
+              158.0
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              24.499989999999997,
+              77.99999,
+              0.0
+            ],
+            [
+              231.49999,
+              177.99999,
+              158.0
+            ]
+          ],
+          "build_height_mm": 158.0,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/tower_sump_body_uno_ports_r17.stl",
+            "sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+            "max_bidirectional_vertex_error_mm": 5.787242873431575e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": true,
+            "canonical_faces": 81676,
+            "canonical_bounds_mm": [
+              [
+                -8.881784197001252e-16,
+                -8.881784197001252e-16,
+                -1.1102230246251565e-16
+              ],
+              [
+                207.0,
+                100.0,
+                158.0
+              ]
+            ]
+          }
+        },
+        {
+          "object_id": "8",
+          "part_id": "7",
+          "name": "top_cover_flush_r15.stl",
+          "source_file": "top_cover_flush_r15.stl",
+          "object_overrides": {},
+          "source_offset_mm": [
+            48.0,
+            50.0,
+            160.75
+          ],
+          "source_matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+          "build_transform": "1 0 0 0 1 0 0 0 1 127.99999 -179.19999 2.75",
+          "mesh_member": "3D/Objects/object_2.model",
+          "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+          "vertex_count": 2280,
+          "face_count": 4572,
+          "source_bounds_mm": [
+            [
+              -1.5,
+              0.0,
+              158.0
+            ],
+            [
+              97.5,
+              100.0,
+              163.5
+            ]
+          ],
+          "build_bounds_mm": [
+            [
+              78.49999,
+              -229.19999,
+              0.0
+            ],
+            [
+              177.49999,
+              -129.19999,
+              5.5
+            ]
+          ],
+          "build_height_mm": 5.5,
+          "canonical_comparison": {
+            "file": "technical/print/main_parts/stl/top_cover_flush_r16.stl",
+            "sha256": "2c12b48f94d7d459c472606b54d6e2af76c629a621dc03ea2279ae0f3fa8a5b6",
+            "max_bidirectional_vertex_error_mm": 2.6019094384356373e-06,
+            "vertex_match_0p0002mm": true,
+            "same_triangle_connectivity": false,
+            "canonical_faces": 4572,
+            "canonical_bounds_mm": [
+              [
+                -1.5,
+                -8.881784197001252e-16,
+                158.0
+              ],
+              [
+                97.5,
+                100.0,
+                163.5
+              ]
+            ]
+          }
+        }
+      ],
+      "plates": [
+        {
+          "metadata": {
+            "plater_id": "1",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_1.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_1.png",
+            "top_file": "Metadata/top_1.png",
+            "pick_file": "Metadata/pick_1.png"
+          },
+          "instances": [
+            {
+              "object_id": "2",
+              "instance_id": "0",
+              "identify_id": "234"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "2",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_2.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_2.png",
+            "top_file": "Metadata/top_2.png",
+            "pick_file": "Metadata/pick_2.png"
+          },
+          "instances": [
+            {
+              "object_id": "6",
+              "instance_id": "0",
+              "identify_id": "315"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "3",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_3.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_3.png",
+            "top_file": "Metadata/top_3.png",
+            "pick_file": "Metadata/pick_3.png"
+          },
+          "instances": [
+            {
+              "object_id": "8",
+              "instance_id": "0",
+              "identify_id": "109"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "plater_id": "4",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "thumbnail_file": "Metadata/plate_4.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_4.png",
+            "top_file": "Metadata/top_4.png",
+            "pick_file": "Metadata/pick_4.png"
+          },
+          "instances": [
+            {
+              "object_id": "4",
+              "instance_id": "0",
+              "identify_id": "275"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "technical/print/slicer_exports/tower_r17.gcode.3mf",
+      "sha256": "0c86ebab5877d83d6d8f27c3847707de56c8b22b09df0b7244baf7be4a391f67",
+      "archive_crc_error": null,
+      "member_count": 35,
+      "gcode_members": [
+        "Metadata/plate_1.gcode"
+      ],
+      "mesh_member_sha256": {},
+      "unit": "millimeter",
+      "application": "BambuStudio-02.05.00.66",
+      "creation_date": "2026-09-28",
+      "modification_date": "2026-09-28",
+      "settings": {
+        "printer_model": "Bambu Lab X1 Carbon",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "print_settings_id": "0.20mm Strength @BBL X1C",
+        "layer_height": "0.2",
+        "wall_loops": "6",
+        "filament_type": [
+          "ABS",
+          "PLA",
+          "ABS",
+          "PLA"
+        ],
+        "enable_support": "1",
+        "support_type": "tree(auto)",
+        "support_on_build_plate_only": "0",
+        "support_threshold_angle": "30",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "support_interface_top_layers": "2",
+        "support_interface_bottom_layers": "2",
+        "brim_type": "outer_only",
+        "brim_width": "5"
+      },
+      "parts": [],
+      "plates": [
+        {
+          "metadata": {
+            "plater_id": "1",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "gcode_file": "Metadata/plate_1.gcode",
+            "thumbnail_file": "Metadata/plate_1.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_1.png",
+            "top_file": "Metadata/top_1.png",
+            "pick_file": "Metadata/pick_1.png",
+            "pattern_bbox_file": "Metadata/plate_1.json"
+          },
+          "instances": []
+        },
+        {
+          "metadata": {
+            "plater_id": "2",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "gcode_file": "",
+            "thumbnail_file": "Metadata/plate_2.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_2.png",
+            "top_file": "Metadata/top_2.png",
+            "pick_file": "Metadata/pick_2.png"
+          },
+          "instances": []
+        },
+        {
+          "metadata": {
+            "plater_id": "3",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "gcode_file": "",
+            "thumbnail_file": "Metadata/plate_3.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_3.png",
+            "top_file": "Metadata/top_3.png",
+            "pick_file": "Metadata/pick_3.png"
+          },
+          "instances": []
+        },
+        {
+          "metadata": {
+            "plater_id": "4",
+            "plater_name": "",
+            "locked": "false",
+            "filament_map_mode": "Auto For Flush",
+            "filament_maps": "1 1 1 1",
+            "filament_volume_maps": "0 0 0 0",
+            "gcode_file": "",
+            "thumbnail_file": "Metadata/plate_4.png",
+            "thumbnail_no_light_file": "Metadata/plate_no_light_4.png",
+            "top_file": "Metadata/top_4.png",
+            "pick_file": "Metadata/pick_4.png"
+          },
+          "instances": []
+        }
+      ]
+    }
+  ],
+  "newer_user_project_setting_changes": {
+    "activate_air_filtration": {
+      "published": [
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      "newer_user_project": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    },
+    "additional_cooling_fan_speed": {
+      "published": [
+        "0",
+        "70",
+        "0",
+        "70"
+      ],
+      "newer_user_project": [
+        "70",
+        "70",
+        "0",
+        "70"
+      ]
+    },
+    "close_fan_the_first_x_layers": {
+      "published": [
+        "3",
+        "1",
+        "3",
+        "1"
+      ],
+      "newer_user_project": [
+        "1",
+        "1",
+        "3",
+        "1"
+      ]
+    },
+    "cool_plate_temp": {
+      "published": [
+        "0",
+        "35",
+        "0",
+        "35"
+      ],
+      "newer_user_project": [
+        "35",
+        "35",
+        "0",
+        "35"
+      ]
+    },
+    "cool_plate_temp_initial_layer": {
+      "published": [
+        "0",
+        "35",
+        "0",
+        "35"
+      ],
+      "newer_user_project": [
+        "35",
+        "35",
+        "0",
+        "35"
+      ]
+    },
+    "eng_plate_temp": {
+      "published": [
+        "90",
+        "0",
+        "90",
+        "0"
+      ],
+      "newer_user_project": [
+        "0",
+        "0",
+        "90",
+        "0"
+      ]
+    },
+    "eng_plate_temp_initial_layer": {
+      "published": [
+        "90",
+        "0",
+        "90",
+        "0"
+      ],
+      "newer_user_project": [
+        "0",
+        "0",
+        "90",
+        "0"
+      ]
+    },
+    "fan_cooling_layer_time": {
+      "published": [
+        "30",
+        "100",
+        "30",
+        "100"
+      ],
+      "newer_user_project": [
+        "100",
+        "100",
+        "30",
+        "100"
+      ]
+    },
+    "fan_max_speed": {
+      "published": [
+        "60",
+        "100",
+        "60",
+        "100"
+      ],
+      "newer_user_project": [
+        "100",
+        "100",
+        "60",
+        "100"
+      ]
+    },
+    "fan_min_speed": {
+      "published": [
+        "10",
+        "100",
+        "10",
+        "100"
+      ],
+      "newer_user_project": [
+        "100",
+        "100",
+        "10",
+        "100"
+      ]
+    },
+    "filament_adhesiveness_category": {
+      "published": [
+        "200",
+        "100",
+        "200",
+        "100"
+      ],
+      "newer_user_project": [
+        "100",
+        "100",
+        "200",
+        "100"
+      ]
+    },
+    "filament_change_length": {
+      "published": [
+        "10",
+        "5",
+        "10",
+        "5"
+      ],
+      "newer_user_project": [
+        "5",
+        "5",
+        "10",
+        "5"
+      ]
+    },
+    "filament_colour": {
+      "published": [
+        "#789D4A",
+        "#61C680",
+        "#000000",
+        "#AE96D4"
+      ],
+      "newer_user_project": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#AE96D4"
+      ]
+    },
+    "filament_density": {
+      "published": [
+        "1.04",
+        "1.26",
+        "1.04",
+        "1.26"
+      ],
+      "newer_user_project": [
+        "1.26",
+        "1.26",
+        "1.04",
+        "1.26"
+      ]
+    },
+    "filament_deretraction_speed": {
+      "published": [
+        "nil",
+        "40",
+        "nil",
+        "nil",
+        "nil",
+        "40",
+        "nil",
+        "nil"
+      ],
+      "newer_user_project": [
+        "nil",
+        "nil",
+        "nil",
+        "nil",
+        "nil",
+        "40",
+        "nil",
+        "nil"
+      ]
+    },
+    "filament_dev_ams_drying_ams_limitations": {
+      "published": [
+        "1",
+        "1",
+        "0",
+        "1",
+        "1",
+        "0"
+      ],
+      "newer_user_project": [
+        "1",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1",
+        "0"
+      ]
+    },
+    "filament_dev_ams_drying_heat_distortion_temperature": {
+      "published": [
+        "90",
+        "45",
+        "90",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "90",
+        "45"
+      ]
+    },
+    "filament_dev_ams_drying_temperature": {
+      "published": [
+        "65",
+        "80",
+        "65",
+        "75",
+        "45",
+        "45",
+        "45",
+        "45",
+        "65",
+        "80",
+        "65",
+        "75",
+        "45",
+        "45",
+        "45",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "45",
+        "45",
+        "45",
+        "45",
+        "45",
+        "45",
+        "65",
+        "80",
+        "65",
+        "75",
+        "45",
+        "45",
+        "45",
+        "45"
+      ]
+    },
+    "filament_dev_ams_drying_time": {
+      "published": [
+        "12",
+        "8",
+        "12",
+        "8",
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "8",
+        "12",
+        "8",
+        "12",
+        "12",
+        "12",
+        "12"
+      ],
+      "newer_user_project": [
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "12",
+        "8",
+        "12",
+        "8",
+        "12",
+        "12",
+        "12",
+        "12"
+      ]
+    },
+    "filament_dev_chamber_drying_bed_temperature": {
+      "published": [
+        "90",
+        "70",
+        "90",
+        "70"
+      ],
+      "newer_user_project": [
+        "70",
+        "70",
+        "90",
+        "70"
+      ]
+    },
+    "filament_dev_drying_cooling_temperature": {
+      "published": [
+        "75",
+        "45",
+        "75",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "75",
+        "45"
+      ]
+    },
+    "filament_dev_drying_softening_temperature": {
+      "published": [
+        "80",
+        "50",
+        "80",
+        "50"
+      ],
+      "newer_user_project": [
+        "50",
+        "50",
+        "80",
+        "50"
+      ]
+    },
+    "filament_flow_ratio": {
+      "published": [
+        "0.95",
+        "0.95",
+        "0.98",
+        "0.98",
+        "0.95",
+        "0.95",
+        "0.98",
+        "0.98"
+      ],
+      "newer_user_project": [
+        "0.98",
+        "0.98",
+        "0.98",
+        "0.98",
+        "0.95",
+        "0.95",
+        "0.98",
+        "0.98"
+      ]
+    },
+    "filament_ids": {
+      "published": [
+        "GFB00",
+        "GFA00",
+        "GFB00",
+        "GFA00"
+      ],
+      "newer_user_project": [
+        "GFA00",
+        "GFA00",
+        "GFB00",
+        "GFA00"
+      ]
+    },
+    "filament_long_retractions_when_cut": {
+      "published": [
+        "1",
+        "nil",
+        "1",
+        "1",
+        "1",
+        "nil",
+        "1",
+        "1"
+      ],
+      "newer_user_project": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "nil",
+        "1",
+        "1"
+      ]
+    },
+    "filament_max_volumetric_speed": {
+      "published": [
+        "16",
+        "25",
+        "21",
+        "29",
+        "16",
+        "25",
+        "21",
+        "29"
+      ],
+      "newer_user_project": [
+        "21",
+        "29",
+        "21",
+        "29",
+        "16",
+        "25",
+        "21",
+        "29"
+      ]
+    },
+    "filament_multi_colour": {
+      "published": [
+        "#789D4A",
+        "#61C680",
+        "#000000",
+        "#AE96D4"
+      ],
+      "newer_user_project": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#AE96D4"
+      ]
+    },
+    "filament_prime_volume": {
+      "published": [
+        "45",
+        "30",
+        "45",
+        "30"
+      ],
+      "newer_user_project": [
+        "30",
+        "30",
+        "45",
+        "30"
+      ]
+    },
+    "filament_retraction_distances_when_cut": {
+      "published": [
+        "18",
+        "nil",
+        "18",
+        "18",
+        "18",
+        "nil",
+        "18",
+        "18"
+      ],
+      "newer_user_project": [
+        "18",
+        "18",
+        "18",
+        "18",
+        "18",
+        "nil",
+        "18",
+        "18"
+      ]
+    },
+    "filament_retraction_length": {
+      "published": [
+        "0.4",
+        "0.4",
+        "nil",
+        "0.4",
+        "0.4",
+        "0.4",
+        "nil",
+        "0.4"
+      ],
+      "newer_user_project": [
+        "nil",
+        "0.4",
+        "nil",
+        "0.4",
+        "0.4",
+        "0.4",
+        "nil",
+        "0.4"
+      ]
+    },
+    "filament_retraction_speed": {
+      "published": [
+        "nil",
+        "40",
+        "nil",
+        "nil",
+        "nil",
+        "40",
+        "nil",
+        "nil"
+      ],
+      "newer_user_project": [
+        "nil",
+        "nil",
+        "nil",
+        "nil",
+        "nil",
+        "40",
+        "nil",
+        "nil"
+      ]
+    },
+    "filament_settings_id": {
+      "published": [
+        "Bambu ABS @BBL X1C",
+        "Bambu PLA Basic @BBL X1C",
+        "Bambu ABS @BBL X1C",
+        "Bambu PLA Basic @BBL X1C"
+      ],
+      "newer_user_project": [
+        "Bambu PLA Basic @BBL X1C",
+        "Bambu PLA Basic @BBL X1C",
+        "Bambu ABS @BBL X1C",
+        "Bambu PLA Basic @BBL X1C"
+      ]
+    },
+    "filament_start_gcode": {
+      "published": [
+        "; Filament gcode\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; Filament gcode\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}"
+      ],
+      "newer_user_project": [
+        "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; Filament gcode\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}",
+        "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}"
+      ]
+    },
+    "filament_type": {
+      "published": [
+        "ABS",
+        "PLA",
+        "ABS",
+        "PLA"
+      ],
+      "newer_user_project": [
+        "PLA",
+        "PLA",
+        "ABS",
+        "PLA"
+      ]
+    },
+    "flush_volumes_matrix": {
+      "published": [
+        "0",
+        "218",
+        "140",
+        "277",
+        "140",
+        "0",
+        "157",
+        "212",
+        "467",
+        "519",
+        "0",
+        "504",
+        "198",
+        "194",
+        "156",
+        "0"
+      ],
+      "newer_user_project": [
+        "0",
+        "143",
+        "143",
+        "137",
+        "623",
+        "0",
+        "123",
+        "504",
+        "623",
+        "123",
+        "0",
+        "504",
+        "367",
+        "156",
+        "156",
+        "0"
+      ]
+    },
+    "hot_plate_temp": {
+      "published": [
+        "90",
+        "55",
+        "90",
+        "55"
+      ],
+      "newer_user_project": [
+        "55",
+        "55",
+        "90",
+        "55"
+      ]
+    },
+    "hot_plate_temp_initial_layer": {
+      "published": [
+        "90",
+        "55",
+        "90",
+        "55"
+      ],
+      "newer_user_project": [
+        "55",
+        "55",
+        "90",
+        "55"
+      ]
+    },
+    "impact_strength_z": {
+      "published": [
+        "7.4",
+        "13.8",
+        "7.4",
+        "13.8"
+      ],
+      "newer_user_project": [
+        "13.8",
+        "13.8",
+        "7.4",
+        "13.8"
+      ]
+    },
+    "nozzle_temperature": {
+      "published": [
+        "270",
+        "270",
+        "220",
+        "220",
+        "270",
+        "270",
+        "220",
+        "220"
+      ],
+      "newer_user_project": [
+        "220",
+        "220",
+        "220",
+        "220",
+        "270",
+        "270",
+        "220",
+        "220"
+      ]
+    },
+    "nozzle_temperature_initial_layer": {
+      "published": [
+        "260",
+        "260",
+        "220",
+        "220",
+        "260",
+        "260",
+        "220",
+        "220"
+      ],
+      "newer_user_project": [
+        "220",
+        "220",
+        "220",
+        "220",
+        "260",
+        "260",
+        "220",
+        "220"
+      ]
+    },
+    "nozzle_temperature_range_high": {
+      "published": [
+        "280",
+        "240",
+        "280",
+        "240"
+      ],
+      "newer_user_project": [
+        "240",
+        "240",
+        "280",
+        "240"
+      ]
+    },
+    "nozzle_temperature_range_low": {
+      "published": [
+        "240",
+        "190",
+        "240",
+        "190"
+      ],
+      "newer_user_project": [
+        "190",
+        "190",
+        "240",
+        "190"
+      ]
+    },
+    "overhang_fan_speed": {
+      "published": [
+        "80",
+        "100",
+        "80",
+        "100"
+      ],
+      "newer_user_project": [
+        "100",
+        "100",
+        "80",
+        "100"
+      ]
+    },
+    "overhang_fan_threshold": {
+      "published": [
+        "25%",
+        "50%",
+        "25%",
+        "50%"
+      ],
+      "newer_user_project": [
+        "50%",
+        "50%",
+        "25%",
+        "50%"
+      ]
+    },
+    "slow_down_layer_time": {
+      "published": [
+        "12",
+        "4",
+        "12",
+        "4"
+      ],
+      "newer_user_project": [
+        "4",
+        "4",
+        "12",
+        "4"
+      ]
+    },
+    "supertack_plate_temp": {
+      "published": [
+        "0",
+        "45",
+        "0",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "0",
+        "45"
+      ]
+    },
+    "supertack_plate_temp_initial_layer": {
+      "published": [
+        "0",
+        "45",
+        "0",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "0",
+        "45"
+      ]
+    },
+    "temperature_vitrification": {
+      "published": [
+        "100",
+        "45",
+        "100",
+        "45"
+      ],
+      "newer_user_project": [
+        "45",
+        "45",
+        "100",
+        "45"
+      ]
+    },
+    "textured_plate_temp": {
+      "published": [
+        "90",
+        "55",
+        "90",
+        "55"
+      ],
+      "newer_user_project": [
+        "55",
+        "55",
+        "90",
+        "55"
+      ]
+    },
+    "textured_plate_temp_initial_layer": {
+      "published": [
+        "90",
+        "55",
+        "90",
+        "55"
+      ],
+      "newer_user_project": [
+        "55",
+        "55",
+        "90",
+        "55"
+      ]
+    }
+  },
+  "limitations": [
+    "No slicer rerun or layer review performed",
+    "No source relationship to physical printed part independently established",
+    "No physical fit or leak acceptance inferred from digital matches"
+  ],
+  "baseline_step_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352",
+  "baseline_mesh_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "volume_mm3": 563673.3465931654,
+    "components": 1,
+    "degenerate_faces_area_below_1e-10": 0
+  },
+  "baseline_route_underside_metric": {
+    "selection": "face centroids x88.5..114.5 y81.5..96.5 z51.5..159 with normal.z<-0.5",
+    "area_mm2": 227.64033741854277,
+    "faces": 276,
+    "largest_z_bins_0p1mm_area_mm2": [
+      [
+        88.0,
+        50.24465224589221
+      ],
+      [
+        52.0,
+        33.324135754897725
+      ],
+      [
+        85.0,
+        20.22370534811631
+      ],
+      [
+        84.9,
+        14.006242113431473
+      ],
+      [
+        84.8,
+        10.746667882799112
+      ],
+      [
+        84.7,
+        10.318892377620903
+      ],
+      [
+        84.5,
+        7.5541213834381855
+      ],
+      [
+        84.6,
+        7.220119813644067
+      ],
+      [
+        84.4,
+        7.12748324088251
+      ],
+      [
+        83.8,
+        6.54025984597486
+      ],
+      [
+        84.0,
+        6.291502338748888
+      ],
+      [
+        84.1,
+        6.250491730582086
+      ],
+      [
+        84.3,
+        6.184821895322793
+      ],
+      [
+        83.4,
+        5.688674759413424
+      ],
+      [
+        83.1,
+        4.894604201961963
+      ]
+    ],
+    "meaning": "Geometric underside-risk metric; not sliced support volume or threshold interpretation"
+  },
+  "bambu_cli": {
+    "installed_version": "02.05.00.66",
+    "executable": "C:/Program Files/Bambu Studio/bambu-studio.exe",
+    "help_exit_code": 0,
+    "help_capture": "bambu_cli_help.txt",
+    "slice_command_available": true,
+    "export_3mf_available": true,
+    "slice_performed": false,
+    "official_reference": "https://github.com/bambulab/BambuStudio/wiki/Command-Line-Usage"
+  },
+  "no_tower_source_geometry_conflict": true,
+  "user_and_published_mesh_members_byte_identical": true
+}

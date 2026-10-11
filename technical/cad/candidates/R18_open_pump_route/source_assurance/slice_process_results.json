@@ -1,0 +1,21 @@
+[
+  {
+    "name": "baseline",
+    "exit_code": 0,
+    "elapsed_seconds": 51.7,
+    "output_exists": true
+  },
+  {
+    "name": "candidate",
+    "exit_code": 4294967290,
+    "elapsed_seconds": 0.8,
+    "output_exists": false
+  },
+  {
+    "name": "candidate",
+    "attempt": 2,
+    "exit_code": 0,
+    "elapsed_seconds": 39.0,
+    "output_exists": true
+  }
+]

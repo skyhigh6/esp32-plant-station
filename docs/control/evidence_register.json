@@ -144,5 +144,53 @@
     "source": "mechanical/concept_rev8/README.md",
     "snapshot": "../verification/source_basis/source_snapshot/mechanical/concept_rev8/README.md",
     "sha256": "96d1603898cf2ce556f91fcc4fff1826872fcf8398558a3c942a1f0c2e675f84"
+  },
+  {
+    "source": "technical/cad/candidates/R18_open_pump_route/build.py",
+    "snapshot": "../technical/cad/candidates/R18_open_pump_route/build.py",
+    "sha256": "07295115961b8de8ab916a4394eae5330aece25256266146a29cd28880684971",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_open_pump_route/geometry_checks.json",
+    "snapshot": "../technical/cad/candidates/R18_open_pump_route/geometry_checks.json",
+    "sha256": "ea7a5de05d8af2fd89b353b1a339e0d25fd09ec27f7f8a2467d5db55bb5c3c67",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_open_pump_route/independent_checks.json",
+    "snapshot": "../technical/cad/candidates/R18_open_pump_route/independent_checks.json",
+    "sha256": "5309e8d45c0b1b2b6ccb516d88ed6267540595ae0f0a107f4cafb58d0b9951ce",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_open_pump_route/process_record.json",
+    "snapshot": "../technical/cad/candidates/R18_open_pump_route/process_record.json",
+    "sha256": "e050d00e4b1d711e4d8379fbef8ee39efc6a404781f269cd98a7d9222d0a66b6",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/build.py",
+    "snapshot": "../technical/cad/candidates/R18_fascia_no_aux_apertures/build.py",
+    "sha256": "7f50cec78306c12383ed9dcaa4d9ea27b5cdda1afcd7adeea8ec1aaa086b4fec",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/geometry_checks.json",
+    "snapshot": "../technical/cad/candidates/R18_fascia_no_aux_apertures/geometry_checks.json",
+    "sha256": "66e69b250faee06d43901ca4e09ea312d40347169a81b5c7562c64033c488ef3",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/independent_checks.json",
+    "snapshot": "../technical/cad/candidates/R18_fascia_no_aux_apertures/independent_checks.json",
+    "sha256": "6de8adc79068448d554386764b479e55329c6e64264fef42f9ff9b81ce7019e4",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
+  },
+  {
+    "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/process_record.json",
+    "snapshot": "../technical/cad/candidates/R18_fascia_no_aux_apertures/process_record.json",
+    "sha256": "b8c13727b4ba0ae5fd4d3b6d7766e5d62e31f6b06f3f4bdb449cebd441be5e31",
+    "purpose": "R18 verified candidate incorporated without export changes; no physical acceptance"
   }
 ]

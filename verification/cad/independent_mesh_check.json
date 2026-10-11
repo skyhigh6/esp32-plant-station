@@ -1,9 +1,9 @@
 {
-  "revision": "R17 USB-C and DC panel prototype",
+  "revision": "R18",
   "units": "mm",
   "files": {
-    "tower_sump_body_uno_ports_r17": {
-      "sha256": "f598a7865bed6395d74d9a249cbfd3799a14e0e47ceb7b97f982f2658e0b827b",
+    "tower_open_pump_route_r18": {
+      "sha256": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
       "bounds_mm": [
         [
           -8.881784197001252e-16,
@@ -16,7 +16,7 @@
           158.0
         ]
       ],
-      "volume_mm3": 563673.3465931654,
+      "volume_mm3": 551091.7290009625,
       "watertight": true,
       "winding_consistent": true,
       "components": 1,
@@ -46,11 +46,11 @@
     }
   },
   "sections": {
-    "tower_sump_body_uno_ports_r17_x0.5": {
-      "dc_diameter_mm": 9.999526576422065,
+    "tower_open_pump_route_r18_x0.5": {
+      "dc_diameter_mm": 9.999526593283417,
       "usb_fixing_diameters_mm": [
-        2.7998663305995337,
-        2.799866006466859
+        2.79986632544318,
+        2.7998660010599585
       ],
       "usb_cut": {
         "bounds_yz_mm": [
@@ -67,10 +67,10 @@
           9.800003051757812,
           4.1999969482421875
         ],
-        "corner_profile_max_error_mm": 0.00011430768145159753
+        "corner_profile_max_error_mm": 0.00011437673841330209
       }
     },
-    "tower_sump_body_uno_ports_r17_x3.0": {
+    "tower_open_pump_route_r18_x3.0": {
       "dc_diameter_mm": 9.998451574072579,
       "usb_fixing_diameters_mm": [
         2.7995664632032176,
@@ -94,11 +94,11 @@
         "corner_profile_max_error_mm": 0.0003649455239289612
       }
     },
-    "tower_sump_body_uno_ports_r17_x5.5": {
-      "dc_diameter_mm": 9.999526600592139,
+    "tower_open_pump_route_r18_x5.5": {
+      "dc_diameter_mm": 9.99952658373079,
       "usb_fixing_diameters_mm": [
-        2.799867555623184,
-        2.7998660121673273
+        2.7998675607795374,
+        2.799866017574227
       ],
       "usb_cut": {
         "bounds_yz_mm": [

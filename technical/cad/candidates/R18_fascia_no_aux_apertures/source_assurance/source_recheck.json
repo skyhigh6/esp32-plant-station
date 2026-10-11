@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-11",
+  "source_hashes": {
+    "technical/print/main_parts/stl/fascia_charcoal.stl": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+    "technical/print/main_parts/step/fascia_charcoal.step": "659f2b4dccc36b2a2557f485f04079922de0ce02b9f36d2cac726a22ef2eeda4",
+    "technical/print/main_parts/stl/fascia_charcoal.3mf": "8affac6f39286460068aaa49c8ff7c89dd5471ae7b13280b354badcfc6e41589",
+    "technical/print/main_parts/stl/all plates r17.3mf": "c8343ca833e78734466df041dc11677183dbe5941f2b859ea60ff4f0b57a7792"
+  },
+  "source_geometry_conflict": false,
+  "equality_evidence": [
+    {
+      "project": "technical/print/main_parts/stl/all plates r17.3mf",
+      "geometry_evidence_reused_after_hash_recheck": {
+        "file": "technical/print/main_parts/stl/fascia_charcoal.stl",
+        "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+        "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+        "vertex_match_0p0002mm": true,
+        "same_triangle_connectivity": true,
+        "canonical_faces": 14720,
+        "canonical_bounds_mm": [
+          [
+            3.4000000953674316,
+            1.0,
+            3.4000000953674316
+          ],
+          [
+            92.5999984741211,
+            12.0,
+            154.60000610351562
+          ]
+        ]
+      }
+    },
+    {
+      "project": "technical/print/main_parts/stl/fascia_charcoal.3mf",
+      "geometry_evidence_reused_after_hash_recheck": {
+        "file": "technical/print/main_parts/stl/fascia_charcoal.stl",
+        "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+        "max_bidirectional_vertex_error_mm": 7.450067253527617e-06,
+        "vertex_match_0p0002mm": true,
+        "same_triangle_connectivity": true,
+        "canonical_faces": 14720,
+        "canonical_bounds_mm": [
+          [
+            3.4000000953674316,
+            1.0,
+            3.4000000953674316
+          ],
+          [
+            92.5999984741211,
+            12.0,
+            154.60000610351562
+          ]
+        ]
+      }
+    }
+  ],
+  "authority": "Fill only three LED and one speaker through-plate passages; retain rear collars/seats and other interfaces."
+}

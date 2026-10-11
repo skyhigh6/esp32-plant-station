@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plant Uno | Wiring and button controls</title>
+  <title>Plant Station R18 / D03 | Uno UI v6 wiring and controls</title>
   <style>
     :root { color-scheme: light; font: 16px/1.5 system-ui, Segoe UI, sans-serif; background: #f1f4f3; color: #182824; }
     * { box-sizing: border-box; }
@@ -72,13 +72,20 @@
 </head>
 <body>
   <header>
-    <span class="tag">27 September 2026 · current interface</span>
-    <h1>Plant Uno — wiring and button controls</h1>
+    <span class="tag">R18 / D03 · 11 October 2026 · Uno UI v6 unchanged</span>
+    <h1>Plant Station — wiring and button controls</h1>
     <p>Three illuminated buttons, a 16×2 LCD and a relay controlled pump. The knob chooses a 1.0–4.0 second run; below 25% moisture the red lamp blinks, and at 25% or above the green lamp stays on.</p>
   </header>
   <main>
+    <section class="panel" aria-label="R18 current configuration">
+      <h2>Current R18 configuration and print checks</h2>
+      <p>R18 combines the open pump-wire lay-in channel and top crossover with closure of three standalone LED apertures and the dedicated speaker aperture. The three illuminated-button mounting openings and their LED wiring remain. Firmware UI v6 and the controls below are unchanged.</p>
+      <p>Use <a href="../technical/print/main_parts/stl/tower_open_pump_route_r18.stl">R18 tower</a>, <a href="../technical/print/main_parts/stl/fascia_no_aux_apertures_r18.stl">R18 fascia</a>, the retained R16 lid/R13 planter and one shaft-fit knob. Original R17 tower/fascia files are frozen predecessors. R17 plate projects and printer files are historical evidence; prepare new R18 slicing from current exports.</p>
+      <p>Check the <a href="../technical/print/fit_trials/stl/power_ports_fit_coupon_r17.stl">retained R17 port coupon</a> for actual USB/DC hardware. The <a href="../technical/print/fit_trials/stl/route_trial_r18.stl">optional R18 route trial</a> checks local lay-in clearance only. With power isolated, lay in the terminated lead, inspect edges and smooth bends, leave service slack and dry-fit all retained parts. Check wire retention, pinching and service access. Inspect fascia face continuity and dry-fit the controls.</p>
+      <p><strong>Reported:</strong> Kevin says the latest R17 tower fits the Uno and relay perfectly. Their nominal mounts are retained; this closes no controlled test. A17-01–A17-13 and A18-01–A18-04 remain open. Use the <a href="documents/AM_R18/PLANT-AM-001_R18_D03.pdf">R18 assembly manual</a> and <a href="documents/TS_R18/PLANT-TS-001_R18_D03.pdf">R18 acceptance sheets</a>; <a href="START_HERE.html">open the full document index</a>.</p>
+    </section>
     <section class="banner" aria-label="Current operating restriction">
-      <strong>LCD backlight timeout uploaded to COM8.</strong> The display remains on the Uno 5 V rail; D10 is unconnected. UI v6 initialised the LCD with status <code>0</code>, then logged backlight OFF after 60 seconds and ON after the knob moved. A pump run restarts the timer when it ends. Earlier LCD faults mean screen reliability still needs checking. The browser demo does not connect to the Arduino.
+      <strong>Historical software evidence — 27 September 2026.</strong> The LCD timeout revision was uploaded to COM8. The display remains on the Uno 5 V rail; D10 is unconnected. Serial recorded UI v6 LCD status <code>0</code>, backlight OFF after 60 seconds and ON after knob movement. The firmware restarts the timer when a pump run ends; its physical response remains to be checked. Earlier faults mean LCD reliability still needs checking. This R18 issue performs no upload or hardware operation. The browser demo does not connect to the Arduino.
     </section>
 
     <section aria-labelledby="diagram-title">
@@ -285,7 +292,7 @@
     <section class="panel" aria-labelledby="tests-title">
       <h2 id="tests-title">6 · Check the revised controls</h2>
       <div class="test"><div class="test-id">T01</div><div><strong>Verify all four leads with power removed.</strong><p>For each button, red/black must be open released and closed pressed. Confirm green is LED+ and yellow is LED− from part markings or a current-limited test. Establish the LED rating and current limit before connecting D5–D7.</p><div class="evidence">Record: button part IDs, continuity, LED polarity/rating, resistor decision and photograph.</div></div></div>
-      <div class="test"><div class="test-id">T02</div><div><strong>Upload and boot readback — passed this boot.</strong><p>COM8 upload passed after the operator reported pump power OFF. Serial showed <code>PlantUno UI v6</code>, <code>relay=OFF</code> at rest and LCD initialisation status <code>0</code>. Prior boots had intermittent LCD faults; measure power and I²C wiring if one recurs.</p><div class="evidence">Record: port, sketch hash, serial log, rail voltage and LCD status.</div></div></div>
+      <div class="test"><div class="test-id">T02</div><div><strong>Upload and boot readback — historical 27 September boot.</strong><p>COM8 upload passed after the operator reported pump power OFF. Serial showed <code>PlantUno UI v6</code>, <code>relay=OFF</code> at rest and LCD initialisation status <code>0</code>. This is historical software evidence, not a new R18 test or a controlled acceptance closure. Prior boots had intermittent LCD faults; measure power and I²C wiring if one recurs.</p><div class="evidence">Record: port, sketch hash, serial log, rail voltage and LCD status.</div></div></div>
       <div class="test"><div class="test-id">T03</div><div><strong>Check the three LCD pages.</strong><p>Press yellow once per page: Status shows moisture and the selected 1.0–4.0 second run; Raw shows soil and knob ADC values; Session shows completed/cancelled counts and the last completed run. Holding yellow lights all lamps.</p><div class="evidence">Record: screen photographs at minimum and maximum knob settings.</div></div></div>
       <div class="test"><div class="test-id">T04</div><div><strong>Check control logic.</strong><p>One dose per WATER press. At the instant the timed run ends, the LCD should return from the countdown to the Status page with soil percentage, even if WATER is still held. Red or yellow cancels a run; all buttons must be released before another. Hold red for two seconds to clear session counters. Confirm the knob only changes the next run once started.</p><div class="evidence">Record: screen video at pump stop, minimum and maximum timing, cancellation and reset.</div></div></div>
       <div class="test"><div class="test-id">T05</div><div><strong>Relay check with pump supply OFF.</strong><p>Identify the module and verify its 5 V supply, input current, HIGH = ON, LOW = OFF, and contact state during cold start, reset and either supply-start order. Record any transient contact closure.</p><div class="evidence">Record: module identifier/datasheet, measured values, contact state and test setup.</div></div></div>
@@ -294,7 +301,7 @@
       <div class="test"><div class="test-id">T08</div><div><strong>LCD backlight timeout — serial commands passed.</strong><p>At status <code>0</code>, serial logged <code>LCD backlight=OFF idle</code> just after 60 seconds. A knob movement logged <code>LCD backlight=ON activity</code>. Confirm visually, then finish a dose and check that the full 60-second period restarts at pump stop. Do not move LCD VCC to D10.</p><div class="evidence">Record: LCD photographs and elapsed times. Pump-end reset and physical light change remain open.</div></div></div>
     </section>
   </main>
-  <footer>Source: <code>firmware/arduino/PlantUno/PlantUno.ino</code> and <code>docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md</code>. UI v6 compiled and uploaded to COM8 on 27 September 2026. Serial confirmed controller commands only; the browser LCD and lamps are demonstrations.</footer>
+  <footer>Current baseline: R18 / D03, 11 October 2026; firmware UI v6 unchanged. Source: <code>firmware/arduino/PlantUno/PlantUno.ino</code> and <code>docs/UNO_BUTTON_RELAY_REVISION_2026-09-27.md</code>. UI v6 compiled and uploaded to COM8 on 27 September 2026. Serial confirmed controller commands only; the browser LCD and lamps are demonstrations. All controlled physical/electrical acceptance actions remain open.</footer>
   <script>
     (() => {
       const pot = document.getElementById('demo-pot');

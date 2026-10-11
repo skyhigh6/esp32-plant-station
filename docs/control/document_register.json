@@ -1,32 +1,38 @@
 [
   {
     "document_id": "PLANT-AM-001",
-    "design_revision": "R17",
-    "document_issue": "D02",
-    "date": "2026-09-28",
-    "status": "Issued for prototype review; physical acceptance open",
-    "file": "documents/AM_R17/PLANT-AM-001_R17_D02.pdf",
-    "pages": 20,
-    "sha256": "5ee74745950df35c7e934d3907fdf38ffe01ffacd00c21217e3a83b3baeb4525"
+    "design_revision": "R18",
+    "document_issue": "D03",
+    "date": "2026-10-11",
+    "status": "Issued for combined prototype review; physical acceptance open",
+    "file": "documents/AM_R18/PLANT-AM-001_R18_D03.pdf",
+    "pages": 21,
+    "sha256": "fdc330f02a0252c9a8afe04d3f4370c9eb2d917936b1e190312b5c1f6d9b9753",
+    "source_sha256": "fdcb00f47ca6248f1b896ea099199273c4c7a6b8c05fe08a3529ad77fe1dbfdb",
+    "preceding_document": "PLANT-AM-001 R17 D02"
   },
   {
     "document_id": "PLANT-TR-001",
-    "design_revision": "R17",
-    "document_issue": "D02",
-    "date": "2026-09-28",
-    "status": "Issued for prototype review; physical acceptance open",
-    "file": "documents/TR_R17/PLANT-TR-001_R17_D02.pdf",
-    "pages": 11,
-    "sha256": "3dec637c818bf32813be4be0cfcdff22a8cf88e08be26014ea121db6f8cea79a"
+    "design_revision": "R18",
+    "document_issue": "D03",
+    "date": "2026-10-11",
+    "status": "Issued for combined prototype review; physical acceptance open",
+    "file": "documents/TR_R18/PLANT-TR-001_R18_D03.pdf",
+    "pages": 14,
+    "sha256": "1e7854ce8dabd0da68188aa806be7f4d7f9bc1a515a38b82039a60072d4a99d1",
+    "source_sha256": "0b225631ad7ed7e516e80adecbffe99a072e9772c9793bea5ebc2d7750b7d85e",
+    "preceding_document": "PLANT-TR-001 R17 D02"
   },
   {
     "document_id": "PLANT-TS-001",
-    "design_revision": "R17",
-    "document_issue": "D02",
-    "date": "2026-09-28",
-    "status": "Issued for prototype review; physical acceptance open",
-    "file": "documents/TS_R17/PLANT-TS-001_R17_D02.pdf",
-    "pages": 9,
-    "sha256": "3d57d89aaf68c73e1642685b4f5ec04aedb47d3bbe8aa0f7b62d800f34cf56b2"
+    "design_revision": "R18",
+    "document_issue": "D03",
+    "date": "2026-10-11",
+    "status": "Issued for combined prototype review; physical acceptance open",
+    "file": "documents/TS_R18/PLANT-TS-001_R18_D03.pdf",
+    "pages": 10,
+    "sha256": "e34282d781beccfc53456fb4ba36bcdd7d0ffe366649201316b51c443e775c89",
+    "source_sha256": "340fc0baeb59e21566acd11919b525ae613cdf08386ecfb39ec06826ad03bf69",
+    "preceding_document": "PLANT-TS-001 R17 D02"
   }
 ]

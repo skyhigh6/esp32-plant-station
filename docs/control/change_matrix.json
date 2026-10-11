@@ -112,5 +112,23 @@
     "revision": "R17",
     "description": "USB/barrel extensions remain an electrical interface hold",
     "source": "mechanical/concept_rev17_uno_ports/README.md"
+  },
+  {
+    "id": "T18-1",
+    "revision": "R18",
+    "description": "Open front pump-wire riser and upward-open crossover; protected divider, water bore and reported-fitting mounts retained",
+    "source": "technical/cad/candidates/R18_open_pump_route/CHANGE_RECORD.md"
+  },
+  {
+    "id": "T18-2",
+    "revision": "R18",
+    "description": "Close three standalone LED apertures and one speaker aperture; retain illuminated-button holes/circuitry and blind rear seats",
+    "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/CHANGE_RECORD.md"
+  },
+  {
+    "id": "T18-3",
+    "revision": "R18",
+    "description": "Combine R18 files in D03 documents; retain partial reported Arduino/relay fit, candidate/process limits and all A17 plus new A18 acceptance actions",
+    "source": "docs/control/R18_CHANGE_RECORD.md"
   }
 ]

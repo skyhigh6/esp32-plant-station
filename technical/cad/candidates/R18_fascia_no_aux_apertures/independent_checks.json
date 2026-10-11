@@ -1,0 +1,390 @@
+{
+  "units": "mm",
+  "sections_y_mm": 2.5,
+  "retained_circles": {
+    "R17 fascia": [
+      {
+        "centre_xz_mm": [
+          24,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.99813231519089,
+          6.000003088270017
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          48,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.99813231519089,
+          6.000002791570859
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          72,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.998133185132584,
+          6.000004389345942
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          32,
+          48
+        ],
+        "diameter_mm": 7,
+        "radius_range_mm": [
+          3.49891040166726,
+          3.5000015020863064
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          9,
+          10
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994710810679285,
+          1.7000005955593251
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          87,
+          10
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994691930034225,
+          1.7000032809530572
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          9,
+          148
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994670651295547,
+          1.7000069766573107
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          87,
+          148
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994659517244817,
+          1.7000069766573107
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          10.5,
+          97
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.499777881513721,
+          1.50000305166964
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          85.5,
+          97
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997770601812725,
+          1.500004494653024
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          10.5,
+          128
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997754469035165,
+          1.5000075406286004
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          85.5,
+          128
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997748533979887,
+          1.5000076355839143
+        ]
+      }
+    ],
+    "R18 C02 fascia": [
+      {
+        "centre_xz_mm": [
+          24,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.99813231519089,
+          6.000003088270017
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          48,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.99813231519089,
+          6.000002791570859
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          72,
+          72
+        ],
+        "diameter_mm": 12,
+        "radius_range_mm": [
+          5.998133185132584,
+          6.000004389345942
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          32,
+          48
+        ],
+        "diameter_mm": 7,
+        "radius_range_mm": [
+          3.49891040166726,
+          3.5000015020863064
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          9,
+          10
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994710810679285,
+          1.7000005955593251
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          87,
+          10
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994691930034225,
+          1.7000032809530572
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          9,
+          148
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994670651295547,
+          1.7000069766573107
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          87,
+          148
+        ],
+        "diameter_mm": 3.4,
+        "radius_range_mm": [
+          1.6994659517244817,
+          1.7000069766573107
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          10.5,
+          97
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.499777881513721,
+          1.50000305166964
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          85.5,
+          97
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997770601812725,
+          1.500004494653024
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          10.5,
+          128
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997754469035165,
+          1.5000075406286004
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          85.5,
+          128
+        ],
+        "diameter_mm": 3,
+        "radius_range_mm": [
+          1.4997748533979887,
+          1.5000076355839143
+        ]
+      }
+    ]
+  },
+  "obsolete_centres_solid": {
+    "R17 fascia": [
+      {
+        "centre_xz_mm": [
+          24,
+          88
+        ],
+        "solid_at_section": false
+      },
+      {
+        "centre_xz_mm": [
+          48,
+          88
+        ],
+        "solid_at_section": false
+      },
+      {
+        "centre_xz_mm": [
+          72,
+          88
+        ],
+        "solid_at_section": false
+      },
+      {
+        "centre_xz_mm": [
+          67,
+          45
+        ],
+        "solid_at_section": false
+      }
+    ],
+    "R18 C02 fascia": [
+      {
+        "centre_xz_mm": [
+          24,
+          88
+        ],
+        "solid_at_section": true
+      },
+      {
+        "centre_xz_mm": [
+          48,
+          88
+        ],
+        "solid_at_section": true
+      },
+      {
+        "centre_xz_mm": [
+          72,
+          88
+        ],
+        "solid_at_section": true
+      },
+      {
+        "centre_xz_mm": [
+          67,
+          45
+        ],
+        "solid_at_section": true
+      }
+    ]
+  },
+  "meshes": {
+    "R17 fascia": {
+      "sha256": "544372242f60839adac7043016d29cb039eab63d4611949836c824dc37c4d9eb",
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "bounds_mm": [
+        [
+          3.4000000953674316,
+          1.0,
+          3.4000000953674316
+        ],
+        [
+          92.5999984741211,
+          12.0,
+          154.60000610351562
+        ]
+      ],
+      "volume_mm3": 34703.762694381134
+    },
+    "R18 C02 fascia": {
+      "sha256": "4b2ab7f9f1ac33aa6f4abb18af265e274d1c5236f0e7b43a6941af862373c222",
+      "closed": true,
+      "winding": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "bounds_mm": [
+        [
+          3.4000000953674316,
+          1.0,
+          3.4000000953674316
+        ],
+        [
+          92.5999984741211,
+          12.0,
+          154.60000610351562
+        ]
+      ],
+      "volume_mm3": 34918.08749509087
+    }
+  },
+  "display_aperture_mm": {
+    "R17 fascia": [
+      71.39999675750732,
+      24.600006103515625
+    ],
+    "R18 C02 fascia": [
+      71.39999675750732,
+      24.600006103515625
+    ]
+  }
+}

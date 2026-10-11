@@ -1,0 +1,77 @@
+{
+  "revision": "R18 candidate C01",
+  "date": "2026-10-11",
+  "units": "mm",
+  "source_step": "technical\\print\\main_parts\\step\\tower_sump_body_uno_ports_r17.step",
+  "source_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352",
+  "cadquery": "2.8.0",
+  "change_removed_mm3": 12580.991927249253,
+  "cuts_xyz_mm": {
+    "front": [
+      [
+        106.5,
+        82,
+        52
+      ],
+      [
+        114,
+        96,
+        129
+      ]
+    ],
+    "open_top_crossing": [
+      [
+        89,
+        88,
+        77
+      ],
+      [
+        114,
+        96,
+        159
+      ]
+    ]
+  },
+  "preservation": {
+    "uno_and_relay_removed_mm3": 0.0,
+    "below_rim_wet_dry_partition_removed_mm3": 0.0,
+    "sump_floor_removed_mm3": 0.0,
+    "tube_column_removed_mm3": 0.0,
+    "lid_rear_right_fixing_removed_mm3": 0.0,
+    "lay_in_corridor_solid_overlap_mm3": 0.0,
+    "crossing_floor_min_z_mm": 77,
+    "crossing_floor_above_sump_rim_mm": 17,
+    "rear_wall_remaining_band_y_mm": [
+      96,
+      100
+    ]
+  },
+  "parts": {
+    "tower_open_pump_route_r18_c01": {
+      "valid_single_solid": true,
+      "mesh_one_component": true,
+      "watertight": true,
+      "winding": true,
+      "volume_mm3": 551091.7290009625,
+      "extents_mm": [
+        207.0,
+        100.0,
+        158.0
+      ],
+      "STEP_readback": "PASS"
+    },
+    "route_trial_r18_c01": {
+      "valid_single_solid": true,
+      "mesh_one_component": true,
+      "watertight": true,
+      "winding": true,
+      "volume_mm3": 14283.166042573297,
+      "extents_mm": [
+        29.0,
+        20.0,
+        60.0
+      ],
+      "STEP_readback": "PASS"
+    }
+  }
+}

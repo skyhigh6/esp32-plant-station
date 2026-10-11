@@ -1,0 +1,40 @@
+[2026-10-11 09:40:33.401180] [0x0000a820] [trace]   Initializing StaticPrintConfigs
+[2026-10-11 09:40:33.423121] [0x0000a820] [warning] cli mode, Current BambuStudio Version 02.05.00.66
+[2026-10-11 09:40:33.889872] [0x0000a820] [warning] Slic3r::CLI::run:2688, can not find system preset file: C:\Program Files\Bambu Studio\resources/profiles/BBL/machine_full/Bambu Lab X1 Carbon 0.4 nozzle.json 
+[2026-10-11 09:40:33.889872] [0x0000a820] [warning] Slic3r::CLI::run:2710, can not find system preset file: C:\Program Files\Bambu Studio\resources/profiles/BBL/process_full/0.20mm Strength @BBL X1C.json 
+[2026-10-11 09:40:33.889872] [0x0000a820] [error]   3207: nozzle_volume_type not found, when different_extruder or multiple extruder, new_printer_name , extruder_count 1
+[2026-10-11 09:40:33.889872] [0x0000a820] [warning] no filament colors found in projects
+[2026-10-11 09:40:46.222089] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 9
+[2026-10-11 09:40:46.222089] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 9
+[2026-10-11 09:40:46.283924] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 35
+[2026-10-11 09:40:46.318830] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 207
+[2026-10-11 09:40:46.318830] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 207
+[2026-10-11 09:40:46.318830] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 168
+[2026-10-11 09:40:46.318830] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 168
+[2026-10-11 09:40:46.551208] [0x00004920] [error]   ZFiller: encounter idx from clip: 192
+[2026-10-11 09:40:46.552206] [0x00004920] [error]   ZFiller: encounter idx from clip: 178
+[2026-10-11 09:40:46.600078] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 200
+[2026-10-11 09:40:46.600078] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 198
+[2026-10-11 09:40:46.602073] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 216
+[2026-10-11 09:40:46.602073] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 214
+[2026-10-11 09:40:46.628003] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 108
+[2026-10-11 09:40:46.628003] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 101
+[2026-10-11 09:40:46.791566] [0x00004920] [error]   ZFiller: encounter idx from clip: 201
+[2026-10-11 09:40:46.805528] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 109
+[2026-10-11 09:40:46.853400] [0x00004920] [error]   ZFiller: encounter idx from clip: 205
+[2026-10-11 09:40:46.854398] [0x00004920] [error]   ZFiller: encounter idx from clip: 204
+[2026-10-11 09:40:46.878334] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 94
+[2026-10-11 09:40:46.966098] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 38
+[2026-10-11 09:40:47.029928] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 200
+[2026-10-11 09:40:47.031923] [0x00009e1c] [error]   ZFiller: encounter idx from clip: 216
+[2026-10-11 09:40:47.080792] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 40
+[2026-10-11 09:40:47.303197] [0x0000a820] [error]   ZFiller: encounter idx from clip: 41
+[2026-10-11 09:40:47.309181] [0x0000a820] [error]   ZFiller: encounter idx from clip: 35
+[2026-10-11 09:40:47.380989] [0x0000aa10] [error]   ZFiller: encounter idx from clip: 43
+[2026-10-11 09:40:47.401933] [0x00004920] [error]   ZFiller: encounter idx from clip: 37
+[2026-10-11 09:40:47.411906] [0x00004920] [error]   ZFiller: encounter idx from clip: 61
+[2026-10-11 09:40:47.411906] [0x00004920] [error]   ZFiller: encounter idx from clip: 59
+[2026-10-11 09:40:47.444818] [0x0000a820] [warning] tree support default to organic support
+[2026-10-11 09:41:02.835604] [0x0000a820] [warning] tree support default to organic support
+
+STDERR:

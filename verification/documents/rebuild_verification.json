@@ -1,19 +1,19 @@
 {
-  "AM_R17": {
+  "AM_R18": {
     "exit_code": 0,
-    "pages": 20,
+    "pages": 21,
     "placement_manifest_equal": true,
     "all_rendered_png_hashes_equal": true
   },
-  "TR_R17": {
+  "TR_R18": {
     "exit_code": 0,
-    "pages": 11,
+    "pages": 14,
     "placement_manifest_equal": true,
     "all_rendered_png_hashes_equal": true
   },
-  "TS_R17": {
+  "TS_R18": {
     "exit_code": 0,
-    "pages": 9,
+    "pages": 10,
     "placement_manifest_equal": true,
     "all_rendered_png_hashes_equal": true
   }

@@ -1,0 +1,30 @@
+{
+  "baseline_valid": true,
+  "candidate_valid": true,
+  "candidate_solid_count": 1,
+  "removed_volume_mm3": 12580.991927086734,
+  "added_volume_mm3": 0.0,
+  "removed_outside_declared_cutters_mm3": 0.0,
+  "preserved_regions_removed_volume_mm3": {
+    "all_geometry_left_of_route": 0.0,
+    "all_geometry_right_of_route": 0.0,
+    "rear_wall_band": 0.0,
+    "sump_floor_and_low_wall": 0.0,
+    "below_rim_remaining_partition": 0.0,
+    "left_usb_and_dc_ports": 0.0,
+    "lid_fixing_rear_right": 0.0
+  },
+  "free_corridor_solid_overlap_mm3": {
+    "lay_in_from_sump_side_lower": 231.32262316410117,
+    "lay_in_from_sump_side_upper": 2206.3456154935934,
+    "vertical_route": 0.0,
+    "crossing_to_dry_tower": 0.0,
+    "crossing_top_access": 0.0
+  },
+  "retained_material_probe_missing_mm3": {
+    "crossing_floor": 0.0,
+    "back_wall": 794.9058045361434,
+    "below_rim_partition": 0.0
+  },
+  "coupon_symmetric_difference_mm3": 0.0
+}

@@ -80,6 +80,9 @@ def table(rows,widths=None,row_meta=None):
 def build(path):
     path=Path(path).resolve();base=path.parent;d=json.loads(path.read_text(encoding='utf8'));log=[];story=[]
     issue=d['document_issue'];date=d['issue_date'];status=d['status']
+    revision=d['design_revision']
+    integration_note=('R17 incorporates R15/R16 mechanical changes and the current Uno UI v6 interface. Previous issues are retained. Blank physical results remain open; no acceptance signature is inferred.' if revision==17 else 'R18 combines the open pump-wire route and fascia aperture closures, retaining the R17 ports, Uno/relay mounts, lid, planter and Uno UI v6. Previous issues are retained; reported board fit is not acceptance of the new parts.')
+    control_note=('D02 / document control: new integrated R17 technical content in the established D01 A4 template. Pagination, new headings and editorial reflow alone receive no technical bar.' if revision==17 else f'{issue} / document control: combined R{revision} technical content in the established A4 template. Pagination, new headings and editorial reflow alone receive no technical bar.')
     matrix=json.loads((base.parents[1]/'control/change_matrix.json').read_text(encoding='utf8'))
     changes={item['id']:item for item in matrix}
     def check_bars(labels,ids,block):
@@ -130,7 +133,7 @@ def build(path):
     nfront=3
     for _ in range(6):
         frontstory=[para(d['title'],HEAD),Spacer(1,25),table([
-            ['Controlled field','Value'],['Document number',d['document_id']],['Plant design revision',f"R{d['design_revision']}"],['Document issue',issue],['Issue date',date],['Preceding document',d['original_identity']],['Status',status]]),Spacer(1,16),para(d['scope_note']),para('R17 incorporates R15/R16 mechanical changes and the current Uno UI v6 interface. Previous issues are retained. Blank physical results remain open; no acceptance signature is inferred.',SMALL),PageBreak(),para('Revision control',HEAD),para('Narrow parallel left-margin bars identify surviving changes against the verified matrix. Dates are documentary dates. R15/R16 source changes are incorporated without creating intervening manual issues.'),table([['Revision / class','Change and affected content']]+[[h['revision'],h['description']] for h in d['history']],[95,340]),Spacer(1,10),para('D02 / document control: new integrated R17 technical content in the established D01 A4 template. Pagination, new headings and editorial reflow alone receive no technical bar.',SMALL),para(d['history_limit'],SMALL),PageBreak(),para('List of effective pages',HEAD),para(f'All pages are effective at {issue}, dated {date}, for the R17 prototype. Section references provide navigation; technical change labels are controlled separately.'),table([['Page','Issue','Content']]+[[str(p),issue,'Control pages' if p<=nfront else 'Section '+next((s for s,ps in section_pages.items() if p-nfront in ps),'?')] for p in range(1,nfront+nbody+1)],[40,70,325]),Spacer(1,12),para('Section / page cross-reference',SUB),table([['Section','Subject','Effective pages']]+[[str(i),sec['title'],', '.join(str(p+nfront) for p in sorted(section_pages[str(i)]))] for i,sec in enumerate(d['sections'],1)],[40,300,95])]
+            ['Controlled field','Value'],['Document number',d['document_id']],['Plant design revision',f"R{d['design_revision']}"],['Document issue',issue],['Issue date',date],['Preceding document',d['original_identity']],['Status',status]]),Spacer(1,16),para(d['scope_note']),para(integration_note,SMALL),PageBreak(),para('Revision control',HEAD),para('Narrow parallel left-margin bars identify surviving changes against the verified matrix. Dates are documentary dates. R15/R16 source changes are incorporated without creating intervening manual issues.'),table([['Revision / class','Change and affected content']]+[[h['revision'],h['description']] for h in d['history']],[95,340]),Spacer(1,10),para(control_note,SMALL),para(d['history_limit'],SMALL),PageBreak(),para('List of effective pages',HEAD),para(f'All pages are effective at {issue}, dated {date}, for the R{revision} prototype. Section references provide navigation; technical change labels are controlled separately.'),table([['Page','Issue','Content']]+[[str(p),issue,'Control pages' if p<=nfront else 'Section '+next((s for s,ps in section_pages.items() if p-nfront in ps),'?')] for p in range(1,nfront+nbody+1)],[40,70,325]),Spacer(1,12),para('Section / page cross-reference',SUB),table([['Section','Subject','Effective pages']]+[[str(i),sec['title'],', '.join(str(p+nfront) for p in sorted(section_pages[str(i)]))] for i,sec in enumerate(d['sections'],1)],[40,300,95])]
         front=base/'front.tmp.pdf'
         SimpleDocTemplate(str(front),pagesize=(W,H),leftMargin=LEFT,rightMargin=RIGHT,topMargin=TOP,bottomMargin=BOTTOM).build(frontstory)
         actual=len(fitz.open(front))
@@ -141,7 +144,7 @@ def build(path):
     for i,p in enumerate(result):
         p.insert_text((LEFT,30),f"{d['document_id']}  |  DESIGN R{d['design_revision']}  |  {issue}",fontsize=8,fontname='hebo')
         p.draw_line((LEFT,38),(W-RIGHT,38),color=(0,0,0),width=.5)
-        p.insert_text((LEFT,H-25),'PLANT STATION  /  R17 prototype - physical acceptance open',fontsize=7.5)
+        p.insert_text((LEFT,H-25),f'PLANT STATION  /  R{revision} prototype - physical acceptance open',fontsize=7.5)
         p.insert_text((W-RIGHT-64,H-25),f'{i+1} / {total}',fontsize=8)
     target=base/f"{d['document_id']}_R{d['design_revision']}_{issue}.pdf"
     result.set_metadata({'title':d['title'],'subject':f"Design R{d['design_revision']}; document issue {issue}"});result.save(target,garbage=4,deflate=True);result.close()
@@ -151,6 +154,20 @@ def build(path):
     renders=base/'rendered';renders.mkdir(exist_ok=True)
     with fitz.open(target) as pdf:
         for i,p in enumerate(pdf):p.get_pixmap(matrix=fitz.Matrix(1.25,1.25)).save(renders/f'page-{i+1:03d}.png')
+
+    if revision>=18:
+        lines=[f"# {d['title']}",f"{d['document_id']} / R{revision} / {issue} / {date}",status,'',d['scope_note'],'']
+        for sec in d['sections']:
+            lines.extend(['## '+sec['title'],''])
+            for b in sec['blocks']:
+                if b['type']=='table':
+                    lines.extend(['| '+' | '.join(str(x).replace('|','/') for x in row)+' |' for row in b['rows'][:1]])
+                    lines.append('| '+' | '.join('---' for _ in b['rows'][0])+' |')
+                    lines.extend('| '+' | '.join(str(x).replace('|','/') for x in row)+' |' for row in b['rows'][1:])
+                elif b['type']=='image':lines.extend([f"![Geometry evidence]({b['path']})",b.get('caption','')])
+                else:lines.append(b['text'])
+                lines.append('')
+        target.with_suffix('.md').write_text('\n'.join(lines),encoding='utf-8')
     body.unlink();front.unlink();print(json.dumps({'pdf':str(target),'pages':total}))
 
 if __name__=='__main__':

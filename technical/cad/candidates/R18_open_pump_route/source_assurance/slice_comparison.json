@@ -1,0 +1,143 @@
+{
+  "baseline": {
+    "name": "baseline",
+    "metadata": {
+      "index": "1",
+      "extruder_type": "0",
+      "nozzle_volume_type": "0",
+      "printer_model_id": "",
+      "nozzle_diameters": "0.4",
+      "timelapse_type": "0",
+      "prediction": "39776",
+      "weight": "555.65",
+      "first_layer_time": "0.000000",
+      "outside": "false",
+      "support_used": "true",
+      "label_object_enabled": "false",
+      "filament_maps": "1 1 1 1",
+      "limit_filament_maps": "0 0 0 0"
+    },
+    "warnings": [
+      {
+        "msg": "bed_temperature_too_high_than_filament",
+        "level": "3",
+        "error_code": "1000C001"
+      }
+    ],
+    "stored_filament_diameter_mm": 1.75,
+    "stored_filament_density_g_cm3": 1.26,
+    "support_features": {
+      "Support": {
+        "deposited_filament_length_mm": 7827.382810000321,
+        "extruding_moves": 77508,
+        "min_z": 0.1,
+        "max_z": 154.3,
+        "deposited_volume_mm3": 18827.062004747968,
+        "estimated_mass_g": 23.72209812598244
+      },
+      "Support interface": {
+        "deposited_filament_length_mm": 162.66520000000122,
+        "extruding_moves": 3431,
+        "min_z": 3.5,
+        "max_z": 154.9,
+        "deposited_volume_mm3": 391.25565731908114,
+        "estimated_mass_g": 0.49298212822204224
+      }
+    },
+    "support_filament_length_mm": 7990.048010000322,
+    "support_volume_mm3": 19218.31766206705,
+    "support_estimated_mass_g": 24.215080254204484,
+    "support_arc_moves": 62785,
+    "slicer_log_error_count": 31,
+    "slicer_log_error_examples": [
+      "3207: nozzle_volume_type not found, when different_extruder or multiple extruder, new_printer_name , extruder_count 1",
+      "ZFiller: encounter idx from clip: 101",
+      "ZFiller: encounter idx from clip: 108",
+      "ZFiller: encounter idx from clip: 109",
+      "ZFiller: encounter idx from clip: 168",
+      "ZFiller: encounter idx from clip: 178"
+    ],
+    "slicer_log_warning_examples": [
+      "Slic3r::CLI::run:2688, can not find system preset file: C:\\Program Files\\Bambu Studio\\resources/profiles/BBL/machine_full/Bambu Lab X1 Carbon 0.4 nozzle.json ",
+      "Slic3r::CLI::run:2710, can not find system preset file: C:\\Program Files\\Bambu Studio\\resources/profiles/BBL/process_full/0.20mm Strength @BBL X1C.json ",
+      "cli mode, Current BambuStudio Version 02.05.00.66",
+      "no filament colors found in projects",
+      "tree support default to organic support"
+    ]
+  },
+  "candidate": {
+    "name": "candidate",
+    "metadata": {
+      "index": "1",
+      "extruder_type": "0",
+      "nozzle_volume_type": "0",
+      "printer_model_id": "",
+      "nozzle_diameters": "0.4",
+      "timelapse_type": "0",
+      "prediction": "40097",
+      "weight": "548.58",
+      "first_layer_time": "241568988643565625410730940432384.000000",
+      "outside": "false",
+      "support_used": "true",
+      "label_object_enabled": "false",
+      "filament_maps": "1 1 1 1",
+      "limit_filament_maps": "0 0 0 0"
+    },
+    "warnings": [
+      {
+        "msg": "bed_temperature_too_high_than_filament",
+        "level": "3",
+        "error_code": "1000C001"
+      }
+    ],
+    "stored_filament_diameter_mm": 1.75,
+    "stored_filament_density_g_cm3": 1.26,
+    "support_features": {
+      "Support": {
+        "deposited_filament_length_mm": 7667.834240000121,
+        "extruding_moves": 74624,
+        "min_z": 0.1,
+        "max_z": 154.3,
+        "deposited_volume_mm3": 18443.30272107975,
+        "estimated_mass_g": 23.23856142856049
+      },
+      "Support interface": {
+        "deposited_filament_length_mm": 152.0613700000007,
+        "extruding_moves": 3248,
+        "min_z": 3.5,
+        "max_z": 154.9,
+        "deposited_volume_mm3": 365.7504572102074,
+        "estimated_mass_g": 0.4608455760848613
+      }
+    },
+    "support_filament_length_mm": 7819.895610000121,
+    "support_volume_mm3": 18809.053178289956,
+    "support_estimated_mass_g": 23.699407004645348,
+    "support_arc_moves": 60401,
+    "slicer_log_error_count": 29,
+    "slicer_log_error_examples": [
+      "3207: nozzle_volume_type not found, when different_extruder or multiple extruder, new_printer_name , extruder_count 1",
+      "ZFiller: encounter idx from clip: 174",
+      "ZFiller: encounter idx from clip: 178",
+      "ZFiller: encounter idx from clip: 182",
+      "ZFiller: encounter idx from clip: 184",
+      "ZFiller: encounter idx from clip: 192"
+    ],
+    "slicer_log_warning_examples": [
+      "Slic3r::CLI::run:2688, can not find system preset file: C:\\Program Files\\Bambu Studio\\resources/profiles/BBL/machine_full/Bambu Lab X1 Carbon 0.4 nozzle.json ",
+      "Slic3r::CLI::run:2710, can not find system preset file: C:\\Program Files\\Bambu Studio\\resources/profiles/BBL/process_full/0.20mm Strength @BBL X1C.json ",
+      "cli mode, Current BambuStudio Version 02.05.00.66",
+      "no filament colors found in projects",
+      "tree support default to organic support"
+    ]
+  },
+  "support_reduction_percent": 2.1295541627189163,
+  "support_reduction_mm3": 409.2644837770931,
+  "support_reduction_estimated_mass_g": 0.5156732495591356,
+  "method": "Parse feature-tagged G0/G1/G2/G3 XY motion with positive commanded E extrusion, respecting M82/M83/G92. Support + Support interface. Excludes retractions and E-only primes; material volume uses stored filament diameter and density. Comparative commanded deposition, not observed consumption.",
+  "limitations": [
+    "No physical print performed",
+    "Stored user profile produces bed_temperature_too_high_than_filament warning in both slices; profile is not accepted for printing",
+    "Slicer logs emit ZFiller errors in both despite exit 0; comparative result needs layer review before manufacture"
+  ]
+}

@@ -8,12 +8,28 @@
       "barred_placements": 77,
       "identity_loep_sections_bounds": true
     },
+    "AM_R18": {
+      "pdf": "PLANT-AM-001_R18_D03.pdf",
+      "pages": 21,
+      "front_pages": 4,
+      "sha256": "fdc330f02a0252c9a8afe04d3f4370c9eb2d917936b1e190312b5c1f6d9b9753",
+      "barred_placements": 93,
+      "identity_loep_sections_bounds": true
+    },
     "TR_R17": {
       "pdf": "PLANT-TR-001_R17_D02.pdf",
       "pages": 11,
       "front_pages": 3,
       "sha256": "3dec637c818bf32813be4be0cfcdff22a8cf88e08be26014ea121db6f8cea79a",
       "barred_placements": 27,
+      "identity_loep_sections_bounds": true
+    },
+    "TR_R18": {
+      "pdf": "PLANT-TR-001_R18_D03.pdf",
+      "pages": 14,
+      "front_pages": 3,
+      "sha256": "1e7854ce8dabd0da68188aa806be7f4d7f9bc1a515a38b82039a60072d4a99d1",
+      "barred_placements": 50,
       "identity_loep_sections_bounds": true
     },
     "TS_R17": {
@@ -23,9 +39,17 @@
       "sha256": "3d57d89aaf68c73e1642685b4f5ec04aedb47d3bbe8aa0f7b62d800f34cf56b2",
       "barred_placements": 17,
       "identity_loep_sections_bounds": true
+    },
+    "TS_R18": {
+      "pdf": "PLANT-TS-001_R18_D03.pdf",
+      "pages": 10,
+      "front_pages": 3,
+      "sha256": "e34282d781beccfc53456fb4ba36bcdd7d0ffe366649201316b51c443e775c89",
+      "barred_placements": 39,
+      "identity_loep_sections_bounds": true
     }
   },
-  "source_hash_records": 28,
+  "source_hash_records": 36,
   "checks": [
     "PDF identity and page count",
     "Every effective-page row",

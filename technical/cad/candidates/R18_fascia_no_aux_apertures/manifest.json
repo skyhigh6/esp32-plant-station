@@ -1,0 +1,25 @@
+{
+  "revision": "R18 C02 fascia-only local candidate",
+  "source_SHA256": "659f2b4dccc36b2a2557f485f04079922de0ce02b9f36d2cac726a22ef2eeda4",
+  "sha256": {
+    "before_after_fascia.png": "5fa33a5c782c556e91370d4e35696c33ef48d0d18d48f9b5d630bafcbdc7bd92",
+    "build.py": "7f50cec78306c12383ed9dcaa4d9ea27b5cdda1afcd7adeea8ec1aaa086b4fec",
+    "CHANGE_RECORD.md": "f77a81cb934a69bc429ea117fe69e5d0ba46705021b21ce0662c946567d66884",
+    "check_and_render.py": "09bef052862904cf30acbd22a22d31fa207d0b273047ce43da830a1a8f02bff3",
+    "exports/fascia_no_aux_apertures_r18_c02.step": "277c67abcb8b8b9072cd468812d0907954673facde2cd79d02870465620a10cf",
+    "exports/fascia_no_aux_apertures_r18_c02.stl": "4b2ab7f9f1ac33aa6f4abb18af265e274d1c5236f0e7b43a6941af862373c222",
+    "geometry_checks.json": "66e69b250faee06d43901ca4e09ea312d40347169a81b5c7562c64033c488ef3",
+    "independent_checks.json": "6de8adc79068448d554386764b479e55329c6e64264fef42f9ff9b81ce7019e4",
+    "process_record.json": "b8c13727b4ba0ae5fd4d3b6d7766e5d62e31f6b06f3f4bdb449cebd441be5e31",
+    "README.md": "94c50f24567fca31adfa033fb97683af3fa4af45f45d64024d9b4833172a8da8",
+    "source_assurance/assurance.md": "0ee51b8da64e9c12b45375161eaea40b810adcd3e0b90f04deda65c60c98d603",
+    "source_assurance/baseline_plate_section.json": "c400bbace2b4ffb0245fc5cad6f34aa05f64b4da2e3935f85163f94277da0681",
+    "source_assurance/check_mesh_sections.py": "2a61e4ffa4afbcac0493a467363cb43cd50f25102b10e48cfc3361531137c040",
+    "source_assurance/check_step.py": "2884c2dfcb84231f4010a46a40fedd3b88958b5aa575a0e21e596882c0537664",
+    "source_assurance/fascia_section_comparison.png": "bcc95b8aa3555a6c4c5998d10f4fab52d875057e718ed45cee063cfb068e6ef8",
+    "source_assurance/mesh_and_section_checks.json": "0f8f49e0c9532e73f139acc81356b22082a41f0361fb7bc566fda833bf12df2a",
+    "source_assurance/process_results.json": "5b4432cfcc9d43fb9bf4bc504c4b31a05d75a05ef1a3884d99092e5abeb04f8e",
+    "source_assurance/source_recheck.json": "57a1a2ec3be8960d10eb592bf9b109cc7916d33a1559e0c80a1298db72581443",
+    "source_assurance/step_independent_checks.json": "f73849868e34d2734c584530b0188fe634df218447effb28a3c4256fdb383f86"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_sha256": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
+  "watertight": true,
+  "winding_consistent": true,
+  "connected_components": 1,
+  "volume_mm3": 551091.7290009625,
+  "bounds_mm": [
+    [
+      -8.881784197001252e-16,
+      -8.881784197001252e-16,
+      -1.1102230246251565e-16
+    ],
+    [
+      207.0,
+      100.0,
+      158.0
+    ]
+  ],
+  "degenerate_faces": 0,
+  "faces": 79680
+}

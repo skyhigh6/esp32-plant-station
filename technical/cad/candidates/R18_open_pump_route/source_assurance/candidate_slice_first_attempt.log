@@ -1,0 +1,6 @@
+[2026-10-11 09:41:25.301937] [0x00009b2c] [trace]   Initializing StaticPrintConfigs
+[2026-10-11 09:41:25.322881] [0x00009b2c] [warning] cli mode, Current BambuStudio Version 02.05.00.66
+Slic3r::CLI::run found error, exit
+
+STDERR:
+<local-user-profile>\Documents\ChatGPT\plant\.build\r18_source_audit\candidate_project.3mf: The supplied file couldn't be read because it's empty

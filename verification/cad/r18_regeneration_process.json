@@ -1,0 +1,194 @@
+{
+  "revision": "R18",
+  "records": [
+    {
+      "source": "technical/cad/candidates/R18_open_pump_route/build.py",
+      "exit_code": 3221226356,
+      "stdout": "PASS: R18 exports, protected mounts/wet floor/tube/lid, lay-in corridors\n",
+      "stderr": "",
+      "exports": {
+        ".build/r18_regeneration/R18_open_pump_route/exports/tower_open_pump_route_r18_c01.stl": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
+        ".build/r18_regeneration/R18_open_pump_route/exports/tower_open_pump_route_r18_c01.step": "e95c6968eb0c702416760303f7479c32c5dc42d2f4a7f77e2d1cabe7b666ae91",
+        ".build/r18_regeneration/R18_open_pump_route/exports/route_trial_r18_c01.stl": "b4d55ef095cccf97a2e71bedc07c2953b7b79bb07b4e8c1e80b82b1e6d322428",
+        ".build/r18_regeneration/R18_open_pump_route/exports/route_trial_r18_c01.step": "2ee9ce7ca1f0974f1bce39846f4b8422b265f603b94f4bb65a64328e2ffd493b"
+      },
+      "stl_hashes_match_candidate": true,
+      "geometry_report": {
+        "revision": "R18 candidate C01",
+        "date": "2026-10-11",
+        "units": "mm",
+        "source_step": "technical\\print\\main_parts\\step\\tower_sump_body_uno_ports_r17.step",
+        "source_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352",
+        "cadquery": "2.8.0",
+        "change_removed_mm3": 12580.991927249253,
+        "cuts_xyz_mm": {
+          "front": [
+            [
+              106.5,
+              82,
+              52
+            ],
+            [
+              114,
+              96,
+              129
+            ]
+          ],
+          "open_top_crossing": [
+            [
+              89,
+              88,
+              77
+            ],
+            [
+              114,
+              96,
+              159
+            ]
+          ]
+        },
+        "preservation": {
+          "uno_and_relay_removed_mm3": 0.0,
+          "below_rim_wet_dry_partition_removed_mm3": 0.0,
+          "sump_floor_removed_mm3": 0.0,
+          "tube_column_removed_mm3": 0.0,
+          "lid_rear_right_fixing_removed_mm3": 0.0,
+          "lay_in_corridor_solid_overlap_mm3": 0.0,
+          "crossing_floor_min_z_mm": 77,
+          "crossing_floor_above_sump_rim_mm": 17,
+          "rear_wall_remaining_band_y_mm": [
+            96,
+            100
+          ]
+        },
+        "parts": {
+          "tower_open_pump_route_r18_c01": {
+            "valid_single_solid": true,
+            "mesh_one_component": true,
+            "watertight": true,
+            "winding": true,
+            "volume_mm3": 551091.7290009625,
+            "extents_mm": [
+              207.0,
+              100.0,
+              158.0
+            ],
+            "STEP_readback": "PASS"
+          },
+          "route_trial_r18_c01": {
+            "valid_single_solid": true,
+            "mesh_one_component": true,
+            "watertight": true,
+            "winding": true,
+            "volume_mm3": 14283.166042573297,
+            "extents_mm": [
+              29.0,
+              20.0,
+              60.0
+            ],
+            "STEP_readback": "PASS"
+          }
+        }
+      },
+      "runtime_exit_hex": "0xc0000374"
+    },
+    {
+      "source": "technical/cad/candidates/R18_fascia_no_aux_apertures/build.py",
+      "exit_code": 3221226356,
+      "stdout": "PASS: four filled apertures, no removals, retained envelope and zero tower interference\n",
+      "stderr": "",
+      "exports": {
+        ".build/r18_regeneration/R18_fascia_no_aux_apertures/exports/fascia_no_aux_apertures_r18_c02.stl": "4b2ab7f9f1ac33aa6f4abb18af265e274d1c5236f0e7b43a6941af862373c222",
+        ".build/r18_regeneration/R18_fascia_no_aux_apertures/exports/fascia_no_aux_apertures_r18_c02.step": "bbed4fb2f942d6a5711f595e68d4b94a44dc6c197ff14ef666c6e6ebecd67dda"
+      },
+      "stl_hashes_match_candidate": true,
+      "geometry_report": {
+        "revision": "R18 C02 fascia-only local candidate",
+        "date": "2026-10-11",
+        "units": "mm",
+        "cadquery": "2.8.0",
+        "source": "technical\\print\\main_parts\\step\\fascia_charcoal.step",
+        "source_sha256": "659f2b4dccc36b2a2557f485f04079922de0ce02b9f36d2cac726a22ef2eeda4",
+        "plate_front_rear_y_mm": [
+          1.0,
+          4.0
+        ],
+        "obsolete_apertures": {
+          "LED1": {
+            "centre_xz_mm": [
+              24.0,
+              88.0
+            ],
+            "original_diameter_mm": 5.0,
+            "full_plate_missing_mm3": 0.0
+          },
+          "LED2": {
+            "centre_xz_mm": [
+              48.0,
+              88.0
+            ],
+            "original_diameter_mm": 5.0,
+            "full_plate_missing_mm3": 0.0
+          },
+          "LED3": {
+            "centre_xz_mm": [
+              72.0,
+              88.0
+            ],
+            "original_diameter_mm": 5.0,
+            "full_plate_missing_mm3": 0.0
+          },
+          "speaker": {
+            "centre_xz_mm": [
+              67.0,
+              45.0
+            ],
+            "original_diameter_mm": 4.0,
+            "full_plate_missing_mm3": 0.0
+          }
+        },
+        "change": {
+          "added_mm3": 214.4136986075101,
+          "removed_mm3": 0.0,
+          "added_outside_aperture_patches_mm3": 0.0
+        },
+        "retained": "All geometry outside four aperture patches; rear collars/seat, all buttons, knob, display and fixings",
+        "tower_intersections": {
+          "R17": {
+            "before_mm3": 0.0,
+            "after_mm3": 0.0,
+            "tower_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352"
+          },
+          "R18_C01_route_only": {
+            "before_mm3": 0.0,
+            "after_mm3": 0.0,
+            "tower_sha256": "e95c6968eb0c702416760303f7479c32c5dc42d2f4a7f77e2d1cabe7b666ae91"
+          }
+        },
+        "STEP_readback": "valid single solid",
+        "mesh": {
+          "closed": true,
+          "winding": true,
+          "components": 1,
+          "volume_mm3": 34918.08749509087,
+          "bounds_mm": [
+            [
+              3.4000000953674316,
+              1.0,
+              3.4000000953674316
+            ],
+            [
+              92.5999984741211,
+              12.0,
+              154.60000610351562
+            ]
+          ]
+        }
+      },
+      "runtime_exit_hex": "0xc0000374"
+    }
+  ],
+  "status": "Geometry/export checks completed; process anomaly remains",
+  "physical_acceptance": "Open; no hardware operation",
+  "date": "2026-10-11"
+}

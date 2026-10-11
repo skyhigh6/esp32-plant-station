@@ -1,4 +1,4 @@
-"""Read final R17 STLs independently: topology and through-wall port sections."""
+"""Read final R18 tower and inherited port-coupon STLs independently: topology and through-wall port sections."""
 
 from pathlib import Path
 import argparse
@@ -53,10 +53,10 @@ def usb_rectangle(loops: list, p: dict) -> dict:
 
 def main() -> None:
     p = json.loads((HERE / "parameters.json").read_text(encoding="utf-8"))
-    report = {"revision": p["revision"], "units": "mm", "files": {}, "sections": {},
+    report = {"revision": "R18", "units": "mm", "files": {}, "sections": {},
               "parameters_sha256": hashlib.sha256((HERE / "parameters.json").read_bytes()).hexdigest()}
     for name, expected_extents in (
-        ("tower_sump_body_uno_ports_r17", (207, 100, 158)),
+        ("tower_open_pump_route_r18", (207, 100, 158)),
         ("power_ports_fit_coupon_r17", (6, 60, 24)),
     ):
         group = "main_parts" if name.startswith("tower_") else "fit_trials"
@@ -96,7 +96,7 @@ def main() -> None:
             }
     report["unsupported"] = ["Full mesh self-intersection", "Slicer layers", "Physical fit and strength"]
     (REPORT_DIR / "independent_mesh_check.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print("PASS: 2 R17 meshes; six wall sections confirm USB profile, 2 fixing pilots and 10 mm bore")
+    print("PASS: R18 tower and R17 coupon meshes; six wall sections confirm USB profile, 2 fixing pilots and 10 mm bore")
 
 
 if __name__ == "__main__":

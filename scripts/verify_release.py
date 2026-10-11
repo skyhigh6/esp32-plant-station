@@ -23,8 +23,8 @@ def main() -> None:
     for row in prints + inputs:
         if digest(contained(row['file'])) != row['sha256']:
             raise AssertionError(f'File changed: {row["file"]}')
-    if len(prints) != 46:
-        raise AssertionError('Expected 46 controlled print exports')
+    if len(prints) != 52:
+        raise AssertionError('Expected 52 controlled print exports (48 current/options plus 4 frozen predecessors)')
     evidence = json.loads((ROOT / 'docs/control/evidence_register.json').read_text())
     preserved_firmware = 0
     for row in evidence:
@@ -59,18 +59,35 @@ def main() -> None:
                 raise AssertionError('Stored toolpath SHA-256 mismatch')
             if hashlib.md5(gcode).hexdigest().upper().encode() != archive.read(row['gcode_member'] + '.md5'):
                 raise AssertionError('Stored toolpath MD5 mismatch')
+    promotions = [('R18_open_pump_route','tower_open_pump_route_r18_c01','tower_open_pump_route_r18','main_parts'),('R18_open_pump_route','route_trial_r18_c01','route_trial_r18','fit_trials'),('R18_fascia_no_aux_apertures','fascia_no_aux_apertures_r18_c02','fascia_no_aux_apertures_r18','main_parts')]
+    for folder, source, target, group in promotions:
+        for ext in ('stl','step'):
+            if digest(ROOT / f'technical/cad/candidates/{folder}/exports/{source}.{ext}') != digest(ROOT / f'technical/print/{group}/{ext}/{target}.{ext}'):
+                raise AssertionError('R18 promotion changed geometry')
+    for candidate in (ROOT / 'technical/cad/candidates').iterdir():
+        manifest = json.loads((candidate / 'manifest.json').read_text())
+        for path, expected in manifest['sha256'].items():
+            if digest(candidate / path) != expected:
+                raise AssertionError(f'Candidate evidence mismatch: {candidate.name}/{path}')
     for command in ([sys.executable, str(ROOT / 'technical/cad/check_exports.py')],
+                    [sys.executable, str(ROOT / 'verification/cad/r18_combined_check.py'), '--mesh-only'],
                     [sys.executable, str(ROOT / 'docs/tooling/validate_set.py')]):
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
         if result.returncode:
             raise RuntimeError(f'Check failed: {Path(command[1]).name}\n{result.stdout}\n{result.stderr}')
         print(result.stdout.strip())
-    report = {'date':'2026-09-28', 'status':'PASS', 'print_export_hashes':len(prints),
+    combined = json.loads((ROOT / 'verification/cad/r18_combined_checks.json').read_text())
+    if not combined.get('eight_board_pilots_identical_to_R17') or len(combined.get('assembly_pair_intersections',{})) != 6:
+        raise AssertionError('Full combined STEP evidence missing')
+    for pair in combined['assembly_pair_intersections'].values():
+        if abs(pair['combined_R18_mm3']) > .001:
+            raise AssertionError('Combined assembly intersection')
+    report = {'date':'2026-10-11', 'status':'PASS', 'print_export_hashes':len(prints),
               'frozen_cad_input_hashes':len(inputs), 'source_basis_hashes':len(evidence),
               'current_firmware_files_preserved':preserved_firmware, 'independent_mesh_checker_exit':0,
               'plate_layout_hash_crc_membership':True,
               'controlled_operator_slicer_exports':len(slicer),
-              'pdf_validator_exit':0, 'engineering_scope':'No geometry, firmware or issued PDF content change',
+              'pdf_validator_exit':0, 'engineering_scope':'Combined R18 pump-wire route and fascia aperture closures; Uno UI v6 unchanged', 'r17_printer_files':'Historical only; no R18 machine files issued',
               'physical_acceptance':'Open; no hardware or printer test performed'}
     (ROOT / 'verification/release_checks.json').write_text(json.dumps(report, indent=2) + '\n')
     print('PASS: release integrity and relocated independent checks')

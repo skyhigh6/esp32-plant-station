@@ -9,3 +9,9 @@ __pycache__/
 !.env.example
 *.pem
 *.key
+
+# Original operator projects contain mixed models and account metadata.
+/technical/print/main_parts/stl/all plates r17.3mf
+/technical/print/main_parts/stl/fascia_charcoal.3mf
+# Local candidate review archives duplicate the controlled R18 release.
+/technical/cad/candidates/*/*review.zip

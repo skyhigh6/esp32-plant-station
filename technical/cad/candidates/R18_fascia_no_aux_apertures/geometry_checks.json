@@ -1,0 +1,83 @@
+{
+  "revision": "R18 C02 fascia-only local candidate",
+  "date": "2026-10-11",
+  "units": "mm",
+  "cadquery": "2.8.0",
+  "source": "technical\\print\\main_parts\\step\\fascia_charcoal.step",
+  "source_sha256": "659f2b4dccc36b2a2557f485f04079922de0ce02b9f36d2cac726a22ef2eeda4",
+  "plate_front_rear_y_mm": [
+    1.0,
+    4.0
+  ],
+  "obsolete_apertures": {
+    "LED1": {
+      "centre_xz_mm": [
+        24.0,
+        88.0
+      ],
+      "original_diameter_mm": 5.0,
+      "full_plate_missing_mm3": 0.0
+    },
+    "LED2": {
+      "centre_xz_mm": [
+        48.0,
+        88.0
+      ],
+      "original_diameter_mm": 5.0,
+      "full_plate_missing_mm3": 0.0
+    },
+    "LED3": {
+      "centre_xz_mm": [
+        72.0,
+        88.0
+      ],
+      "original_diameter_mm": 5.0,
+      "full_plate_missing_mm3": 0.0
+    },
+    "speaker": {
+      "centre_xz_mm": [
+        67.0,
+        45.0
+      ],
+      "original_diameter_mm": 4.0,
+      "full_plate_missing_mm3": 0.0
+    }
+  },
+  "change": {
+    "added_mm3": 214.4136986075101,
+    "removed_mm3": 0.0,
+    "added_outside_aperture_patches_mm3": 0.0
+  },
+  "retained": "All geometry outside four aperture patches; rear collars/seat, all buttons, knob, display and fixings",
+  "tower_intersections": {
+    "R17": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0,
+      "tower_sha256": "e74c073986564771eb660b70b004969c20f2cf9501af87a1c6b3494666879352"
+    },
+    "R18_C01_route_only": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0,
+      "tower_sha256": "5444d3722b381151e1b2ccb68366cf45b6a37d974aced967f436cfe043be5716"
+    }
+  },
+  "STEP_readback": "valid single solid",
+  "mesh": {
+    "closed": true,
+    "winding": true,
+    "components": 1,
+    "volume_mm3": 34918.08749509087,
+    "bounds_mm": [
+      [
+        3.4000000953674316,
+        1.0,
+        3.4000000953674316
+      ],
+      [
+        92.5999984741211,
+        12.0,
+        154.60000610351562
+      ]
+    ]
+  }
+}

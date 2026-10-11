@@ -1,0 +1,11 @@
+{
+  "revision": "R18 C02 fascia only",
+  "cad_build_exit": 1,
+  "cad_build_result": "PASS printed, exports and checks completed; no returned traceback; shutdown cause unknown",
+  "independent_mesh_render_exit": 0,
+  "independent_STEP_audit_exit": 1,
+  "independent_STEP_audit_status": "All results saved before shutdown, no traceback",
+  "visual_inspection": "before_after_fascia.png inspected",
+  "slicing": "Not performed; proportionate layer check is a physical-manufacture action",
+  "publication": "Local candidate only; not committed, pushed or promoted"
+}

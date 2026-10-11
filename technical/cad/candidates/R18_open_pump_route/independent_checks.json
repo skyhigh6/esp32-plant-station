@@ -1,0 +1,226 @@
+{
+  "units": "mm",
+  "files": {
+    "route_trial_r18_c01.stl": {
+      "sha256": "b4d55ef095cccf97a2e71bedc07c2953b7b79bb07b4e8c1e80b82b1e6d322428",
+      "closed": true,
+      "consistent_winding": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "volume_mm3": 14283.166042573297,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          29.0,
+          20.0,
+          60.0
+        ]
+      ]
+    },
+    "tower_open_pump_route_r18_c01.stl": {
+      "sha256": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
+      "closed": true,
+      "consistent_winding": true,
+      "components": 1,
+      "all_edges_two_faces": true,
+      "degenerate_faces": 0,
+      "volume_mm3": 551091.7290009625,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ]
+    }
+  },
+  "support_proxy": {
+    "R17": {
+      "route_faces_downward_more_than_30deg_from_vertical_area_mm2": 226.9699655557159
+    },
+    "R18 C01": {
+      "route_faces_downward_more_than_30deg_from_vertical_area_mm2": 0.0
+    },
+    "reduction_percent": 100.0
+  },
+  "limitations": [
+    "Downward face area is geometry evidence, not slicer support consumption",
+    "No full self-intersection test or physical acceptance"
+  ],
+  "board_pilot_sections": {
+    "R17": [
+      {
+        "centre_xz_mm": [
+          79.75,
+          107.56
+        ],
+        "radius_min_max_mm": [
+          1.3995935988693615,
+          1.4000038797951309
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          79.75,
+          79.62
+        ],
+        "radius_min_max_mm": [
+          1.3995937597661585,
+          1.400004070069343
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          28.95,
+          122.8
+        ],
+        "radius_min_max_mm": [
+          1.399594299456851,
+          1.400003558531848
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          27.68,
+          74.54
+        ],
+        "radius_min_max_mm": [
+          1.3995935522694891,
+          1.4000038389200726
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          23.75,
+          35.75
+        ],
+        "radius_min_max_mm": [
+          1.3995962582300707,
+          1.4000015258789062
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          23.75,
+          56.25
+        ],
+        "radius_min_max_mm": [
+          1.3995962582300707,
+          1.4000015258789062
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          68.25,
+          35.75
+        ],
+        "radius_min_max_mm": [
+          1.3995943229053378,
+          1.4000023576028617
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          68.25,
+          56.25
+        ],
+        "radius_min_max_mm": [
+          1.3995943229053378,
+          1.4000023576028617
+        ]
+      }
+    ],
+    "R18 C01": [
+      {
+        "centre_xz_mm": [
+          79.75,
+          107.56
+        ],
+        "radius_min_max_mm": [
+          1.3995935988693615,
+          1.4000038797951309
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          79.75,
+          79.62
+        ],
+        "radius_min_max_mm": [
+          1.3995937597661585,
+          1.400004070069343
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          28.95,
+          122.8
+        ],
+        "radius_min_max_mm": [
+          1.399594299456851,
+          1.400003558531848
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          27.68,
+          74.54
+        ],
+        "radius_min_max_mm": [
+          1.3995935522694891,
+          1.4000038389200726
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          23.75,
+          35.75
+        ],
+        "radius_min_max_mm": [
+          1.3995962582300707,
+          1.4000015258789062
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          23.75,
+          56.25
+        ],
+        "radius_min_max_mm": [
+          1.3995962582300707,
+          1.4000015258789062
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          68.25,
+          35.75
+        ],
+        "radius_min_max_mm": [
+          1.3995943229053378,
+          1.4000023576028617
+        ]
+      },
+      {
+        "centre_xz_mm": [
+          68.25,
+          56.25
+        ],
+        "radius_min_max_mm": [
+          1.3995943229053378,
+          1.4000023576028617
+        ]
+      }
+    ]
+  }
+}

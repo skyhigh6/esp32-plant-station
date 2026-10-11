@@ -1,0 +1,41 @@
+{
+  "cad_build": {
+    "exit_code": 1,
+    "assertions": "PASS printed; geometry_checks.json and STL/STEP exports produced",
+    "stderr_after_PASS": "No traceback returned",
+    "disposition": "Not a clean process exit; cause unknown; prior project records show similar native shutdown anomaly"
+  },
+  "independent_export_check": {
+    "exit_code": 0,
+    "result": "PASS"
+  },
+  "visual_review": {
+    "before_after_section.png": "Inspected",
+    "before_after_route.png": "Inspected; local cropped surface detail, not complete assembly"
+  },
+  "git_alignment": {
+    "remote": "https://github.com/skyhigh6/esp32-plant-station.git",
+    "branch": "main",
+    "local_and_fetched_remote": "16e4ad7651115d4fda5e9024cfb1815945fa96a0",
+    "action": "Fetched; already aligned; no merge/reset needed"
+  },
+  "publication": "Candidate remains local; not committed or pushed",
+  "independent_assurance_worker": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning": "high",
+    "dispatch": "Explicit selection accepted by spawn tool",
+    "outputs": "Source audit and candidate assurance inspected separately; summaries not used as sole evidence"
+  },
+  "slicer_comparison": {
+    "Bambu_Studio": "2.5.0.66",
+    "baseline_exit": 0,
+    "candidate_retry_exit": 0,
+    "first_candidate_attempt": "Failed model namespace serialisation; corrected scratch copy, original untouched",
+    "support_deposition_reduction_percent": 2.1295541627189163,
+    "limitations": [
+      "Both runs emit ZFiller and preset/profile warnings",
+      "Candidate first-layer metadata implausible",
+      "Comparison only; generated files not issued for manufacture"
+    ]
+  }
+}

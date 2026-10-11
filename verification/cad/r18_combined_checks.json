@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-11",
+  "units": "mm",
+  "promotion_hashes": {
+    "technical\\print\\main_parts\\stl\\tower_open_pump_route_r18.stl": {
+      "sha256": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
+      "candidate_sha256": "9cfdab7ae09f73e2852554bb8d97aa61061193c1e15fc20a720600f5eaf8c196",
+      "byte_identical": true
+    },
+    "technical\\print\\main_parts\\step\\tower_open_pump_route_r18.step": {
+      "sha256": "5444d3722b381151e1b2ccb68366cf45b6a37d974aced967f436cfe043be5716",
+      "candidate_sha256": "5444d3722b381151e1b2ccb68366cf45b6a37d974aced967f436cfe043be5716",
+      "byte_identical": true
+    },
+    "technical\\print\\main_parts\\stl\\fascia_no_aux_apertures_r18.stl": {
+      "sha256": "4b2ab7f9f1ac33aa6f4abb18af265e274d1c5236f0e7b43a6941af862373c222",
+      "candidate_sha256": "4b2ab7f9f1ac33aa6f4abb18af265e274d1c5236f0e7b43a6941af862373c222",
+      "byte_identical": true
+    },
+    "technical\\print\\main_parts\\step\\fascia_no_aux_apertures_r18.step": {
+      "sha256": "277c67abcb8b8b9072cd468812d0907954673facde2cd79d02870465620a10cf",
+      "candidate_sha256": "277c67abcb8b8b9072cd468812d0907954673facde2cd79d02870465620a10cf",
+      "byte_identical": true
+    },
+    "technical\\print\\fit_trials\\stl\\route_trial_r18.stl": {
+      "sha256": "b4d55ef095cccf97a2e71bedc07c2953b7b79bb07b4e8c1e80b82b1e6d322428",
+      "candidate_sha256": "b4d55ef095cccf97a2e71bedc07c2953b7b79bb07b4e8c1e80b82b1e6d322428",
+      "byte_identical": true
+    },
+    "technical\\print\\fit_trials\\step\\route_trial_r18.step": {
+      "sha256": "1d2ff9e5299690c05e53cfcfd98f239d2dfa73bbffd69d436c6562a71497dee1",
+      "candidate_sha256": "1d2ff9e5299690c05e53cfcfd98f239d2dfa73bbffd69d436c6562a71497dee1",
+      "byte_identical": true
+    }
+  },
+  "exported_mesh_checks": {
+    "tower": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "volume_mm3": 551091.7290009625,
+      "bounds_mm": [
+        [
+          -8.881784197001252e-16,
+          -8.881784197001252e-16,
+          -1.1102230246251565e-16
+        ],
+        [
+          207.0,
+          100.0,
+          158.0
+        ]
+      ],
+      "degenerate_faces_area_lt_1e_10": 0
+    },
+    "fascia": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "volume_mm3": 34918.08749509087,
+      "bounds_mm": [
+        [
+          3.4000000953674316,
+          1.0,
+          3.4000000953674316
+        ],
+        [
+          92.5999984741211,
+          12.0,
+          154.60000610351562
+        ]
+      ],
+      "degenerate_faces_area_lt_1e_10": 0
+    },
+    "route_trial": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "volume_mm3": 14283.166042573297,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          29.0,
+          20.0,
+          60.0
+        ]
+      ],
+      "degenerate_faces_area_lt_1e_10": 0
+    }
+  },
+  "manifests": {
+    "technical\\cad\\candidates\\R18_fascia_no_aux_apertures\\manifest.json": {
+      "entries": 19,
+      "mismatches": []
+    },
+    "technical\\cad\\candidates\\R18_open_pump_route\\manifest.json": {
+      "entries": 36,
+      "mismatches": []
+    },
+    "technical/print/manifest.json": {
+      "entries": 52,
+      "mismatches": []
+    }
+  },
+  "publication_text_metadata_findings": [],
+  "publication_exclusions": [
+    "Original two user 3MF projects: DesignerUserId account metadata and filament_cost fields",
+    "Local candidate review ZIPs: duplicate archives, C01 contains original unredacted failed-attempt log",
+    "All .build comparison toolpaths/projects: local validation outputs"
+  ],
+  "reopened_STEP_all_valid_single_solids": true,
+  "retained_eight_board_pilots": [
+    {
+      "centre_xz_mm": [
+        23.75,
+        35.75
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        23.75,
+        56.25
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        27.68,
+        74.54
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        28.95,
+        122.8
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        68.25,
+        35.75
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        68.25,
+        56.25
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        79.75,
+        79.62
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    },
+    {
+      "centre_xz_mm": [
+        79.75,
+        107.56
+      ],
+      "diameter_mm": 2.8,
+      "y_extent_mm": [
+        76.0,
+        87.0
+      ]
+    }
+  ],
+  "eight_board_pilots_identical_to_R17": true,
+  "pump_route_checks": {
+    "removed_mm3": 12580.991927086734,
+    "added_mm3": 0.0,
+    "removed_outside_cutter_mm3": 0.0,
+    "rear_band_removed_mm3": 0.0,
+    "below_rim_partition_removed_mm3": 0.0,
+    "sump_floor_removed_mm3": 0.0,
+    "tube_column_removed_mm3": 0.0,
+    "lid_fixing_removed_mm3": 0.0,
+    "front_lay_in_corridor_overlap_mm3": 0.0,
+    "top_crossover_overlap_mm3": 0.0
+  },
+  "fascia_checks": {
+    "added_mm3": 214.4136986075101,
+    "removed_mm3": 0.0,
+    "added_outside_four_plate_regions_mm3": 0.0,
+    "rear_features_symmetric_difference_mm3": 0.0,
+    "closure_probe_missing_mm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "assembly_pair_intersections": {
+    "tower__fascia": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    },
+    "tower__lid": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    },
+    "tower__planter": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    },
+    "fascia__lid": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    },
+    "fascia__planter": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    },
+    "lid__planter": {
+      "baseline_mm3": 0.0,
+      "combined_R18_mm3": 0.0,
+      "change_mm3": 0.0
+    }
+  },
+  "limitations": [
+    "Digital geometry assurance only; no new physical fit, leak, strength or electrical acceptance",
+    "Existing comparative slices retain documented errors and profile warnings; no new slicing performed",
+    "CAD process may exit1 after reports during known runtime shutdown anomaly; actual exit separately recorded"
+  ],
+  "process_results": {
+    "combined_STEP_mesh_check_exit_code": 1,
+    "combined_checker_printed_both_PASS_before_exit": true,
+    "combined_checker_traceback": false,
+    "CAD_shutdown_note": "Known CAD-runtime shutdown anomaly remains; exit1 is not clean process success. Geometry evidence is saved and mesh-only run recorded separately.",
+    "mesh_only_check_exit_code": 0,
+    "mesh_only_check_note": "Independent reopened-export topology/hash/manifest check passes without importing CAD runtime."
+  },
+  "publication_ignore_check_exit_code": 0,
+  "publication_original_user_projects_and_candidate_archives_ignored": true
+}

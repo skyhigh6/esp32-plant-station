@@ -1,0 +1,32 @@
+[
+  {
+    "document_id": "PLANT-AM-001",
+    "design_revision": "R17",
+    "document_issue": "D02",
+    "date": "2026-09-28",
+    "status": "Issued for prototype review; physical acceptance open",
+    "file": "documents/AM_R17/PLANT-AM-001_R17_D02.pdf",
+    "pages": 20,
+    "sha256": "5ee74745950df35c7e934d3907fdf38ffe01ffacd00c21217e3a83b3baeb4525"
+  },
+  {
+    "document_id": "PLANT-TR-001",
+    "design_revision": "R17",
+    "document_issue": "D02",
+    "date": "2026-09-28",
+    "status": "Issued for prototype review; physical acceptance open",
+    "file": "documents/TR_R17/PLANT-TR-001_R17_D02.pdf",
+    "pages": 11,
+    "sha256": "3dec637c818bf32813be4be0cfcdff22a8cf88e08be26014ea121db6f8cea79a"
+  },
+  {
+    "document_id": "PLANT-TS-001",
+    "design_revision": "R17",
+    "document_issue": "D02",
+    "date": "2026-09-28",
+    "status": "Issued for prototype review; physical acceptance open",
+    "file": "documents/TS_R17/PLANT-TS-001_R17_D02.pdf",
+    "pages": 9,
+    "sha256": "3d57d89aaf68c73e1642685b4f5ec04aedb47d3bbe8aa0f7b62d800f34cf56b2"
+  }
+]

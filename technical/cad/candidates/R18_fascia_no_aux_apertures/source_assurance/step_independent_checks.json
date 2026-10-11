@@ -1,0 +1,65 @@
+{
+  "candidate_sha256": "277c67abcb8b8b9072cd468812d0907954673facde2cd79d02870465620a10cf",
+  "baseline_valid": true,
+  "candidate_valid": true,
+  "candidate_solid_count": 1,
+  "removed_mm3": 0.0,
+  "added_mm3": 214.4136986075101,
+  "added_outside_small_aperture_regions_mm3": 0.0,
+  "added_behind_plate_mm3": 0.0,
+  "added_in_front_of_plate_mm3": 0.0,
+  "closures": [
+    {
+      "centre_xz_mm": [
+        24,
+        88
+      ],
+      "nominal_diameter_mm": 5.0,
+      "entire_plate_probe_missing_mm3": 0.0
+    },
+    {
+      "centre_xz_mm": [
+        48,
+        88
+      ],
+      "nominal_diameter_mm": 5.0,
+      "entire_plate_probe_missing_mm3": 0.0
+    },
+    {
+      "centre_xz_mm": [
+        72,
+        88
+      ],
+      "nominal_diameter_mm": 5.0,
+      "entire_plate_probe_missing_mm3": 0.0
+    },
+    {
+      "centre_xz_mm": [
+        67,
+        45
+      ],
+      "nominal_diameter_mm": 4,
+      "entire_plate_probe_missing_mm3": 0.0
+    }
+  ],
+  "retained_passage_overlap_mm3": {
+    "button1": 0.0,
+    "button2": 0.0,
+    "button3": 0.0,
+    "knob": 0.0,
+    "display_fixing1": 0.0,
+    "display_fixing2": 0.0,
+    "display_fixing3": 0.0,
+    "display_fixing4": 0.0,
+    "fascia_fixing1": 0.0,
+    "fascia_fixing2": 0.0,
+    "fascia_fixing3": 0.0,
+    "fascia_fixing4": 0.0
+  },
+  "lcd_opening_overlap_mm3": 0.0,
+  "rear_features_symmetric_difference_mm3": 0.0,
+  "tower_intersections_mm3": {
+    "R17": 0.0,
+    "R18_C01": 0.0
+  }
+}
